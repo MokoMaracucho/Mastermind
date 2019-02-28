@@ -1,7 +1,7 @@
 package fr.moko.main.java.game_Launchers;
 
 import fr.moko.main.java.configuration.Configuration;
-import fr.moko.main.java.menus.Main_Menu;
+import fr.moko.main.java.graphism.Graphism;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,8 +9,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 
 
+
 /**
- * Lance des jeux "Recherche +/-" et "Mastermind"</p>
+ * <p>Lance les jeux "Recherche +/-" et "Mastermind"</p>
  *
  * <ul>
  *     <li>Recherche +/-</li>
@@ -28,12 +29,23 @@ public class Game_Launcher {
     // Instance "Configuration"
     Configuration configuration = new Configuration();
 
+    // Instance "Graphism"
+    Graphism graphism = new Graphism();
+
 
 
     /**
      * Lancement des jeux "Recherche +/-" et "Mastermind"
      */
     public void game_Launcher() {
+
+        logger.trace("#######################################");
+        logger.trace("<<< START >>> Méthode : game_Launcher()");
+        logger.trace("#######################################");
+
+        logger.trace("######################################################################################");
+        logger.trace("<<< 1st Part >>> Méthode : game_Launcher() : Récupération des valeurs de configuration");
+        logger.trace("######################################################################################");
 
         // Initialisation (ArrayList) : "al_PropertiesValue"
         ArrayList al_Configuration = new ArrayList();
@@ -72,5 +84,46 @@ public class Game_Launcher {
         // Récupération - (int) Nombre de chances du jeu "Mastermind"
         int int_Mastermind_NumberOfChances = (int) al_Configuration.get(5);
         logger.debug("Récupération - (int) Nombre de chances du jeu \"Mastermind\" : " + int_Mastermind_NumberOfChances);
+
+
+
+        logger.trace("#########################################################");
+        logger.trace("<<< 2nd Part >>> Méthode : game_Launcher() : Présentation");
+        logger.trace("#########################################################");
+
+        // Initialisation - (boolean) Premier tour
+        boolean boo_FirstRound = true;
+        logger.debug("Initialisation - (boolean) Premier tour : " + boo_FirstRound);
+
+
+
+        // FOR - Lancement boucle infini
+        for (int i = 0; i <= 1; i++) {
+            logger.info("FOR - Lancement boucle infini");
+
+
+
+            // Remise à zéro de "i"
+            i = 0;
+            logger.debug("Remise à zéro de \"i\" : " + i);
+
+
+
+            // IF - Premier tour
+            if (boo_FirstRound) {
+                logger.info("IF - Premier tour");
+
+                // Affichage "MOKO GAMES INDUSTRY"
+                graphism.display_MOKO_GAMES_INDUSTRY();
+
+                // MàJ - (boolean) Premier tour
+                boo_FirstRound = false;
+                logger.debug("MàJ - (boolean) Premier tour : " + boo_FirstRound);
+            }
+        }
+
+        logger.trace("#####################################");
+        logger.trace("<<< END >>> Méthode : game_Launcher()");
+        logger.trace("#####################################\n");
     }
 }

@@ -31,11 +31,12 @@ public class Configuration {
     static Logger logger = LogManager.getRootLogger();
 
 
-
     /**
-     * Récupèration les valeurs de configuration
+     * Récupération des valeurs de configurations
      *
-     * @return : (ArrayList) Contenant les valeurs de configuration
+     * @param al_Configuration : (ArrayList) Valeurs de configuration
+     *
+     * @return : (ArrayList) Valeurs de configuration
      */
     public ArrayList get_Configuration(ArrayList al_Configuration) {
 
