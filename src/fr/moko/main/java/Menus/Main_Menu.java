@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
  * @author : Moko
  * @version : 1.0
  */
-public class Main_Menu {
+public interface Main_Menu {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
