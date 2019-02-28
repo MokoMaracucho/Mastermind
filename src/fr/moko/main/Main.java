@@ -1,6 +1,6 @@
 package fr.moko.main;
 
-import fr.moko.main.java.Game_Launchers.Game_Launcher;
+import fr.moko.main.java.game_Launchers.Game_Launcher;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

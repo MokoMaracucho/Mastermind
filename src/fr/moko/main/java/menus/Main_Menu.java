@@ -1,4 +1,4 @@
-package fr.moko.main.java.Menus;
+package fr.moko.main.java.menus;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
