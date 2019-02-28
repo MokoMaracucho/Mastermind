@@ -78,17 +78,17 @@ public class Game_Launcher {
         logger.debug("Récupération - (int) Nombre d'unités des combinaisons du jeu \"Recherche +/-\" : " + int_Recherche_NumberOfUnities);
 
         // Récupération - (int) Nombre de chances du jeu "Recherche +/-"
-        int int_Recherche_NumberOfChances = (int) al_Configuration.get(4);
+        int int_Recherche_NumberOfChances = (int) al_Configuration.get(2);
         logger.debug("Récupération - (int) Nombre de chances du jeu \"Recherche +/-\" : " + int_Recherche_NumberOfChances);
 
 
 
         // Récupération - (int) Nombre d'unités des combinaisons du jeu "Mastermind"
-        int int_Mastermind_NumberOfUnities = (int) al_Configuration.get(2);
+        int int_Mastermind_NumberOfUnities = (int) al_Configuration.get(3);
         logger.debug("Récupération - (int) Nombre d'unités des combinaisons du jeu \"Mastermind\" : " + int_Mastermind_NumberOfUnities);
 
         // Récupération - (int) Nombre de lettres utilisées pour le jeu "Mastermind"
-        int int_Mastermind_NumberOfLetters = (int) al_Configuration.get(3);
+        int int_Mastermind_NumberOfLetters = (int) al_Configuration.get(4);
         logger.debug("Récupération - (int) Nombre de lettres utilisées pour le jeu \"Mastermind\" : " + int_Mastermind_NumberOfLetters);
 
         // Récupération - (int) Nombre de chances du jeu "Mastermind"
@@ -151,9 +151,9 @@ public class Game_Launcher {
 
 
 
-            logger.trace("####################################################################################################");
+            logger.trace("################################################################################################");
             logger.trace("<<< 4th Part >>> Méthode : game_Launcher() : Lance du jeu \"Recherche +/-\" ou du jeu \"Mastermind\"");
-            logger.trace("####################################################################################################");
+            logger.trace("################################################################################################");
 
             // SWITCH - Choix du jeu
             logger.info("SWITCH - Choix du jeu");
@@ -188,8 +188,6 @@ public class Game_Launcher {
                     break;
             }
         }
-
-
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : game_Launcher()");

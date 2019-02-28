@@ -61,7 +61,7 @@ public class Texts_Main_Menu {
     public void display_FAITES_VOTRE_SELECTION() {
 
         delay.delay_Text();
-        System.out.print("Faites votre sélection : \n");
+        System.out.print("Faites votre sélection : ");
     }
 
 

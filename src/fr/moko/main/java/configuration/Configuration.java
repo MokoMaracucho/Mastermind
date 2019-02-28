@@ -96,8 +96,8 @@ public class Configuration {
         al_Configuration.add(1, int_Recherche_NumberOfUnities);
 
         // Initialisation, récupération et injection - (int) Nombre de chances du jeu "Mastermind"
-        int int_Mastermind_NumberOfChances = Integer.parseInt(str_Mastermind_NumberOfChances);
-        al_Configuration.add(2, int_Mastermind_NumberOfChances);
+        int int_Recherche_NumberOfChances = Integer.parseInt(str_Recherche_NumberOfChances);
+        al_Configuration.add(2, int_Recherche_NumberOfChances);
 
 
 
@@ -110,8 +110,8 @@ public class Configuration {
         al_Configuration.add(4, int_Mastermind_NumberOfLetters);
 
         // Initialisation, récupération et injection - (int) Nombre de chances du jeu "Recherche +/-"
-        int int_Recherche_NumberOfChances = Integer.parseInt(str_Recherche_NumberOfChances);
-        al_Configuration.add(5, int_Recherche_NumberOfChances);
+        int int_Mastermind_NumberOfChances = Integer.parseInt(str_Mastermind_NumberOfChances);
+        al_Configuration.add(5, int_Mastermind_NumberOfChances);
 
         logger.trace("###########################################");
         logger.trace("<<< END >>> Méthode : get_PropertiesValue()");
