@@ -196,6 +196,74 @@ public class Methods_Main_Menu {
                         break;
                 }
                 break;
+
+            // CASE - "Modes"
+            case "Modes" :
+                logger.info("CASE - \"Modes\"");
+
+                // SWITCH - (char) Caractére récupéré du scanner
+                logger.info("SWITCH - (char) Caractére récupéré du scanner");
+                switch (ch_Scanner){
+
+                    // CASE - '1'
+                    case '1' :
+                        logger.info("CASE - '1'");
+
+                        texts_Main_Menu.display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_CHALLENGER();
+
+                        // MàJ - (String) Choix
+                        str_Choise = "Challenger";
+                        logger.debug("MàJ - (String) Choix : " + str_Choise);
+
+                        break;
+
+                    // CASE - '2'
+                    case '2':
+                        logger.info("CASE - '2'");
+
+                        texts_Main_Menu.display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_DEFENSE();
+
+                        // MàJ - (String) Choix
+                        str_Choise = "Défense";
+                        logger.debug("MàJ - (String) Choix : " + str_Choise);
+
+                        break;
+
+                    // CASE - '3'
+                    case '3':
+                        logger.info("CASE - '3'");
+
+                        texts_Main_Menu.display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_DUEL();
+
+                        // MàJ - (String) Choix
+                        str_Choise = "Duel";
+                        logger.debug("MàJ - (String) Choix : " + str_Choise);
+
+                        break;
+
+                    // CASE - 'Q'
+                    case 'Q' :
+                        logger.info("CASE - 'Q'");
+
+                        // EXIT - Sortie du jeu
+                        System.exit(0);
+                        logger.warn("EXIT - Sortie du jeu");
+
+                        break;
+
+                    // DEFAULT
+                    default :
+                        logger.info("DEFAULT");
+
+                        // Affiche "Votre choix n'est pas correct !"
+                        texts_Main_Menu.display_VOTRE_CHOIX_N_EST_PAS_CORRECT();
+
+                        // Affiche "Veuillez réessayer."
+                        texts_Main_Menu.display_VEUILLEZ_REESSAYER();
+
+                        break;
+                }
+                break;
         }
 
         return str_Choise;

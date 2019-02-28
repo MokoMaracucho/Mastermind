@@ -47,8 +47,8 @@ public class Main_Menu {
         // Initialisation (String) Choix du mode
         String str_Mode_Choise = new String();
 
-        // DO {} WHILE - Confirnmation = "N"
-        logger.info("DO {} WHILE - Confirnmation = \"N\"");
+        // DO {} WHILE - Confirmation = "N"
+        logger.info("DO {} WHILE - Confirmation = \"N\"");
         do {
 
             // DO {} WHILE - Le choix du jeu = ""
@@ -104,9 +104,66 @@ public class Main_Menu {
 
 
 
+        // DO {} WHILE - Confirnmation = "N"
+        logger.info("DO {} WHILE - Confirnmation = \"N\"");
+        do {
+
+            // DO {} WHILE - Choix du mode = ""
+            logger.info("DO {} WHILE - Choix du mode = \"\"");
+            do {
+
+                // MàJ - (String) Valeur du menu
+                str_Menu_Value = "Modes";
+
+                // Affichage du menu des modes
+                texts_Main_Menu.display_Modes_Menu();
+
+                // Initialisation et récupération (String) valeur de la chaîne de caractère contenue dans le scanner : "str_Scanner"
+                String str_Scanner = methods_Main_Menu.run_Scanner();
+                logger.debug("(String) Valeur de la chaîne de caractère contenue dams le scanner : " + str_Scanner);
+
+                // Initialisation et récupération (char) lettre correspondant au choix du jeu : "ch_Scanner"
+                char ch_Scanner = str_Scanner.toUpperCase().charAt(0);
+                logger.debug("(char) Lettre correspondant au choix du mode : " + ch_Scanner);
+
+                // Injection (String) choix du mode : "str_ModeChoise"
+                str_Mode_Choise = methods_Main_Menu.run_Scanner_Treatment(str_Menu_Value, ch_Scanner);
+                logger.debug("str_ModeChoise : " + str_Mode_Choise);
+
+            } while (str_Mode_Choise.equals(""));
+
+            // DO {} WHILE - La confirmation = ""
+            logger.info("DO {} WHILE - La confirmation = \"\"");
+            do {
+
+                // MàJ - (String) Valeur du menu
+                str_Menu_Value = "Confirm";
+
+                // Affichage confirmation
+                texts_Main_Menu.display_ETES_VOUS_SUR();
+
+                // Initialisation et récupération (String) valeur de la chaîne de caractère contenue dans le scanner : "str_Scanner"
+                String str_Scanner = methods_Main_Menu.run_Scanner();
+                logger.debug("(String) Valeur de la chaîne de caractère contenue dams le scanner : " + str_Scanner);
+
+                // Initialisation et récupération (char) lettre correspondant au choix du jeu : "ch_Scanner"
+                char ch_Scanner = str_Scanner.toUpperCase().charAt(0);
+                logger.debug("(char) Lettre correspondant au choix de la confirmation : " + ch_Scanner);
+
+                // Injection (String) confirmation : "str_ConfirmChoise"
+                str_Confirm_Choise = methods_Main_Menu.run_Scanner_Treatment(str_Menu_Value, ch_Scanner);
+                logger.debug("str_ConfirmChoise : " + str_Confirm_Choise);
+
+            } while (str_Confirm_Choise.equals(""));
+
+        } while (str_Confirm_Choise.equals("N"));
+
+
+
 
         // Injection des choix du menu principal
         array_str_Menu_Choices[0] = str_Game_Choise;
+        array_str_Menu_Choices[1] = str_Mode_Choise;
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : run_Main_Menu()");
