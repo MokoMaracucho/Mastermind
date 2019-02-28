@@ -3,6 +3,7 @@ package fr.moko.main.java.game_Launchers;
 import fr.moko.main.java.configuration.Configuration;
 import fr.moko.main.java.dev_Mode.Dev_Mode;
 import fr.moko.main.java.graphism.Graphism;
+import fr.moko.main.java.menus.Main_Menu;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,6 +33,9 @@ public class Game_Launcher {
 
     // Instance "Dev_Mode"
     Dev_Mode dev_Mode = new Dev_Mode();
+
+    // Instance "Main_Menu"
+    Main_Menu main_Menu = new Main_Menu();
 
     // Instance "Graphism"
     Graphism graphism = new Graphism();
@@ -131,6 +135,20 @@ public class Game_Launcher {
                     dev_Mode.display_VOUS_ETES_EN_MODE_DEVELOPPEUR();
                 }
             }
+
+
+
+            logger.trace("#########################################################");
+            logger.trace("<<< 2nd Part >>> Méthode : game_Launcher() : Présentation");
+            logger.trace("#########################################################");
+
+            // Initialisation et récupération (array String) Choix du menu principal
+            String array_str_MenuChoices[] = new String[2];
+
+            array_str_MenuChoices = main_Menu.run_Main_Menu(array_str_MenuChoices);
+
+            logger.debug("(String) Choix du jeu : " + array_str_MenuChoices[0]);
+            logger.debug("(String) Choix du mode : " + array_str_MenuChoices[1]);
         //}
 
         logger.trace("#####################################");

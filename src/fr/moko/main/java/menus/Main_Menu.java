@@ -6,13 +6,27 @@ import org.apache.logging.log4j.Logger;
 
 
 /**
- * Menu principal
+ * Lance le menu principal
  *
  * @author : Moko
  * @version : 1.0
  */
-public interface Main_Menu {
+public class Main_Menu {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
+
+
+
+    /**
+     * Lancement du menu principal
+     *
+     * @return : (array String) contenant les choix du menu principal
+     */
+    public String[] run_Main_Menu(String array_str_MenuChoices[]) {
+
+        
+
+        return array_str_MenuChoices;
+    }
 }
