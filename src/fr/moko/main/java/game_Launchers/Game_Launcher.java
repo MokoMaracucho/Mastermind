@@ -138,18 +138,20 @@ public class Game_Launcher {
 
 
 
-            logger.trace("#########################################################");
-            logger.trace("<<< 2nd Part >>> Méthode : game_Launcher() : Présentation");
-            logger.trace("#########################################################");
+            logger.trace("###########################################################");
+            logger.trace("<<< 3rd Part >>> Méthode : game_Launcher() : Menu principal");
+            logger.trace("###########################################################");
 
             // Initialisation et récupération (array String) Choix du menu principal
-            String array_str_MenuChoices[] = new String[2];
+            String array_str_Menu_Choices[] = new String[2];
 
-            array_str_MenuChoices = main_Menu.run_Main_Menu(array_str_MenuChoices);
+            array_str_Menu_Choices = main_Menu.run_Main_Menu(array_str_Menu_Choices);
 
-            logger.debug("(String) Choix du jeu : " + array_str_MenuChoices[0]);
-            logger.debug("(String) Choix du mode : " + array_str_MenuChoices[1]);
+            logger.debug("(String) Choix du jeu : " + array_str_Menu_Choices[0]);
+            logger.debug("(String) Choix du mode : " + array_str_Menu_Choices[1]);
         //}
+
+
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : game_Launcher()");
