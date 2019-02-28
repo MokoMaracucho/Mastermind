@@ -42,6 +42,6 @@ public class Graphism {
         delay.delay_Image();
         System.out.println(" \\__/   \\__/   \\__/   \\_________/    \\__/    \\____/   \\_________/");
         delay.delay_Image();
-        System.out.println("\n---------------------------------------------------- GAMES INDUSTRY");
+        System.out.println("\n---------------------------------------------------- GAMES INDUSTRY\n");
     }
 }

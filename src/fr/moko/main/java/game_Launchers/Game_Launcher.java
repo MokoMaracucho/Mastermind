@@ -1,6 +1,7 @@
 package fr.moko.main.java.game_Launchers;
 
 import fr.moko.main.java.configuration.Configuration;
+import fr.moko.main.java.dev_Mode.Dev_Mode;
 import fr.moko.main.java.graphism.Graphism;
 
 import org.apache.logging.log4j.LogManager;
@@ -28,6 +29,9 @@ public class Game_Launcher {
 
     // Instance "Configuration"
     Configuration configuration = new Configuration();
+
+    // Instance "Dev_Mode"
+    Dev_Mode dev_Mode = new Dev_Mode();
 
     // Instance "Graphism"
     Graphism graphism = new Graphism();
@@ -98,14 +102,14 @@ public class Game_Launcher {
 
 
         // FOR - Lancement boucle infini
-        for (int i = 0; i <= 1; i++) {
-            logger.info("FOR - Lancement boucle infini");
+        //for (int i = 0; i <= 1; i++) {
+            //logger.info("FOR - Lancement boucle infini");
 
 
 
             // Remise à zéro de "i"
-            i = 0;
-            logger.debug("Remise à zéro de \"i\" : " + i);
+            //i = 0;
+            //logger.debug("Remise à zéro de \"i\" : " + i);
 
 
 
@@ -119,8 +123,15 @@ public class Game_Launcher {
                 // MàJ - (boolean) Premier tour
                 boo_FirstRound = false;
                 logger.debug("MàJ - (boolean) Premier tour : " + boo_FirstRound);
+
+                // SI - En mode développeur
+                if (boo_DevMode) {
+
+                    // Affichage "Vous êtes en mode développeur"
+                    dev_Mode.display_VOUS_ETES_EN_MODE_DEVELOPPEUR();
+                }
             }
-        }
+        //}
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : game_Launcher()");
