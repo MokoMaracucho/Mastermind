@@ -1,5 +1,6 @@
 package fr.moko.main.java.menus;
 
+import fr.moko.main.java.graphism.Graphism;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,6 +22,9 @@ public class Main_Menu {
 
     // Instance : "Methods_Main_Menu"
     Methods_Main_Menu methods_Main_Menu = new Methods_Main_Menu();
+
+    // Instance "Graphism"
+    Graphism graphism = new Graphism();
 
 
 
@@ -164,6 +168,17 @@ public class Main_Menu {
         // Injection des choix du menu principal
         array_str_Menu_Choices[0] = str_Game_Choise;
         array_str_Menu_Choices[1] = str_Mode_Choise;
+
+        
+
+        logger.debug("(String) Choix du jeu : " + array_str_Menu_Choices[0]);
+        logger.debug("(String) Choix du mode : " + array_str_Menu_Choices[1]);
+
+        // Affichage "GO"
+        graphism.display_GO();
+
+        // Affiche "C'est parti pour ... en mode ..."
+        texts_Main_Menu.display_C_EST_PARTI_POUR(array_str_Menu_Choices);
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : run_Main_Menu()");

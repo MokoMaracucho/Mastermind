@@ -106,14 +106,14 @@ public class Game_Launcher {
 
 
         // FOR - Lancement boucle infini
-        //for (int i = 0; i <= 1; i++) {
-            //logger.info("FOR - Lancement boucle infini");
+        logger.info("FOR - Lancement boucle infini");
+        for (int i = 0; i <= 1; i++) {
 
 
 
             // Remise à zéro de "i"
-            //i = 0;
-            //logger.debug("Remise à zéro de \"i\" : " + i);
+            i = 0;
+            logger.debug("Remise à zéro de \"i\" : " + i);
 
 
 
@@ -146,10 +146,7 @@ public class Game_Launcher {
             String array_str_Menu_Choices[] = new String[2];
 
             array_str_Menu_Choices = main_Menu.run_Main_Menu(array_str_Menu_Choices);
-
-            logger.debug("(String) Choix du jeu : " + array_str_Menu_Choices[0]);
-            logger.debug("(String) Choix du mode : " + array_str_Menu_Choices[1]);
-        //}
+        }
 
 
 

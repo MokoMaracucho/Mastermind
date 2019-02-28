@@ -44,4 +44,29 @@ public class Graphism {
         delay.delay_Image();
         System.out.println("\n---------------------------------------------------- GAMES INDUSTRY\n");
     }
+
+
+
+    /**
+     * Affiche "GO"
+     */
+    public void display_GO() {
+
+        delay.delay_Image();
+        System.out.println("\n\n / $$$$$$$    / $$$$$$$     /$$$");
+        delay.delay_Image();
+        System.out.println("| $$$__ $$$  | $$$__ $$$   | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$ |___/  | $$$ | $$$   | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$ /$$$$$ | $$$ | $$$   | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$|_ $$$  | $$$ | $$$   | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$ | $$$  | $$$ | $$$   |___/");
+        delay.delay_Image();
+        System.out.println("|  $$$$$$$   |  $$$$$$$     /$$$");
+        delay.delay_Image();
+        System.out.println(" \\_______/    \\_______/    |___/");
+    }
 }

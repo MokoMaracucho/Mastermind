@@ -172,4 +172,48 @@ public class Texts_Main_Menu {
         delay.delay_Text();
         System.out.println("Vous avez choisi de jouer en mode \"Duel\" !\n");
     }
+
+
+
+    /**
+     * Affiche "C'est parti pour jouer ... en mode ..."
+     *
+     * @param array_str_MenuChoices : (array String) Choix du menu principal
+     */
+    public void display_C_EST_PARTI_POUR(String array_str_MenuChoices[]) {
+
+        String str_A_OU_AU = run_A_OU_AU(array_str_MenuChoices);
+
+        delay.delay_Text();
+        System.out.println("\nC'est parti pour jouer " + str_A_OU_AU + " \"" + array_str_MenuChoices[0] + "\" en mode \"" + array_str_MenuChoices[1] + "\" !");
+    }
+
+    /**
+     * Retourne "à" ou "au"
+     *
+     * @param array_str_MenuChoices : (array String) Choix du menu principal
+     *
+     * @return : (String) "à" ou "au"
+     */
+    public String run_A_OU_AU(String array_str_MenuChoices[]) {
+
+        String str_A_OU_AU = new String();
+
+        switch (array_str_MenuChoices[0]){
+
+            case "Recherche +/-" :
+
+                str_A_OU_AU = "à";
+
+                break;
+
+            case "Mastermind" :
+
+                str_A_OU_AU = "au";
+
+                break;
+        }
+
+        return str_A_OU_AU;
+    }
 }
