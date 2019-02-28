@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 
 /**
- * Lancement des jeux</p>
+ * Lance des jeux "Recherche +/-" et "Mastermind"</p>
  *
  * <ul>
  *     <li>Recherche +/-</li>
@@ -22,4 +22,13 @@ public class Game_Launcher implements Main_Menu {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
+
+
+
+    /**
+     * Lancement des jeux "Recherche +/-" et "Mastermind"
+     */
+    public void game_Launcher() {
+
+    }
 }

@@ -1,5 +1,7 @@
 package fr.moko.main;
 
+import fr.moko.main.java.Game_Launchers.Game_Launcher;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,5 +31,11 @@ public class Main {
         logger.error("msg d'erreur"); // all throwned exceptions
         logger.fatal("msg d'erreur fatale");  // error DB, exceptions which stop the program
         System.out.print("\n");
+
+
+
+        // Instance "Game_Launcher"
+        Game_Launcher game_Launcher = new Game_Launcher();
+        game_Launcher.game_Launcher();
     }
 }
