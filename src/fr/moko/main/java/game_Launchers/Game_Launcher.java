@@ -2,6 +2,8 @@ package fr.moko.main.java.game_Launchers;
 
 import fr.moko.main.java.configuration.Configuration;
 import fr.moko.main.java.dev_Mode.Dev_Mode;
+import fr.moko.main.java.game_Launchers.mastermind_Launcher.Mastermind_Launcher;
+import fr.moko.main.java.game_Launchers.recherche_Launcher.Recherche_Launcher;
 import fr.moko.main.java.graphism.Graphism;
 import fr.moko.main.java.menus.Main_Menu;
 
@@ -17,7 +19,7 @@ import java.util.ArrayList;
  *
  * <ul>
  *     <li>Recherche +/-</li>
- *     <li>mastermind</li>
+ *     <li>mastermind_Launcher</li>
  * </ul>
  *
  * @author : Moko
@@ -146,6 +148,45 @@ public class Game_Launcher {
             String array_str_Menu_Choices[] = new String[2];
 
             array_str_Menu_Choices = main_Menu.run_Main_Menu(array_str_Menu_Choices);
+
+
+
+            logger.trace("####################################################################################################");
+            logger.trace("<<< 4th Part >>> Méthode : game_Launcher() : Lance du jeu \"Recherche +/-\" ou du jeu \"Mastermind\"");
+            logger.trace("####################################################################################################");
+
+            // SWITCH - Choix du jeu
+            logger.info("SWITCH - Choix du jeu");
+            switch (array_str_Menu_Choices[0]) {
+
+                // CASE - Mode  "Recherche +/-"
+                case "Recherche +/-":
+                    logger.info("CASE - Mode  \"Recherche +/-\"");
+
+                    // Instance "Recherche_Launcher"
+                    Recherche_Launcher recherche_Launcher = new Recherche_Launcher();
+                    logger.info("Instance \"recherchePlusMoins\"");
+
+                    // Lancement du jeu "Recherche +/-"
+                    recherche_Launcher.recherche_Launcher(al_Configuration, array_str_Menu_Choices);
+                    logger.info("Lancement du jeu \"Recherche +/-\"");
+
+                    break;
+
+                // CASE - Mode  "Mastermind"
+                case "Mastermind":
+                    logger.info("CASE - Mode  \"Mastermind\"");
+
+                    // Instance "Mastermind_Launcher"
+                    Mastermind_Launcher mastermind_Launcher = new Mastermind_Launcher();
+                    logger.info("Instance \"Mastermind\"");
+
+                    // Lancement du jeu "Mastermind"
+                    mastermind_Launcher.mastermind_Launcher(al_Configuration, array_str_Menu_Choices);
+                    logger.info("Lancement du jeu \"Mastermind\"");
+
+                    break;
+            }
         }
 
 

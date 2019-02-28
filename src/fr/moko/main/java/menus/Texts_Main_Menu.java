@@ -89,12 +89,12 @@ public class Texts_Main_Menu {
 
 
     /**
-     * Affiche "Vous avez choisi de jouer au "mastermind !""
+     * Affiche "Vous avez choisi de jouer au "mastermind_Launcher !""
      */
     public void display_VOUS_AVEZ_CHOISI_MASTERMIND() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer au \"mastermind\" !\n");
+        System.out.println("Vous avez choisi de jouer au \"mastermind_Launcher\" !\n");
     }
 
 

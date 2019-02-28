@@ -169,7 +169,7 @@ public class Main_Menu {
         array_str_Menu_Choices[0] = str_Game_Choise;
         array_str_Menu_Choices[1] = str_Mode_Choise;
 
-        
+
 
         logger.debug("(String) Choix du jeu : " + array_str_Menu_Choices[0]);
         logger.debug("(String) Choix du mode : " + array_str_Menu_Choices[1]);
