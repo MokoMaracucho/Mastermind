@@ -3,6 +3,7 @@ package fr.moko.main.java.games_Launchers.mastermind_Launcher;
 import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
+import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Defense_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Methods_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Texts_Mastermind;
 
@@ -33,6 +34,9 @@ public class Mastermind_Launcher {
 
     // Instance : "Utilities_Games"
     Utilities_Games utilities_Games = new Utilities_Games();
+
+    // Instance : "Defense_Mastermind"
+    Defense_Mastermind defense_Mastermind = new Defense_Mastermind();
 
     // Instance : "Methods_Mastermind"
     Methods_Mastermind methods_Mastermind = new Methods_Mastermind();
@@ -315,6 +319,9 @@ public class Mastermind_Launcher {
                     // Affiche la combinaison secrète
                     texts_Games.display_VOTRE_COMBINAISON(str_Combination);
                 }
+
+                // Lancement de la défense du jeu "Mastermind"
+                al_Mastermind_Defense = defense_Mastermind.run_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, array_str_Main_Menu_Choices, i, al_Mastermind_Defense);
             }
         }
     }
