@@ -241,7 +241,7 @@ public class Defense_Mastermind {
 
                     // Définition de la lettre suivante
                     logger.info("Définition de la lettre suivante");
-                    ch_NextLetter = defense_Methods_Mastermind.run_NextLetter(int_NumberOfLetters, array_ch_SelectedLetters, int_IndexOfInitialLetter, ch_InitialLetter, ch_NextLetter);
+                    ch_NextLetter = defense_Methods_Mastermind.run_NextLetter(int_NumberOfLetters, array_ch_SelectedLetters, int_IndexOfInitialLetter, ch_NextLetter);
 
                     // Lancement index de la lettre suivante
                     int_IndexOfNextLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_NumberOfLetters, al_Mastermind_Defense, ch_NewLetter);

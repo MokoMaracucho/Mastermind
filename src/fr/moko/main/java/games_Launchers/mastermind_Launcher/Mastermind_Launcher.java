@@ -6,6 +6,7 @@ import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Defense_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Methods_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Texts_Mastermind;
+import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_al_Mastermind_Defense;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -40,6 +41,9 @@ public class Mastermind_Launcher {
 
     // Instance : "Methods_Mastermind"
     Methods_Mastermind methods_Mastermind = new Methods_Mastermind();
+
+    // Instance : "Display_al_Mastermind_Defense"
+    Display_al_Mastermind_Defense display_al_Mastermind_Defense = new Display_al_Mastermind_Defense();
 
     // Instance : "Texts_Mastermind"
     Texts_Mastermind texts_Mastermind = new Texts_Mastermind();
@@ -322,6 +326,21 @@ public class Mastermind_Launcher {
 
                 // Lancement de la défense du jeu "Mastermind"
                 al_Mastermind_Defense = defense_Mastermind.run_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, array_str_Main_Menu_Choices, i, al_Mastermind_Defense);
+
+                // Affichage "al_Mastermind_Defense"
+                display_al_Mastermind_Defense.display_al_Mastermind_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+
+                // Récupération (char[]) Nouvelle proposition de l'ordinateur
+                array_ch_NewComputerProposal = (char[]) al_Mastermind_Defense.get(5);
+                logger.info("Récupération (char[]) Nouvelle proposition de l'ordinateur");
+
+                // Conversion (String) Proposition de l'ordinateur
+                String str_ComputerProposal = utilities_Games.run_arrayCh_TO_str(int_Mastermind_NumberOfUnities, array_ch_NewComputerProposal);
+                logger.debug("Conversion (String) Proposition de l'ordinateur : " + str_ComputerProposal);
+
+                // Affiche la proposition de l'ordinateur
+                texts_Games.display_PROPOSITION_DE_L_ORDINATEUR(str_ComputerProposal, i);
+
             }
         }
     }

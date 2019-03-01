@@ -2,10 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028b4816-3f65-4793-b521-9e6db5ea7249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/Configuration.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/Configuration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/configuration/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/Delay.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/Delay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/delay/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/Dev_Mode.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/Dev_Mode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/dev_Mode/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Methods_Games.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Methods_Games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Texts_Games.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Texts_Games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Utilities_Games.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/Utilities_Games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games_Launcher.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/Games_Launcher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Methods_Mastermind.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Methods_Mastermind.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Methods_Mastermind.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Methods_Mastermind.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/mastermind_Launcher/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Texts_Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Texts_Recherche.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/Graphism.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/Graphism.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/graphism/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Main_Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Main_Menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Methods_Main_Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Methods_Main_Menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Texts_Main_Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/Texts_Main_Menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/menus/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +98,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="323" column="133" selection-start-line="323" selection-start-column="133" selection-end-line="323" selection-end-column="133" />
+            <state relative-caret-position="365">
+              <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="76" column="51" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -31,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="285" column="37" selection-start-line="285" selection-start-column="37" selection-end-line="285" selection-end-column="37" />
+            <state relative-caret-position="-1782">
+              <caret line="126" column="6" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="567">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,9 +207,11 @@
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Methods_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Texts_Games.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" />
       </list>
     </option>
   </component>
@@ -256,6 +361,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="games_Launchers" type="462c0819:PsiDirectoryNode" />
+              <item name="mastermind_Launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="mastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="Utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fr" type="462c0819:PsiDirectoryNode" />
+              <item name="moko" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="games_Launchers" type="462c0819:PsiDirectoryNode" />
               <item name="recherche_Launcher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,7 +434,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551471637860" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551472987292" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -383,7 +501,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -391,11 +509,11 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.96178347" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.4598726" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.3299363" />
+      <window_info anchor="bottom" id="TODO" order="10" visible="true" weight="0.3299363" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -621,20 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="285" column="37" selection-start-line="285" selection-start-column="37" selection-end-line="285" selection-end-column="37" />
+        <state relative-caret-position="-1782">
+          <caret line="126" column="6" selection-start-line="126" selection-start-column="6" selection-end-line="126" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -643,8 +751,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="323" column="133" selection-start-line="323" selection-start-column="133" selection-end-line="323" selection-end-column="133" />
+        <state relative-caret-position="365">
+          <caret line="330" column="45" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="76" column="51" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
