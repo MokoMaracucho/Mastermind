@@ -67,9 +67,13 @@ public class Recherche_Launcher {
         // Initialisation (String) Sous-mode en mode "Duel"
         String str_Sub_Mode = new String();
 
+
+
         // Initialisation (String) résultat gagnant
         String str_WinningResult = methods_Recherche.run_str_WinningResult(int_Recherche_NumberOfUnities);
         logger.debug("(String) Résultat gagnant : " + str_WinningResult);
+
+
 
         // Instance - (ArrayList) Données de défense
         ArrayList al_Recherche_Defense = new ArrayList();
@@ -77,27 +81,29 @@ public class Recherche_Launcher {
 
         // Initialisation et injection - (int[]) Combinaison secrète
         int array_int_Combination[] = new int[int_Recherche_NumberOfUnities];
-        logger.debug("Initialisation et injection - (int[]) Combinaison secrète : " + Arrays.toString(array_int_Combination));
+        logger.info("Initialisation et injection - (int[]) Combinaison secrète");
         al_Recherche_Defense.add(0, array_int_Combination);
 
         // Initialisation et injection - (int[]) Derniers inférieurs
         int array_int_LastInferior[] = new int[int_Recherche_NumberOfUnities];
-        logger.debug("Initialisation et injection - (int[]) Derniers inférieurs : " + Arrays.toString(array_int_LastInferior));
+        logger.info("Initialisation et injection - (int[]) Derniers inférieurs");
         al_Recherche_Defense.add(1, array_int_LastInferior);
 
         // Initialisation et injection - (int[]) Derniers supérieurs
         int array_int_LastSuperior[] = new int[int_Recherche_NumberOfUnities];
-        logger.debug("Initialisation et injection - (int[]) Derniers supérieurs : " + Arrays.toString(array_int_LastSuperior));
         al_Recherche_Defense.add(2, array_int_LastSuperior);
+        logger.info("Initialisation et injection - (int[]) Derniers supérieurs");
 
         // Initialisation et injection - (int[]) Proposition de l'ordinateur
         int array_int_ComputerProposal[] = new int[int_Recherche_NumberOfUnities];
         al_Recherche_Defense.add(3, array_int_ComputerProposal);
-        logger.debug("Initialisation et injection - (int[]) Proposition de l'ordinateur : " + Arrays.toString(array_int_ComputerProposal));
+        logger.info("Initialisation et injection - (int[]) Proposition de l'ordinateur");
+
+
 
         // Initialisation et injection - (char[]) Résultat de la comparaison
         char array_ch_ComparisonResult_Defense[] = new char[int_Recherche_NumberOfUnities];
-        logger.debug("Initialisation et injection - (char[]) Résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult_Defense));
+        logger.info("Initialisation et injection - (char[]) Résultat de la comparaison");
 
 
 

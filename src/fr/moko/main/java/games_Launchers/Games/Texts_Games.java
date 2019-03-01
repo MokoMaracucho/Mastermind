@@ -23,7 +23,7 @@ public class Texts_Games {
     public void display_BUT_DU_JEU() {
 
         delay.delay_Text();
-        System.out.println("But du jeu :\n");
+        System.out.println("\nBut du jeu :\n");
     }
 
 
@@ -49,7 +49,7 @@ public class Texts_Games {
     public void display_A_VOUS_DE_JOUER(){
 
         delay.delay_Text();
-        System.out.println("A vous de jouer !\n");
+        System.out.println("\nA vous de jouer !\n");
     }
 
 
@@ -60,7 +60,7 @@ public class Texts_Games {
     public void display_SAISISSEZ_VOTRE_COMBINAISON(){
 
         delay.delay_Text();
-        System.out.print("Saisissez votre combinaison : ");
+        System.out.print("\nSaisissez votre combinaison : ");
     }
 
 
@@ -95,7 +95,7 @@ public class Texts_Games {
     public void display_VOTRE_COMBINAISON(String str_Combination){
 
         delay.delay_Text();
-        System.out.print("\nVotre combinaison :                                " + str_Combination);
+        System.out.print("\n\nVotre combinaison :                                " + str_Combination);
     }
 
 
