@@ -33,7 +33,7 @@ public class Main_Menu {
      *
      * @return : (array String) contenant les choix du menu principal
      */
-    public String[] run_Main_Menu(String array_str_Menu_Choices[]) {
+    public String[] run_Main_Menu(String array_str_Main_Menu_Choices[]) {
 
         logger.trace("#######################################");
         logger.trace("<<< START >>> Méthode : run_Main_Menu()");
@@ -166,24 +166,24 @@ public class Main_Menu {
 
 
         // Injection des choix du menu principal
-        array_str_Menu_Choices[0] = str_Game_Choise;
-        array_str_Menu_Choices[1] = str_Mode_Choise;
+        array_str_Main_Menu_Choices[0] = str_Game_Choise;
+        array_str_Main_Menu_Choices[1] = str_Mode_Choise;
 
 
 
-        logger.debug("(String) Choix du jeu : " + array_str_Menu_Choices[0]);
-        logger.debug("(String) Choix du mode : " + array_str_Menu_Choices[1]);
+        logger.debug("(String) Choix du jeu : " + array_str_Main_Menu_Choices[0]);
+        logger.debug("(String) Choix du mode : " + array_str_Main_Menu_Choices[1]);
 
         // Affichage "GO"
         graphism.display_GO();
 
         // Affiche "C'est parti pour ... en mode ..."
-        texts_Main_Menu.display_C_EST_PARTI_POUR(array_str_Menu_Choices);
+        texts_Main_Menu.display_C_EST_PARTI_POUR(array_str_Main_Menu_Choices);
 
         logger.trace("#####################################");
         logger.trace("<<< END >>> Méthode : run_Main_Menu()");
         logger.trace("#####################################\n");
 
-        return array_str_Menu_Choices;
+        return array_str_Main_Menu_Choices;
     }
 }

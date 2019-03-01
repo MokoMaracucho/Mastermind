@@ -1,6 +1,6 @@
 package fr.moko.main;
 
-import fr.moko.main.java.game_Launchers.Game_Launcher;
+import fr.moko.main.java.games_Launchers.Games_Launcher;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,8 +34,8 @@ public class Main {
 
 
 
-        // Instance "Game_Launcher"
-        Game_Launcher game_Launcher = new Game_Launcher();
-        game_Launcher.game_Launcher();
+        // Instance "Games_Launcher"
+        Games_Launcher games_Launcher = new Games_Launcher();
+        games_Launcher.games_Launcher();
     }
 }

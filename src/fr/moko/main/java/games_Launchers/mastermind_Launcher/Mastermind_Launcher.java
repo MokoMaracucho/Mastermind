@@ -1,4 +1,4 @@
-package fr.moko.main.java.game_Launchers.mastermind_Launcher;
+package fr.moko.main.java.games_Launchers.mastermind_Launcher;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
