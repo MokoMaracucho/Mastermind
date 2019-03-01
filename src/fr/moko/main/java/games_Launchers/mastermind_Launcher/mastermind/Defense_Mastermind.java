@@ -502,4 +502,214 @@ public class Defense_Mastermind {
 
         return array_int_NewComparisonResult;
     }
+
+
+
+    /**
+     * Comparaison entre les deux dernières comparaisons avec la combinaison secrète
+     *
+     * @param al_Defense : (ArrayList) Données défense
+     *
+     * @return : (ArrayList) Données de défense
+     */
+    public ArrayList run_al_ComparisonOfComparisonResults(ArrayList al_Defense) {
+
+        logger.trace("##############################################################");
+        logger.trace("<<< START >>> Méthode : run_al_ComparisonOfComparisonResults()");
+        logger.trace("##############################################################");
+
+        // Récupération (int[]) Comparaison précédente
+        int array_int_PreviousComparisonResult[] = (int[]) al_Defense.get(6);
+        logger.debug("Récupération (int[]) Comparaison précédente : " + Arrays.toString(array_int_PreviousComparisonResult));
+
+        // Récupération (int[]) Nouvelle comparaison
+        int array_int_NewComparisonResult[] = (int[]) al_Defense.get(7);
+        logger.debug("Récupération (int[]) Nouvelle comparaison : " + Arrays.toString(array_int_NewComparisonResult));
+
+        // Initialisation (char[]) Comparaison des comparaisons
+        char array_ch_ComparisonOfComparisonResults[] = new char[2];
+        logger.debug("Initialisation (char[]) Comparaison des comparaisons : " + Arrays.toString(array_int_NewComparisonResult));
+
+        // Calcule de la différence de lettres bien placées
+        int int_RightLetterRightPlace = array_int_NewComparisonResult[0] - array_int_PreviousComparisonResult[0];
+        logger.debug("Calcule de la différence de lettres bien placées : " + int_RightLetterRightPlace);
+
+        // Calcule de la différence de lettres présentes mais mal placées
+        int int_RightLetterWrongPlace = array_int_NewComparisonResult[1] - array_int_PreviousComparisonResult[1];
+        logger.debug("Calcule de la différence de lettres présentes mais mal placées : " + int_RightLetterWrongPlace);
+
+        // Calcule de la différence de lettres non présentes
+        int int_MissingLetter = array_int_NewComparisonResult[2] - array_int_PreviousComparisonResult[2];
+        logger.debug("Calcule de la différence de lettres non présentes : " + int_MissingLetter);
+
+        // IF - Plus une lettre bien placée / Moins une lettre présente mais à la mauvaise place
+        if (int_RightLetterRightPlace == 1 && int_RightLetterWrongPlace == -1) {
+            logger.info("ELSE IF - Plus une lettre bien placée / Moins une lettre présente mais à la mauvaise place");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '=';
+            array_ch_ComparisonOfComparisonResults[1] = '≠';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+
+        }
+        // ELSE IF - Plus une lettre bien placée / Moins une lettre non présente
+        else if (int_RightLetterRightPlace == 1 && int_MissingLetter == -1) {
+            logger.info("ELSE IF - Plus une lettre bien placée / Moins une lettre non présente");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '=';
+            array_ch_ComparisonOfComparisonResults[1] = '-';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE IF - Plus une lettre présente mais à la mauvaise place / Moins une lettre bien placée
+        else if (int_RightLetterWrongPlace == 1 && int_RightLetterRightPlace == -1) {
+            logger.info("ELSE IF - Plus une lettre présente mais à la mauvaise place / Moins une lettre bien placée");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '≠';
+            array_ch_ComparisonOfComparisonResults[1] = '=';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE IF - Plus une lettre présente mais à la mauvaise place / Moins une lettre non présente
+        else if (int_RightLetterWrongPlace == 1 && int_MissingLetter == -1) {
+            logger.info("ELSE IF - Plus une lettre présente mais à la mauvaise place / Moins une lettre non présente");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '≠';
+            array_ch_ComparisonOfComparisonResults[1] = '-';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE IF - Plus une lettre non présente / Moins une lettre bien placée
+        else if (int_MissingLetter == 1 && int_RightLetterRightPlace == -1) {
+            logger.info("ELSE IF - Plus une lettre non présente / Moins une lettre bien placée");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '-';
+            array_ch_ComparisonOfComparisonResults[1] = '=';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE IF - Plus une lettre non présente / Moins une lettre présente mais à la mauvaise place
+        else if (int_MissingLetter == 1 && int_RightLetterWrongPlace == -1) {
+            logger.info("ELSE IF - Plus une lettre non présente / Moins une lettre présente mais à la mauvaise place");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '-';
+            array_ch_ComparisonOfComparisonResults[1] = '≠';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE IF - Plus une lettre non présente && Plus une lettre présente mais à la mauvaise place
+        else if (int_MissingLetter == 1 && int_MissingLetter == 1) {
+            logger.info("ELSE IF - Plus une lettre non présente && Plus une lettre présente mais à la mauvaise place");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '=';
+            array_ch_ComparisonOfComparisonResults[1] = '-';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+        // ELSE - Sinon ...
+        else {
+            logger.info("ELSE - Sinon ...");
+
+            // MàJ - (char[]) Comparaison des comparaisons
+            array_ch_ComparisonOfComparisonResults[0] = '-';
+            array_ch_ComparisonOfComparisonResults[1] = '-';
+            logger.debug("MàJ - (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+        }
+
+        // Injection (char[]) Comparaison des comparaisons
+        al_Defense.set(8, array_ch_ComparisonOfComparisonResults);
+        logger.debug("Injection (char[]) Comparaison des comparaisons] : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+
+
+        logger.trace("############################################################");
+        logger.trace("<<< END >>> Méthode : run_al_ComparisonOfComparisonResults()");
+        logger.trace("############################################################\n");
+
+        return al_Defense;
+    }
+
+
+
+    /**
+     * Lorsque "=" apparaît
+     *
+     * @param int_NumberOfUnities  : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param al_Defense : (ArrayList) Données défense
+     *
+     * @return : (ArrayList) Données de défense
+     */
+    public ArrayList run_PositiveEquality(int int_NumberOfUnities, int int_NumberOfLetters, ArrayList al_Defense) {
+
+        logger.trace("##############################################");
+        logger.trace("<<< START >>> Méthode : run_PositiveEquality()");
+        logger.trace("##############################################");
+
+        // Récupération (char[]) Lettres sélectionnées pour le "Mastermind"
+        char array_ch_SelectedLetters[] = (char[]) al_Defense.get(0);
+        logger.info("Récupération (char[]) Lettres sélectionnées pour le \"Mastermind\"");
+
+        // array_int_PreviousComputerProposal <- array_int_NewComputerProposal
+        al_Defense.set(4, al_Defense.get(5));
+        logger.info("array_int_PreviousComputerProposal <- array_int_NewComputerProposal");
+
+        // Récupération (char[][]) Analyse de la défense
+        char array_ch_DefenseAnalysis[][] = (char[][]) al_Defense.get(9);
+        logger.info("Récupération (char[][]) Analyse de la défense");
+
+        // Récupération (int) Position de remplacement
+        int int_ReplacementPosition = (int) al_Defense.get(11);
+        logger.info("Récupération (int) Position de remplacemente");
+
+        // Récupération (char) Nouvelle lettre
+        char ch_NewLetter = (char) al_Defense.get(13);
+        logger.info("Récupération (char) Nouvelle lettre");
+
+        // Lancement index de la nouvelle lettre
+        int int_IndexNewLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_NumberOfLetters, al_Defense, ch_NewLetter);
+        logger.info("Lancement index de la nouvelle lettre");
+
+        // FOR - Pour chaque lettre sélectionnée pour le "Mastermind"
+        for (int i = 0; i < int_NumberOfLetters; i++) {
+            logger.info("FOR - Pour chaque lettre sélectionnée pour le \"Mastermind\"");
+
+            // IF - 'i' != Index nouvelle lettre
+            if (i != int_IndexNewLetter) {
+                logger.info("IF - 'i' != Index nouvelle lettre");
+
+                // La lettre n'est présente à cette position = '†'
+                array_ch_DefenseAnalysis[i][int_ReplacementPosition] = '†';
+                logger.info("La lettre n'est présente à cette position = '†'");
+            }
+            // ELSE - 'i' = Index nouvelle lettre
+            else {
+
+                // La lettre est présente à cette position = 'NOUVELLE LETTRE'
+                array_ch_DefenseAnalysis[i][int_ReplacementPosition] = ch_NewLetter;
+                logger.info("La lettre est présente à cette position = 'NOUVELLE LETTRE'");
+            }
+        }
+
+        // Injection - (char[]) Analyse de la défense
+        al_Defense.set(9, array_ch_DefenseAnalysis);
+        logger.info("MàJ - (char[]) Analyse de la défense");
+
+        // Récupération (boolean[]) Lettres de la combinaison trouvées
+        boolean array_boo_FoundLetters[] = (boolean[]) al_Defense.get(10);
+        logger.info("Récupération (boolean[]) Lettres de la combinaison trouvées");
+
+        // MàJ - (boolean[]) Lettres de la combinaison trouvées
+        array_boo_FoundLetters[int_ReplacementPosition] = true;
+        logger.debug("MàJ - (boolean[]) Lettres de la combinaison trouvées : " + Arrays.toString(array_boo_FoundLetters));
+
+        // Injection - (boolean[]) Lettres de la combinaison trouvées
+        al_Defense.set(10, array_boo_FoundLetters);
+        logger.info("Injection - (boolean[]) Lettres de la combinaison trouvées");
+
+        logger.trace("############################################");
+        logger.trace("<<< END >>> Méthode : run_PositiveEquality()");
+        logger.trace("############################################\n");
+
+        return al_Defense;
+    }
 }

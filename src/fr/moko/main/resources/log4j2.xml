@@ -5,11 +5,6 @@
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight{%-5level} %logger{36} - %msg%n"/>
         </Console>
     </Appenders>
-    <Appenders>
-        <File name="File1" fileName="output.log" bufferedIO="false" advertiseURI="./output.log" advertise="true">
-            ...
-        </File>
-    </Appenders>
     <Loggers>
         <Logger name="test" level="trace"/>
         <Root level="trace">

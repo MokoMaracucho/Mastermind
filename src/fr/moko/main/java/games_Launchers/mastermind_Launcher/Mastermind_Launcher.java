@@ -8,12 +8,14 @@ import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Methods_
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Texts_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_al_Mastermind_Defense;
 
+import fr.moko.main.java.graphism.Graphism;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+
 
 
 /**
@@ -26,6 +28,9 @@ public class Mastermind_Launcher {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
+
+    // Instance : "Graphism"
+    Graphism graphism = new Graphism();
 
     // Instance : "Methods_Games"
     Methods_Games methods_Games = new Methods_Games();
@@ -341,6 +346,8 @@ public class Mastermind_Launcher {
                 // Affiche la proposition de l'ordinateur
                 texts_Games.display_PROPOSITION_DE_L_ORDINATEUR(str_ComputerProposal, i);
 
+
+
                 // Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
                 array_int_NewComparisonResult = defense_Mastermind.run_al_NewComparisonResult(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
                 logger.info("Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète");
@@ -352,6 +359,150 @@ public class Mastermind_Launcher {
                 al_Mastermind_Defense.set(7, array_int_NewComparisonResult);
                 logger.info("Injection (int[]) Nouvelle Comparaison");
 
+
+
+
+                // IF - Le nombre de lettres bien placées = Au nombre d'unités utilisé pour les combinaisons
+                if (array_int_NewComparisonResult[0] == int_Mastermind_NumberOfUnities) {
+
+                    // SI - Mode "Défense"
+                    if (array_str_Main_Menu_Choices[1].equals("Défense")) {
+                        logger.info("SI - Mode \"Défense\"");
+
+                        // Affiche "Il a gagné"
+                        graphism.display_HE_WON();
+
+                        // MàJ - (boolean) Partie gagnée
+                        boo_Won_Part = true;
+                        logger.debug("MàJ - (boolean) Partie gagnée");
+
+                        logger.trace("##########################");
+                        logger.trace("### END ### Mode \"Défense\"");
+                        logger.trace("##########################");
+
+                        break;
+                    }
+
+
+
+                    // SINON - Mode "Duel"
+                    else {
+                        logger.info("SINON - Mode \"Duel\"");
+
+                        // MàJ - (boolean) Il a trouvé la combinaison secrète
+                        boo_HE_WON = true;
+
+                        // Affiche "C'est votre dernière chance !"
+                        texts_Games.display_C_EST_VOTRE_DERNIERE_CHANCE();
+
+                        // Compteur de tours au dernier tour
+                        i = int_Mastermind_NumberOfChances - 1;
+                        logger.info("Compteur de tours au dernier tour");
+                    }
+                }
+                // ELSE - Affiche le nombre de chances restantes
+                else {
+                    logger.info("ELSE - Affiche le nombre de chances restantes");
+
+                    // Récupération (int) Compteur de tours
+                    int_NumberOfRoundsCounter = (int) al_Mastermind_Defense.get(3);
+                    logger.info("Récupération (int) Nombre de tours restants");
+
+                    // Incrémentation += 1 Compteur de tours
+                    int_NumberOfRoundsCounter += 1;
+                    logger.debug("Incrémentation += 1 Compteur de tours : " + int_NumberOfRoundsCounter);
+
+                    // Injection (int) Compteur de tours
+                    al_Mastermind_Defense.set(3, int_NumberOfRoundsCounter);
+                    logger.info("Injection (int) Compteur de tours");
+
+                    // Affichage du nombre de chances restantes
+                    texts_Games.display_RemainingChances(int_Mastermind_NumberOfChances, array_str_Main_Menu_Choices, str_SubMode, int_NumberOfRoundsCounter);
+                }
+
+                // IF - Après premier tour
+                if (i > 0) {
+                    logger.info("IF - Après premier tour");
+
+                    // Lancement de la comparaison des comparaisons
+                    al_Mastermind_Defense = defense_Mastermind.run_al_ComparisonOfComparisonResults(al_Mastermind_Defense);
+                    logger.info("Lancement de la comparaison des comparaisons");
+
+                    // Récupération (char[]) Comparaison des comparaisons
+                    array_ch_ComparisonOfComparisonResults = (char[]) al_Mastermind_Defense.get(8);
+                    logger.debug("Récupération (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+
+
+
+                    // IF - "=" apparaît
+                    if (array_ch_ComparisonOfComparisonResults[0] == '=') {
+                        logger.info("IF - \"=\" apparaît");
+
+                        al_Mastermind_Defense = defense_Mastermind.run_PositiveEquality(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                        logger.info("Lancement égalité positive");
+                    }
+
+
+
+                    // IF - "≠" n'est pas apparu et que "=" a disparu
+                    if (array_ch_ComparisonOfComparisonResults[0] != '≠' && array_ch_ComparisonOfComparisonResults[1] == '=') {
+                        logger.info("IF - \"≠\" n'est pas apparu et que \"=\" a disparu");
+
+                        // Lancement égalité négative
+                        //al_Mastermind_Defense = defense_Mastermind.run_NegativeEquality(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+                        logger.info("Lancement égalité négative");
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    // IF - "≠" apparaît
+                    if (array_ch_ComparisonOfComparisonResults[0] == '≠') {
+                        logger.info("IF - \"≠\" apparaît");
+
+                        // Lancement différence positive
+                        //al_Mastermind_Defense = mastermind_Defense.run_PositiveDifference(int_NumberOfUnities, int_NumberOfLetters, int_NumberOfChances, array_str_MenuChoices, str_SubMode, al_Mastermind_Defense, i, boo_WonPart, boo_HeWon);
+                        logger.info("Lancement différence positive");
+                    }
+                }
+
+                logger.trace("##########################");
+                logger.trace("<<< END >>> Mode \"Défense\"");
+                logger.trace("##########################\n");
             }
         }
     }
