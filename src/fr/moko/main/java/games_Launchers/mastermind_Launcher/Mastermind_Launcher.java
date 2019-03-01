@@ -341,6 +341,17 @@ public class Mastermind_Launcher {
                 // Affiche la proposition de l'ordinateur
                 texts_Games.display_PROPOSITION_DE_L_ORDINATEUR(str_ComputerProposal, i);
 
+                // Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+                array_int_NewComparisonResult = defense_Mastermind.run_al_NewComparisonResult(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+                logger.info("Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète");
+
+                // Affichage résultat de la comparaison
+                texts_Mastermind.display_RESULTAT_DE_LA_COMPARAISON(array_int_NewComparisonResult);
+
+                // Injection (int[]) Nouvelle Comparaison
+                al_Mastermind_Defense.set(7, array_int_NewComparisonResult);
+                logger.info("Injection (int[]) Nouvelle Comparaison");
+
             }
         }
     }

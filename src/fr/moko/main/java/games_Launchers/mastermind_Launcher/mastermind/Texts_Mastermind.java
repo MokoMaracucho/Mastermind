@@ -68,4 +68,24 @@ public class Texts_Mastermind {
         delay.delay_Text();
         System.out.print("\nLa combinaison doit être composée de " + int_Mastermind_NumberOfUnities + " lettres !\n");
     }
+
+
+
+    /**
+     * Affiche le résultat de la comparaison
+     *
+     * @param array_int_NewComparisonResult : (int[]) Résultat de la comparaison
+     */
+    public void display_RESULTAT_DE_LA_COMPARAISON(int array_int_NewComparisonResult[]){
+
+        delay.delay_Text();
+        System.out.println("Résultats de la comparaison :\n");
+
+        delay.delay_Text();
+        System.out.println("\t - Nombre de lettres bien placées : " + array_int_NewComparisonResult[0]);
+        delay.delay_Text();
+        System.out.println("\t - Nombre de lettres présentes mais mal placées : " + array_int_NewComparisonResult[1]);
+        delay.delay_Text();
+        System.out.println("\t - Nombre de lettres non présentes : " + array_int_NewComparisonResult[2] + "\n");
+    }
 }
