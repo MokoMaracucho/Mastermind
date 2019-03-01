@@ -1,4 +1,5 @@
 package fr.moko.main.java.game_Launchers.recherche_Launcher;
+import fr.moko.main.java.game_Launchers.recherche_Launcher.recherche.Recherche_Methods;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,6 +19,9 @@ public class Recherche_Launcher {
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
 
+    // Instance : "Recherche_Methods"
+    Recherche_Methods recherche_Methods = new Recherche_Methods();
+
 
 
     /**
@@ -33,5 +37,12 @@ public class Recherche_Launcher {
         int int_Recherche_NumberOfUnities = (int) al_Configuration.get(1);
         int int_Recherche_NumberOfChances = (int) al_Configuration.get(2);
         logger.info("Récupération des valeurs de configuration");
+
+        // Initialisation (String) Sous-mode en mode "Duel"
+        String str_Sub_Mode = new String();
+
+        // Initialisation (String) résultat gagnant
+        String str_WinningResult = recherche_Methods.run_str_WinningResult(int_Recherche_NumberOfUnities);
+        logger.debug("(String) Résultat gagnant : " + str_WinningResult);
     }
 }
