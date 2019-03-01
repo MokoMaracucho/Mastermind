@@ -2,6 +2,7 @@ package fr.moko.main.java.games_Launchers.mastermind_Launcher;
 
 import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
+import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Methods_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Texts_Mastermind;
 
@@ -29,6 +30,9 @@ public class Mastermind_Launcher {
 
     // Instance : "Texts_Games"
     Texts_Games texts_Games = new Texts_Games();
+
+    // Instance : "Utilities_Games"
+    Utilities_Games utilities_Games = new Utilities_Games();
 
     // Instance : "Methods_Mastermind"
     Methods_Mastermind methods_Mastermind = new Methods_Mastermind();
@@ -164,6 +168,12 @@ public class Mastermind_Launcher {
 
 
 
+        // Initialisation (String) Combinaison en lettres capitales
+        String str_Combination_UpperCase = new String();
+        logger.info("Initialisation (String) Combinaison en lettres capitales");
+
+
+
         // Lancement du compteur de tours
         logger.info("Lancement du compteur de tours");
         for (int i = 0; i < int_Mastermind_NumberOfChances; i++) {
@@ -214,12 +224,6 @@ public class Mastermind_Launcher {
 
                     // Affiche "A vous de jouer !"
                     texts_Games.display_A_VOUS_DE_JOUER();
-
-
-
-                    // Initialisation (String) Combinaison en lettres capitales
-                    String str_Combination_UpperCase = new String();
-                    logger.info("Initialisation (String) Combinaison en lettres capitales");
 
 
 
@@ -287,6 +291,29 @@ public class Mastermind_Launcher {
                         logger.debug("(boolean) Combinaison validée : " + boo_Combination_Treatment);
 
                     } while (!boo_Combination_Treatment);
+
+                    // Conversion (char[]) Combinaison secrète contenue dans la chaîne de caractère
+                    array_ch_Combination = utilities_Games.run_str_TO_chArray(int_Mastermind_NumberOfUnities, str_Combination_UpperCase);
+                    logger.debug("Conversion (char[]) Combinaison secrète contenue dans la chaîne de caractère : " + Arrays.toString(array_ch_Combination));
+
+                    // Injection (char[]) Combinaison secrète
+                    al_Mastermind_Defense.set(1, array_ch_Combination);
+                    logger.info("Injection (char[]) Combinaison secrète");
+
+                    // MàJ - (int[]) Nombre de chaque lettre dans la combinaison
+                    array_int_NumberOfEachLettersInCombinason = methods_Mastermind.run_array_int_NumberOfEachLetters(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, array_ch_SelectedLetters, array_ch_Combination);
+                    logger.debug("MàJ - (int[]) Nombre de chaque lettre dans la combinaison : " + Arrays.toString(array_int_NumberOfEachLettersInCombinason));
+
+                    // Injection (int[]) Nombre de chaque lettre dans la combinaison
+                    al_Mastermind_Defense.set(2, array_int_NumberOfEachLettersInCombinason);
+                    logger.info("Injection (int[]) Nombre de chaque lettre dans la combinaison");
+
+                    // Conversion (String) Combinaison secrète contenue dans le tableau de caractères
+                    String str_Combination = utilities_Games.run_arrayCh_TO_str(int_Mastermind_NumberOfUnities, array_ch_Combination);
+                    logger.info("Conversion (String) Combinaison secrète contenue dans le tableau de caractères");
+
+                    // Affiche la combinaison secrète
+                    texts_Games.display_VOTRE_COMBINAISON(str_Combination);
                 }
             }
         }

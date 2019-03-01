@@ -105,4 +105,28 @@ public class Utilities_Games {
 
         return str;
     }
+
+
+
+    /**
+     * Conversion d'une chaîne de caractère en tableau de caractères
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités de la combinaison
+     * @param str_Combination_UpperCase : (String) Combinaison en lettres capitales
+     *
+     * @return (char[]) Un tableau de caractères
+     */
+    public char[] run_str_TO_chArray(int int_Mastermind_NumberOfUnities, String str_Combination_UpperCase) {
+
+        char array_ch_Combination[] = new char[int_Mastermind_NumberOfUnities];
+
+        for (int i = 0; i < int_Mastermind_NumberOfUnities; i++) {
+
+            array_ch_Combination[i] = str_Combination_UpperCase.charAt(i);
+        }
+
+        logger.debug("array_ch_Combination[] : " + Arrays.toString(array_ch_Combination));
+
+        return array_ch_Combination;
+    }
 }

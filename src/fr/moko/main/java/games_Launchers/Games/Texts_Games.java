@@ -95,7 +95,7 @@ public class Texts_Games {
     public void display_VOTRE_COMBINAISON(String str_Combination){
 
         delay.delay_Text();
-        System.out.print("\n\nVotre combinaison :                                " + str_Combination);
+        System.out.print("\n\nVotre combinaison :                                " + str_Combination + "\n");
     }
 
 

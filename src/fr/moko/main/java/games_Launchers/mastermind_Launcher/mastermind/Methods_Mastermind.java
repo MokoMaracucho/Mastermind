@@ -250,4 +250,45 @@ public class Methods_Mastermind {
 
         return boo_Combination_GoodLetters;
     }
+
+
+
+    /**
+     * Tableau qui récupère le nombre de chaque lettre dans la combinaison
+     *
+     * @param int_MAstermind_NumberOfUnities  : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param array_ch_SelectedLetters : (char[]) Lettres sélectionnées pour le jeu "Mastermind"
+     * @param array_ch_Combinaison : (char[]) Combinaison secrète
+     *
+     * @return : (int) Nombre de chaque lettre dans la combinaison secrète
+     */
+    public int[] run_array_int_NumberOfEachLetters(int int_MAstermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, char array_ch_SelectedLetters[], char array_ch_Combinaison[]) {
+
+        // Initialisation (int[]) Nombre de chaque lettre dans la combinaison
+        int array_int_NumberOfEachLettersInCombinason[] = new int[int_Mastermind_NumberOfLetters];
+        logger.info("Initialisation (int[]) Nombre de chaque lettre dans la combinaison");
+
+        // FOR - Chaque lettre de la combinaison
+        for (int i = 0; i < int_MAstermind_NumberOfUnities; i++) {
+
+            // FOR - Pour le nombre de lettres sélectionnées pour le "Mastermind"
+            for (int j = 0; j < int_Mastermind_NumberOfLetters; j++) {
+
+                // IF - L'unité sélectionnée contient une lettre séeclectionnée pour le jeu
+                if (array_ch_Combinaison[i] == array_ch_SelectedLetters[j]) {
+
+                    // Incrémentation += 1 pour la lettre sélectionnée
+                    array_int_NumberOfEachLettersInCombinason[j] += 1;
+
+                    break;
+                }
+            }
+        }
+
+        // (int[]) Nombre de chaque lettre dans la combinaison
+        logger.debug("array_int_NumberOfEachLettersInCombinason[] : " + Arrays.toString(array_int_NumberOfEachLettersInCombinason));
+
+        return array_int_NumberOfEachLettersInCombinason;
+    }
 }
