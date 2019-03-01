@@ -40,12 +40,10 @@ public class Utilities_Games {
             do {
 
                 int_Level *= 10;
-                logger.debug("int_Level : " + int_Level);
 
                 if (int_Combination_TryCatch > int_Level) {
 
                     int_IStart -= 1;
-                    logger.debug("int_IStart : " + int_IStart);
                 }
 
             } while (int_Combination_TryCatch > int_Level);
@@ -81,6 +79,30 @@ public class Utilities_Games {
 
             str += Integer.toString(array_int[i]);
         }
+        return str;
+    }
+
+
+
+    /**
+     * Conversion d'un tableau de caractères en chaîne de caractères
+     *
+     * @param int_NumberOfBoxes : (int) Nombre de cases
+     * @param array_ch : (char[]) Tableau de caractères
+     *
+     * @return (String) Chaîne de caractères
+     */
+    public String run_arrayCh_TO_str(int int_NumberOfBoxes, char array_ch[]) {
+
+        String str = "";
+
+        for (int i = 0; i < int_NumberOfBoxes; i++){
+
+            str += array_ch[i];
+        }
+
+        logger.debug("Incrémentation String() : " + str);
+
         return str;
     }
 }

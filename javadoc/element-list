@@ -1,6 +1,11 @@
 fr.moko.main
 fr.moko.main.java.configuration
 fr.moko.main.java.delay
+fr.moko.main.java.dev_Mode
 fr.moko.main.java.games_Launchers
+fr.moko.main.java.games_Launchers.Games
+fr.moko.main.java.games_Launchers.mastermind_Launcher
+fr.moko.main.java.games_Launchers.recherche_Launcher
+fr.moko.main.java.games_Launchers.recherche_Launcher.recherche
 fr.moko.main.java.graphism
 fr.moko.main.java.menus

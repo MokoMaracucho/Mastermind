@@ -133,7 +133,7 @@ public class Methods_Recherche {
         logger.debug("Initialisation (boolean) Le nombre est trop grand : " + tooBigNumber);
 
         // IF - Nombre positif et pas trop grand
-        if(negativeNumber == false || tooBigNumber == false){
+        if(negativeNumber == false && tooBigNumber == false){
             logger.info("IF - Nombre positif et pas trop grand");
 
             // MàJ - (boolean) Combinaison valide
@@ -235,7 +235,7 @@ public class Methods_Recherche {
      * @param int_Recherche_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
      * @param al_Recherche_Defense : (ArrayList) Données en mode "Défense"
      *
-     * @return : (int[]) Tableau des derniers entiers initialisé
+     * @return : (int[]) Derniers entiers initialisé
      */
     public ArrayList run_arrayInt_LastSuperiorInitialization(int int_Recherche_NumberOfUnities, ArrayList al_Recherche_Defense){
 

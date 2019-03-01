@@ -4,6 +4,7 @@ import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Methods_Recherche;
+import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Recherche_Defense;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Texts_Recherche;
 
 import org.apache.logging.log4j.LogManager;
@@ -30,6 +31,9 @@ public class Recherche_Launcher {
 
     // Instance : "Texts_Games"
     Texts_Games texts_Games = new Texts_Games();
+
+    // Instance : "Recherche_Defense"
+    Recherche_Defense recherche_Defense = new Recherche_Defense();
 
     //Instance : "Utilities_Games"
     Utilities_Games utilities_Games = new Utilities_Games();
@@ -63,6 +67,41 @@ public class Recherche_Launcher {
         String str_WinningResult = methods_Recherche.run_str_WinningResult(int_Recherche_NumberOfUnities);
         logger.debug("(String) Résultat gagnant : " + str_WinningResult);
 
+        // Instance - (ArrayList) Données de défense
+        ArrayList al_Recherche_Defense = new ArrayList();
+        logger.info("Instance - (ArrayList) Données de défense");
+
+        // Initialisation et injection - (int[]) Combinaison secrète
+        int array_int_Combination[] = new int[int_Recherche_NumberOfUnities];
+        logger.debug("Initialisation et injection - (int[]) Combinaison secrète : " + Arrays.toString(array_int_Combination));
+        al_Recherche_Defense.add(0, array_int_Combination);
+
+        // Initialisation et injection - (int[]) Derniers inférieurs
+        int array_int_LastInferior[] = new int[int_Recherche_NumberOfUnities];
+        logger.debug("Initialisation et injection - (int[]) Derniers inférieurs : " + Arrays.toString(array_int_LastInferior));
+        al_Recherche_Defense.add(1, array_int_LastInferior);
+
+        // Initialisation et injection - (int[]) Derniers supérieurs
+        int array_int_LastSuperior[] = new int[int_Recherche_NumberOfUnities];
+        logger.debug("Initialisation et injection - (int[]) Derniers supérieurs : " + Arrays.toString(array_int_LastSuperior));
+        al_Recherche_Defense.add(2, array_int_LastSuperior);
+
+        // Initialisation et injection - (int[]) Proposition de l'ordinateur
+        int array_int_ComputerProposal[] = new int[int_Recherche_NumberOfUnities];
+        al_Recherche_Defense.add(3, array_int_ComputerProposal);
+        logger.debug("Initialisation et injection - (int[]) Proposition de l'ordinateur : " + Arrays.toString(array_int_ComputerProposal));
+
+        // Initialisation et injection - (char[]) Résultat de la comparaison
+        char array_ch_ComparisonResult_Defense[] = new char[int_Recherche_NumberOfUnities];
+        logger.debug("Initialisation et injection - (char[]) Résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult_Defense));
+
+
+
+        // Initialisation (String) résultat de la comparaison en mode "Défense"
+        String str_ComparisonResult_Defense = new String();
+        logger.info("Initialisation (String) résultat de la comparaison en mode \"Défense\"");
+        al_Recherche_Defense.add(4, array_ch_ComparisonResult_Defense);
+
 
 
         // Lancement du compteur de tours
@@ -83,36 +122,6 @@ public class Recherche_Launcher {
                     str_Sub_Mode = "Défense";
                     logger.debug("Màj - (String) Sous-mode (Pour mode \"Duel\") : " + str_Sub_Mode);
                 }
-
-
-                // Instance - (ArrayList) Données de défense
-                ArrayList al_Recherche_Defense = new ArrayList();
-                logger.info("Instance - (ArrayList) Données de défense");
-
-                // Initialisation et injection - (int[]) Combinaison secrète
-                int array_int_Combination[] = new int[int_Recherche_NumberOfUnities];
-                logger.debug("Initialisation et injection - (int[]) Combinaison secrète : " + Arrays.toString(array_int_Combination));
-                al_Recherche_Defense.add(0, array_int_Combination);
-
-                // Initialisation et injection - (int[]) Derniers inférieurs
-                int array_int_LastInferior[] = new int[int_Recherche_NumberOfUnities];
-                logger.debug("Initialisation et injection - (int[]) Derniers inférieurs : " + Arrays.toString(array_int_LastInferior));
-                al_Recherche_Defense.add(1, array_int_LastInferior);
-
-                // Initialisation et injection - (int[]) Derniers supérieurs
-                int array_int_LastSuperior[] = new int[int_Recherche_NumberOfUnities];
-                logger.debug("Initialisation et injection - (int[]) Derniers supérieurs : " + Arrays.toString(array_int_LastSuperior));
-                al_Recherche_Defense.add(2, array_int_LastSuperior);
-
-                // Initialisation et injection - (int[]) Proposition de l'ordinateur
-                int array_int_ComputerProposal[] = new int[int_Recherche_NumberOfUnities];
-                al_Recherche_Defense.add(3, array_int_ComputerProposal);
-                logger.debug("Initialisation et injection - (int[]) Proposition de l'ordinateur : " + Arrays.toString(array_int_ComputerProposal));
-
-                // Initialisation et injection - (char[]) Résultat de la comparaison
-                char array_ch_ComparisonResult_Defense[] = new char[int_Recherche_NumberOfUnities];
-                logger.debug("Initialisation et injection - (char[]) Résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult_Defense));
-                al_Recherche_Defense.add(4, array_ch_ComparisonResult_Defense);
 
 
 
@@ -181,6 +190,17 @@ public class Recherche_Launcher {
                     // Initialisation des derniers supérieurs
                     al_Recherche_Defense = methods_Recherche.run_arrayInt_LastSuperiorInitialization(int_Recherche_NumberOfUnities, al_Recherche_Defense);
                 }
+
+                // Lancement de la défense du jeu "Recheche +/-"
+                al_Recherche_Defense = recherche_Defense.run_Defense(int_Recherche_NumberOfUnities, int_Recherche_NumberOfChances, array_str_Main_Menu_Choices, str_Sub_Mode, i, al_Recherche_Defense);
+
+                // Récupération (char[]) Résultat de la comparaison
+                array_ch_ComparisonResult_Defense = (char[]) al_Recherche_Defense.get(4);
+                logger.debug("Récupération (char[]) Résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult_Defense));
+
+                // Conversion (String) Résultat de la comparaison
+                str_ComparisonResult_Defense = utilities_Games.run_arrayCh_TO_str(int_Recherche_NumberOfUnities, array_ch_ComparisonResult_Defense);
+                logger.debug("Conversion (String) Résultat de la comparaison : " + str_ComparisonResult_Defense);
             }
         }
     }

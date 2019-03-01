@@ -31,7 +31,9 @@ public class Main_Menu {
     /**
      * Lancement du menu principal
      *
-     * @return : (array String) contenant les choix du menu principal
+     * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
+     *
+     * @return : (String[]) Choix du menu principal
      */
     public String[] run_Main_Menu(String array_str_Main_Menu_Choices[]) {
 

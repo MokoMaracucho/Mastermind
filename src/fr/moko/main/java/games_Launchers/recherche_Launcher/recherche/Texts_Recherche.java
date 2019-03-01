@@ -91,4 +91,53 @@ public class Texts_Recherche {
         delay.delay_Text();
         System.out.println("Le nombre doit être inférieur à "+ methods_Texts_Recherche.run_str_NumberMax(int_NumberOfUnities));
     }
+
+
+    /**
+     * Affiche le résultat de la comparaison
+     *
+     * @param array_str_MenuChoices : (String[]) Choix du menu principal
+     * @param str_SubMode : (String) Sous-mode en mode "Duel"
+     * @param str_ComparisonResult : (String) Résultat de la comparaison
+     */
+    public void display_RESULTAT_DE_LA_COMPARAISON(String array_str_MenuChoices[], String str_SubMode, String str_ComparisonResult){
+
+        String str_NewLine = new String();
+
+        switch (array_str_MenuChoices[1]){
+
+            case "Challenger" :
+
+                str_NewLine = "\n";
+
+                break;
+
+            case "Défense" :
+
+                str_NewLine = "";
+
+                break;
+
+            case "Duel" :
+
+                switch (str_SubMode){
+
+                    case "Challenger" :
+
+                        str_NewLine = "\n";
+
+                        break;
+
+                    case "Défense" :
+
+                        str_NewLine = "";
+
+                        break;
+                }
+                break;
+        }
+
+        delay.delay_Text();
+        System.out.println(str_NewLine + "Résultat de la comparaison :                       " + str_ComparisonResult);
+    }
 }
