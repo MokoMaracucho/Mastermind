@@ -23,7 +23,7 @@ public class Texts_Main_Menu {
     public void display_Games_Menu() {
 
         delay.delay_Text();
-        System.out.println("A quel jeu souhaitez-vous jouer ?\n");
+        System.out.println("\nA quel jeu souhaitez-vous jouer ?\n");
 
         delay.delay_Text();
         System.out.println("\t- \"R\" pour jouer à \"Recherche +/-\";");
@@ -83,7 +83,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_RECHERCHE() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer à \"Recherche +/-\" !\n");
+        System.out.println("\nVous avez choisi de jouer à \"Recherche +/-\" !\n");
     }
 
 
@@ -94,7 +94,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_MASTERMIND() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer au \"mastermind_Launcher\" !\n");
+        System.out.println("\nVous avez choisi de jouer au \"mastermind_Launcher\" !\n");
     }
 
 
@@ -127,7 +127,7 @@ public class Texts_Main_Menu {
     public void display_Modes_Menu(){
 
         delay.delay_Text();
-        System.out.println("Choisissez le mode :\n");
+        System.out.println("\nChoisissez le mode :\n");
 
         delay.delay_Text();
         System.out.println("\t- \"1\" pour jouer en mode \"Challenger\";");

@@ -7,6 +7,7 @@ import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Methods_Re
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Recherche_Defense;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Texts_Recherche;
 
+import fr.moko.main.java.graphism.Graphism;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -43,6 +44,9 @@ public class Recherche_Launcher {
 
     // Instance : "Methods_Recherche"
     Methods_Recherche methods_Recherche = new Methods_Recherche();
+
+    // Instance : "Graphism"
+    Graphism graphism = new Graphism();
 
 
 
@@ -94,6 +98,16 @@ public class Recherche_Launcher {
         // Initialisation et injection - (char[]) Résultat de la comparaison
         char array_ch_ComparisonResult_Defense[] = new char[int_Recherche_NumberOfUnities];
         logger.debug("Initialisation et injection - (char[]) Résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult_Defense));
+
+
+
+        // Initialisation (boolean) L'ordinateur a gagné
+        boolean boo_HE_WON = false;
+        logger.debug("Initialisation (boolean) L'ordinateur a gagné : " + boo_HE_WON);
+
+        // Initialisation (bolean) Partie gagnée
+        boolean boo_Won_Part = false;
+        logger.debug("Initialisation (bolean) Partie gagnée : " + boo_Won_Part);
 
 
 
@@ -201,6 +215,45 @@ public class Recherche_Launcher {
                 // Conversion (String) Résultat de la comparaison
                 str_ComparisonResult_Defense = utilities_Games.run_arrayCh_TO_str(int_Recherche_NumberOfUnities, array_ch_ComparisonResult_Defense);
                 logger.debug("Conversion (String) Résultat de la comparaison : " + str_ComparisonResult_Defense);
+            }
+
+            // IF - Le résultat de la comparaison est égale le résultat gagnant
+            if (str_ComparisonResult_Defense.equals(str_WinningResult)) {
+                logger.info("IF - Le résultat de la comparaison est égale le résultat gagnant");
+
+                // SI - Mode "Défense"
+                if (array_str_Main_Menu_Choices[1].equals("Défense")) {
+                    logger.info("SI - Mode \"Défense\"");
+
+                    // Affiche "Il a gagné"
+                    graphism.display_HE_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_Won_Part = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée");
+
+                    logger.trace("##########################");
+                    logger.trace("### END ### Mode \"Défense\"");
+                    logger.trace("##########################");
+
+                    break;
+
+                }
+
+                // SINON - Mode "Duel"
+                else {
+                    logger.info("SINON - Mode \"Duel\"");
+
+                    // MàJ - (boolean) Il a trouvé la combinaison secrète
+                    boo_HE_WON = true;
+
+                    // Affiche "C'est votre dernière chance !"
+                    texts_Games.display_C_EST_VOTRE_DERNIERE_CHANCE();
+
+                    // Compteur de tours au dernier tour
+                    i = int_Recherche_NumberOfChances - 1;
+                    logger.info("Compteur de tours au dernier tour");
+                }
             }
         }
     }

@@ -308,8 +308,8 @@ public class Recherche_Defense {
         logger.debug("Initialisation (int[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_ComparisonResult));
 
         // FOR - Injection de la nouvelle proposition de l'ordinateur
+        logger.info("FOR - Injection de la nouvelle proposition de l'ordinateur");
         for (int i = 0; i < int_Recherche_NumberOfUnities; i++){
-            logger.info("FOR - Injection de la nouvelle proposition de l'ordinateur");
 
             // IF - L'unité du résultat de la comparaison = '-'
             if (array_ch_ComparisonResult[i] == '-'){
@@ -386,8 +386,8 @@ public class Recherche_Defense {
         logger.debug("(char[]) Initialisation du résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult));
 
         // FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+        logger.info("FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète");
         for (int i = 0; i < int_Recherche_NumberOfUnities; i++) {
-            logger.info("FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète");
 
             // IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
             if (array_int_ToCompare[i] < array_int_Base[i]) {
@@ -395,7 +395,6 @@ public class Recherche_Defense {
 
                 // Injection '+'
                 array_ch_ComparisonResult[i] = '+';
-                logger.debug("(char[]) MàJ résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult));
 
                 // IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
             } else if (array_int_ToCompare[i] > array_int_Base[i]) {
@@ -403,7 +402,6 @@ public class Recherche_Defense {
 
                 // Injection '-'
                 array_ch_ComparisonResult[i] = '-';
-                logger.debug("(char[]) MàJ résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult));
 
                 // IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
             } else {
@@ -411,9 +409,10 @@ public class Recherche_Defense {
 
                 // Injection '='
                 array_ch_ComparisonResult[i] = '=';
-                logger.debug("(char[]) MàJ résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult));
             }
         }
+
+        logger.debug("(char[]) MàJ résultat de la comparaison : " + Arrays.toString(array_ch_ComparisonResult));
 
         // Injection du résultat de la comparaison dans "array_ch_ComparisonResult"
         al_RecherchePlusMoins_Defense.set(4, array_ch_ComparisonResult);

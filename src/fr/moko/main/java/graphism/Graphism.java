@@ -69,4 +69,28 @@ public class Graphism {
         delay.delay_Image();
         System.out.println(" \\_______/    \\_______/    |___/");
     }
+
+
+
+    /**
+     * Affiche "HE WON !"
+     */
+    public void display_HE_WON(){
+        delay.delay_Image();
+        System.out.println("\n\n /$$$  /$$$  /$$$$$$$$$    /$$$        /$$$  / $$$$$$$   /$$$  /$$$     /$$$");
+        delay.delay_Image();
+        System.out.println("| $$$ | $$$ | $$$_____/   | $$$       | $$$ | $$$__ $$$ | $$$$| $$$    | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$ | $$$ | $$$         | $$$  /$$$ | $$$ | $$$ | $$$ | $$$$$ $$$    | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$$$$$$$ | $$$$$$      | $$$ | $$$ | $$$ | $$$ | $$$ | $$$$$$$$$    | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$_  $$$ | $$$__/      |  $$$|$$$$$|$$$  | $$$ | $$$ | $$$ $$$$$    | $$$");
+        delay.delay_Image();
+        System.out.println("| $$$ | $$$ | $$$          \\ $$$$$$ $$$$$$  | $$$ | $$$ | $$$\\ $$$$    |___/");
+        delay.delay_Image();
+        System.out.println("| $$$ | $$$ | $$$$$$$$$     | $$$$ | $$$$   |  $$$$$$$  | $$$ \\ $$$     /$$$");
+        delay.delay_Image();
+        System.out.println("|___/ |___/ |_________/      \\___/  \\___/    \\_______/  |___/  \\__/    |___/\n\n");
+    }
 }

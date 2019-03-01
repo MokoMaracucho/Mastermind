@@ -216,4 +216,15 @@ public class Texts_Games {
         delay.delay_Text();
         System.out.println(str_NewLine + "Proposition de l'ordinateur :                      " + str_ComputerProposal + "\n");
     }
+
+
+
+    /**
+     * Affiche "C'est votre dernière chance !!!"
+     */
+    public void display_C_EST_VOTRE_DERNIERE_CHANCE(){
+
+        delay.delay_Text();
+        System.out.print("\nC'est votre dernière chance !!!");
+    }
 }
