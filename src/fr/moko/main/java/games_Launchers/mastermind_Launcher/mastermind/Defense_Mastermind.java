@@ -1,5 +1,9 @@
 package fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind;
+import fr.moko.main.java.games_Launchers.Games.Texts_Games;
+import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
+import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_Array_Defense;
 
+import fr.moko.main.java.graphism.Graphism;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,8 +24,23 @@ public class Defense_Mastermind {
     // Instance "Logger"
     static Logger logger = LogManager.getRootLogger();
 
+    // Instance : "Graphism"
+    Graphism graphism = new Graphism();
+
+    // Instance : "Texts_Games"
+    Texts_Games texts_Games = new Texts_Games();
+
+    // Instance : "Utilities_Games"
+    Utilities_Games utilities_Games = new Utilities_Games();
+
     // Instance : "Defense_Methods_Mastermind"
     Defense_Methods_Mastermind defense_Methods_Mastermind = new Defense_Methods_Mastermind();
+
+    // Instance : "Texts_Mastermind"
+    Texts_Mastermind texts_Mastermind = new Texts_Mastermind();
+
+    // Instance : "Display_Array_Defense"
+    Display_Array_Defense display_Array_Defense = new Display_Array_Defense();
 
 
 
@@ -220,18 +239,8 @@ public class Defense_Mastermind {
                 // Initialisation (int) Index de la lettre suivante
                 int int_IndexOfNextLetter = 0;
 
-                //
-                //
-                //
-                //
-                //
-                //
-                //
-                //
-                //
-                //
-                //
-                //
+
+
                 // DO {} WHILE : La lettre n'a pas encore été testée à cette position
                 logger.info("DO {} WHILE : La lettre n'a pas encore été testée à cette position");
                 do {
@@ -633,13 +642,12 @@ public class Defense_Mastermind {
     /**
      * Lorsque "=" apparaît
      *
-     * @param int_NumberOfUnities  : (int) Nombre d'unités utilisées pour les combinaisons
-     * @param int_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
      * @param al_Defense : (ArrayList) Données défense
      *
      * @return : (ArrayList) Données de défense
      */
-    public ArrayList run_PositiveEquality(int int_NumberOfUnities, int int_NumberOfLetters, ArrayList al_Defense) {
+    public ArrayList run_PositiveEquality(int int_Mastermind_NumberOfLetters, ArrayList al_Defense) {
 
         logger.trace("##############################################");
         logger.trace("<<< START >>> Méthode : run_PositiveEquality()");
@@ -666,11 +674,11 @@ public class Defense_Mastermind {
         logger.info("Récupération (char) Nouvelle lettre");
 
         // Lancement index de la nouvelle lettre
-        int int_IndexNewLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_NumberOfLetters, al_Defense, ch_NewLetter);
+        int int_IndexNewLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_Mastermind_NumberOfLetters, al_Defense, ch_NewLetter);
         logger.info("Lancement index de la nouvelle lettre");
 
         // FOR - Pour chaque lettre sélectionnée pour le "Mastermind"
-        for (int i = 0; i < int_NumberOfLetters; i++) {
+        for (int i = 0; i < int_Mastermind_NumberOfLetters; i++) {
             logger.info("FOR - Pour chaque lettre sélectionnée pour le \"Mastermind\"");
 
             // IF - 'i' != Index nouvelle lettre
@@ -711,5 +719,549 @@ public class Defense_Mastermind {
         logger.trace("############################################\n");
 
         return al_Defense;
+    }
+
+
+    /**
+     *  Lorsque "=" disparaît
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param al_Mastermind_Defense : (ArrayList) Données défense
+     *
+     * @return : (ArrayList) Données de défense
+     */
+    public ArrayList run_NegativeEquality(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, String str_SubMode, ArrayList al_Mastermind_Defense) {
+
+        logger.trace("##############################################");
+        logger.trace("<<< START >>> Méthode : run_NegativeEquality()");
+        logger.trace("##############################################");
+
+        // array_int_PreviousComputerProposal <- array_int_NewComputerProposal
+        al_Mastermind_Defense.set(4, al_Mastermind_Defense.get(5));
+        logger.info("array_int_PreviousComputerProposal <- array_int_NewComputerProposal");
+
+        // Récupération (char[]) Nouvelle proposition
+        char array_ch_NewComputerProposal[] = (char[]) al_Mastermind_Defense.get(5);
+        logger.debug("Récupération (char[]) Nouvelle proposition : " + Arrays.toString(array_ch_NewComputerProposal));
+
+        // Récupération (char[][]) Analyse de la défense
+        char array_ch_DefenseAnalysis[][] = (char[][]) al_Mastermind_Defense.get(9);
+        logger.info("Récupération (char[][]) Analyse de la défense");
+
+        // Récupération (int) Nouvelle position de remplacement
+        int int_NewReplacementPosition = (int) al_Mastermind_Defense.get(11);
+        logger.debug("Récupération (int) Nouvelle position de remplacement : "+ int_NewReplacementPosition);
+
+        // Récupération (char) Lettre précédente
+        char ch_PreviousLetter = (char) al_Mastermind_Defense.get(12);
+        logger.debug("Récupération (char) Lettre précédente : "+ ch_PreviousLetter);
+
+        // MàJ - (char[]) Nouvelle proposition de l'ordinateur
+        array_ch_NewComputerProposal[int_NewReplacementPosition] = ch_PreviousLetter;
+        logger.debug("MàJ - (char[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_NewComputerProposal));
+
+        // Injection (char[]) Nouvelle proposition de l'ordinateur
+        al_Mastermind_Defense.set(5, array_ch_NewComputerProposal);
+        logger.info("Injection (char[]) Nouvelle proposition de l'ordinateur");
+
+        // Définition (int) Index de la lettre précédente
+        int int_IndexOfPreviousLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_Mastermind_NumberOfLetters, al_Mastermind_Defense, ch_PreviousLetter);
+        logger.debug("Définition (int) Index de la lettre précédente : "+ int_IndexOfPreviousLetter);
+
+        // FOR - Chaque lettre sélectionnée pour le "Mastermind"
+        for (int i = 0; i < int_Mastermind_NumberOfLetters; i++) {
+            logger.info("FOR - Chaque lettre sélectionnée pour le \"Mastermind\"");
+
+            // IF - "i" != Index de la lettre précédente
+            if (i != int_IndexOfPreviousLetter) {
+                logger.info("IF - \"i\" != Index de la lettre précédente");
+
+                // La lettre n'est pas présente à cette position = '†'
+                array_ch_DefenseAnalysis[i][int_NewReplacementPosition] = '†';
+                logger.debug("La lettre n'est pas présente à cette position = '†'");
+            }
+            // ELSE - "i" = Index de la lettre précédente
+            else {
+                logger.info("ELSE - \"i\" = Index de la lettre précédente");
+
+                // La lettre est présente à cette position = 'LETTRE PRECEDENTE'
+                array_ch_DefenseAnalysis[i][int_NewReplacementPosition] = ch_PreviousLetter;
+                logger.debug("La lettre est présente à cette position = 'LETTRE PRECEDENTE'");
+            }
+        }
+
+        // Injection (char[]) Analyse de la défense
+        al_Mastermind_Defense.set(9, array_ch_DefenseAnalysis);
+
+        // Récupération (boolean[]) Lettres de la combinaison trouvées
+        boolean array_boo_FoundLetters[] = (boolean[]) al_Mastermind_Defense.get(10);
+        logger.debug("Récupération (boolean[]) Lettres de la combinaison trouvées : " + Arrays.toString(array_boo_FoundLetters));
+
+        // MàJ - (boolean[]) Lettres de la combinaison trouvées
+        array_boo_FoundLetters[int_NewReplacementPosition] = true;
+        logger.debug("MàJ - (boolean[]) Lettres de la combinaison trouvées : " + Arrays.toString(array_boo_FoundLetters));
+
+        // Injection (boolean[]) Lettres de la combinaison trouvées
+        al_Mastermind_Defense.set(10, array_boo_FoundLetters);
+        logger.info("Injection (boolean[]) Lettres de la combinaison trouvées");
+
+        // Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+        int array_int_NewComparisonResult[] = run_al_NewComparisonResult(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+        logger.info("Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète");
+
+        // Injection (int[]) Nouvelle Comparaison
+        al_Mastermind_Defense.set(7, array_int_NewComparisonResult);
+        logger.info("Injection (int[]) Nouvelle Comparaison");
+
+        logger.trace("############################################");
+        logger.trace("<<< END >>> Méthode : run_NegativeEquality()");
+        logger.trace("############################################\n");
+
+        return al_Mastermind_Defense;
+    }
+
+
+
+    /**
+     * Lorsque "≠" apparaît
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfChances : (int) Nombre de chances
+     * @param array_str_MenuChoices : (String[]) Choix du menu principal
+     * @param str_SubMode : (String) Sous-mode en mode "Duel"
+     * @param al_Mastermind_Defense : (ArrayList) Données défense
+     * @param i : (int) Compteur de tours
+     *
+     * @return : (ArrayList) Données de défense
+     */
+    public ArrayList run_PositiveDifference(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, int int_Mastermind_NumberOfChances, String array_str_MenuChoices[], String str_SubMode, ArrayList al_Mastermind_Defense, int i, boolean boo_WonPart, boolean boo_HeWon) {
+
+        logger.trace("################################################");
+        logger.trace("<<< START >>> Méthode : run_PositiveDifference()");
+        logger.trace("################################################");
+
+        // Récupération (char[][]) Analyse de la défense
+        char ch_DefenseAnalysis[][] = (char[][]) al_Mastermind_Defense.get(9);
+        logger.info("Récupération (char[][]) Analyse de la défense");
+
+        // Récupération (int) Position de remplacement
+        int int_ReplacementPosition = (int) al_Mastermind_Defense.get(11);
+        logger.debug("Récupération (int) Position de remplacement : " + int_ReplacementPosition);
+
+        // Récupération (char) Nouvelle lettre
+        char ch_NewLetter = (char) al_Mastermind_Defense.get(13);
+        logger.debug("écupération (char) Nouvelle lettre : " + ch_NewLetter);
+
+        // Lancement index de la nouvelle lettre
+        int int_IndexOfNewLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_Mastermind_NumberOfLetters, al_Mastermind_Defense, ch_NewLetter);
+        logger.debug("Lancement index de la nouvelle lettre : " + int_IndexOfNewLetter);
+
+        // MàJ - (char[][]) Analyse défense
+        ch_DefenseAnalysis[int_IndexOfNewLetter][int_ReplacementPosition] = '†';
+        logger.info("MàJ - (char[][]) Analyse défense");
+
+        // Injection - (char[][]) Analyse de la défense
+        al_Mastermind_Defense.set(9, ch_DefenseAnalysis);
+        logger.info("Injection - (char[][]) Analyse de la défense");
+
+
+
+        display_Array_Defense.display_Array_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+
+
+
+        // array_int_PreviousComputerProposal <- array_int_NewComputerProposal
+        al_Mastermind_Defense.set(4, al_Mastermind_Defense.get(5));
+        logger.info("array_int_PreviousComputerProposal <- array_int_NewComputerProposal");
+
+
+
+        // Initialisation (int) et lancement du calcul du nombre de tours
+        int int_NumberOfLaps = defense_Methods_Mastermind.run_int_NumberOfLaps(int_Mastermind_NumberOfUnities, al_Mastermind_Defense);
+        logger.debug("Initialisation (int) Nombre de tours : " + int_NumberOfLaps);
+
+        // Initialisation (int) Compteur de tours
+        int int_LapsCounter = 0;
+        logger.debug("Initialisation (int) Compteur de tours : " + int_LapsCounter);
+
+
+
+        do {
+
+            // Incrémentation += 1 Compteur de tours
+            int_LapsCounter += 1;
+            logger.debug("Incrémentation += 1 Compteur de tours : " + int_LapsCounter);
+
+
+
+            // Définition (int) Nouvelle position de remplacement
+            int_ReplacementPosition = defense_Methods_Mastermind.run_int_NewReplacementPosition(int_Mastermind_NumberOfUnities, al_Mastermind_Defense, int_IndexOfNewLetter);
+            logger.debug("Définition (int) Nouvelle position de remplacement : " + int_ReplacementPosition);
+
+            // Injection (int) Nouvelle position de remplacement
+            al_Mastermind_Defense.set(11, int_ReplacementPosition);
+            logger.info("Injection (int) Nouvelle position de remplacement");
+
+
+
+            // Récupération (char[]) Nouvelle proposition de l'ordinateur
+            char array_ch_NewComputerProposal[] = (char[]) al_Mastermind_Defense.get(5);
+            logger.debug("Récupération (char[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_NewComputerProposal));
+
+            // MàJ - (char[]) Nouvelle proposition de l'ordinateur
+            array_ch_NewComputerProposal[int_ReplacementPosition] = ch_NewLetter;
+            logger.debug("MàJ - (char[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_NewComputerProposal));
+
+            // Injection (char[]) Nouvelle proposition de l'ordinateur
+            al_Mastermind_Defense.set(5, array_ch_NewComputerProposal);
+            logger.info("Injection (char[]) Nouvelle proposition de l'ordinateur");
+
+            // Conversion (String) Nouvelle proposition de l'ordinateur
+            String str_NewComputerProposal = utilities_Games.run_arrayCh_TO_str( int_Mastermind_NumberOfUnities, array_ch_NewComputerProposal);
+            logger.debug("Conversion (String) Nouvelle proposition de l'ordinateur : " + str_NewComputerProposal);
+
+            // Affiche " Proposition de l'ordinateur ..."
+            texts_Games.display_PROPOSITION_DE_L_ORDINATEUR(str_NewComputerProposal, i);
+
+
+
+            // Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+            int array_int_NewComparisonResult[] = run_al_NewComparisonResult(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+            logger.info("Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète");
+
+            // Affichage résultat de la comparaison
+            texts_Mastermind.display_RESULTAT_DE_LA_COMPARAISON(array_int_NewComparisonResult);
+
+            // Injection (int[]) Nouvelle Comparaison
+            al_Mastermind_Defense.set(7, array_int_NewComparisonResult);
+            logger.info("Injection (int[]) Nouvelle Comparaison");
+
+
+
+            // IF - Le nombre de lettres bien placées = Au nombre d'unités utilisé pour les combinaisons
+            if (array_int_NewComparisonResult[0] == int_Mastermind_NumberOfUnities) {
+
+                // SI - Mode "Défense"
+                if (array_str_MenuChoices[1].equals("Défense")) {
+                    logger.info("SI - Mode \"Défense\"");
+
+                    // Affiche "Il a gagné"
+                    graphism.display_HE_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_WonPart = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée");
+
+                    logger.trace("##########################");
+                    logger.trace("### END ### Mode \"Défense\"");
+                    logger.trace("##########################");
+
+                    break;
+                }
+
+                // SINON - Mode "Duel"
+                else {
+                    logger.info("SINON - Mode \"Duel\"");
+
+                    // MàJ - (boolean) Il a trouvé la combinaison secrète
+                    boo_HeWon = true;
+
+                    // Affiche "C'est votre dernière chance !"
+                    texts_Games.display_C_EST_VOTRE_DERNIERE_CHANCE();
+
+                    // Compteur de tours au dernier tour
+                    i = int_Mastermind_NumberOfChances - 1;
+                    logger.info("Compteur de tours au dernier tour");
+                }
+            }
+            // ELSE - Affiche le nombre de chances restantes
+            else {
+                logger.info("ELSE - Affiche le nombre de chances restantes");
+
+                // Récupération (int) Compteur de tours
+                int int_NumberOfRoundsCounter = (int) al_Mastermind_Defense.get(3);
+                logger.info("Récupération (int) Nombre de tours restants");
+
+                // Incrémentation += 1 Compteur de tours
+                int_NumberOfRoundsCounter += 1;
+                logger.debug("Incrémentation += 1 Compteur de tours : " + int_NumberOfRoundsCounter);
+
+                // Injection (int) Compteur de tours
+                al_Mastermind_Defense.set(3, int_NumberOfRoundsCounter);
+                logger.info("Injection (int) Compteur de tours");
+
+                // Affichage du nombre de chances restantes
+                texts_Games.display_RemainingChances(int_Mastermind_NumberOfChances, array_str_MenuChoices, str_SubMode, int_NumberOfRoundsCounter);
+
+                // Lancement de la comparaison des comparaisons
+                al_Mastermind_Defense = run_al_ComparisonOfComparisonResults(al_Mastermind_Defense);
+                logger.info("Lancement de la comparaison des comparaisons");
+
+                // Récupération (char[]) Comparaison des comparaisons
+                char array_ch_ComparisonOfComparisonResults[] = (char[]) al_Mastermind_Defense.get(8);
+                logger.debug("Récupération (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+
+                // IF - "=" apparaît
+                if (array_ch_ComparisonOfComparisonResults[0] == '=') {
+                    logger.info("IF - \"=\" apparaît");
+
+                    // Lancement égalité positive
+                    al_Mastermind_Defense = run_PositiveEquality(int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                    logger.info("Lancement égalité positive");
+
+
+                    break;
+                }
+
+                // ELSE - '=' n'apparaît pas
+                else {
+                    logger.info("ELSE - '=' n'apparaît pas");
+
+                    // La lettre n'est pas présente à cette position = '†'
+                    ch_DefenseAnalysis[int_IndexOfNewLetter][int_ReplacementPosition] = '†';
+                    logger.info("La lettre n'est pas présente à cette position = '†'");
+
+                    // Injection (char[][]) Analyse de la défense
+                    al_Mastermind_Defense.set(9, ch_DefenseAnalysis);
+                    logger.info("Injection (char[][]) Analyse de la défense");
+
+                    // Affiche le tableau d'analyse
+                    display_Array_Defense.display_Array_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                }
+            }
+        } while (int_LapsCounter < int_NumberOfLaps);
+
+
+
+        logger.trace("##############################################");
+        logger.trace("<<< END >>> Méthode : run_PositiveDifference()");
+        logger.trace("##############################################\n");
+
+        return al_Mastermind_Defense;
+    }
+
+
+
+    /**
+     * Lorsque "≠" disparaît
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfChances : (int) Nombre de chances
+     * @param array_str_MenuChoices : (String[]) Choix du menu principal
+     * @param str_SubMode : (String) Sous-mode en mode "Duel"
+     * @param al_Mastermind_Defense : (ArrayList) Données défense
+     * @param i : (int) Compteur de tours
+     *
+     * @return : (ArrayList) Données de défense
+     */
+    public ArrayList run_NegativeDifference(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, int int_Mastermind_NumberOfChances, String array_str_MenuChoices[], String str_SubMode, ArrayList al_Mastermind_Defense, int i, boolean boo_WonPart, boolean boo_HeWon) {
+
+        logger.trace("################################################");
+        logger.trace("<<< START >>> Méthode : run_NegativeDifference()");
+        logger.trace("################################################");
+
+        // Récupération (char[][]) Analyse de la défense
+        char ch_DefenseAnalysis[][] = (char[][]) al_Mastermind_Defense.get(9);
+        logger.info("Récupération (char[][]) Analyse de la défense");
+
+        // Récupération (int) Position de remplacement
+        int int_ReplacementPosition = (int) al_Mastermind_Defense.get(11);
+        logger.debug("Récupération (int) Position de remplacement : " + int_ReplacementPosition);
+
+        // Récupération (char) Lettre précédente
+        char ch_PreviousLetter = (char) al_Mastermind_Defense.get(12);
+        logger.debug("Récupération (char) Lettre précédente : " + ch_PreviousLetter);
+
+        // ch_PreviousLetter -> ch_NewLetter
+        al_Mastermind_Defense.set(13, ch_PreviousLetter);
+
+        // Lancement index de la lettre précédente
+        int int_IndexOfPreviousLetter = defense_Methods_Mastermind.run_int_IndexOfLetter(int_Mastermind_NumberOfLetters, al_Mastermind_Defense, ch_PreviousLetter);
+        logger.debug("Lancement index de la lettre précédente : " + int_IndexOfPreviousLetter);
+
+        // MàJ - (char[][]) Analyse défense
+        ch_DefenseAnalysis[int_IndexOfPreviousLetter][int_ReplacementPosition] = '†';
+        logger.info("MàJ - (char[][]) Analyse défense");
+
+        // Injection - (char[][]) Analyse de la défense
+        al_Mastermind_Defense.set(9, ch_DefenseAnalysis);
+        logger.info("Injection - (char[][]) Analyse de la défense");
+
+
+
+        display_Array_Defense.display_Array_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+
+
+
+        // array_int_PreviousComputerProposal <- array_int_NewComputerProposal
+        //al_Mastermind_Defense.set(4, al_Mastermind_Defense.get(5));
+        logger.info("array_int_PreviousComputerProposal <- array_int_NewComputerProposal");
+
+
+
+        // Initialisation (int) et lancement du calcul du nombre de tours
+        int int_NumberOfLaps = defense_Methods_Mastermind.run_int_NumberOfLaps(int_Mastermind_NumberOfUnities, al_Mastermind_Defense);
+        logger.debug("Initialisation (int) Nombre de tours : " + int_NumberOfLaps);
+
+        // Initialisation (int) Compteur de tours
+        int int_LapsCounter = 0;
+        logger.debug("Initialisation (int) Compteur de tours : " + int_LapsCounter);
+
+
+
+        do {
+
+            // Incrémentation += 1 Compteur de tours
+            int_LapsCounter += 1;
+            logger.debug("Incrémentation += 1 Compteur de tours : " + int_LapsCounter);
+
+
+
+            // Définition (int) Nouvelle position de remplacement
+            int_ReplacementPosition = defense_Methods_Mastermind.run_int_NewReplacementPosition(int_Mastermind_NumberOfUnities, al_Mastermind_Defense, int_IndexOfPreviousLetter);
+            logger.debug("Définition (int) Nouvelle position de remplacement : " + int_ReplacementPosition);
+
+            // Injection (int) Nouvelle position de remplacement
+            al_Mastermind_Defense.set(11, int_ReplacementPosition);
+            logger.info("Injection (int) Nouvelle position de remplacement");
+
+
+
+            // Récupération (char[]) Nouvelle proposition de l'ordinateur
+            char array_ch_NewComputerProposal[] = (char[]) al_Mastermind_Defense.get(5);
+            logger.debug("Récupération (char[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_NewComputerProposal));
+
+            // MàJ - (char[]) Nouvelle proposition de l'ordinateur
+            array_ch_NewComputerProposal[int_ReplacementPosition] = ch_PreviousLetter;
+            logger.debug("MàJ - (char[]) Nouvelle proposition de l'ordinateur : " + Arrays.toString(array_ch_NewComputerProposal));
+
+            // Injection (char[]) Nouvelle proposition de l'ordinateur
+            al_Mastermind_Defense.set(5, array_ch_NewComputerProposal);
+            logger.info("Injection (char[]) Nouvelle proposition de l'ordinateur");
+
+            // Conversion (String) Nouvelle proposition de l'ordinateur
+            String str_NewComputerProposal = utilities_Games.run_arrayCh_TO_str( int_Mastermind_NumberOfUnities, array_ch_NewComputerProposal);
+            logger.debug("Conversion (String) Nouvelle proposition de l'ordinateur : " + str_NewComputerProposal);
+
+            // Affiche " Proposition de l'ordinateur ..."
+            texts_Games.display_PROPOSITION_DE_L_ORDINATEUR(str_NewComputerProposal, i);
+
+
+
+            // Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+            int array_int_NewComparisonResult[] = run_al_NewComparisonResult(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+            logger.info("Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète");
+
+            // Affichage résultat de la comparaison
+            texts_Mastermind.display_RESULTAT_DE_LA_COMPARAISON(array_int_NewComparisonResult);
+
+            // Injection (int[]) Nouvelle Comparaison
+            al_Mastermind_Defense.set(7, array_int_NewComparisonResult);
+            logger.info("Injection (int[]) Nouvelle Comparaison");
+
+
+
+            // IF - Le nombre de lettres bien placées = Au nombre d'unités utilisé pour les combinaisons
+            if (array_int_NewComparisonResult[0] == int_Mastermind_NumberOfUnities) {
+
+                // SI - Mode "Défense"
+                if (array_str_MenuChoices[1].equals("Défense")) {
+                    logger.info("SI - Mode \"Défense\"");
+
+                    // Affiche "Il a gagné"
+                    graphism.display_HE_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_WonPart = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée");
+
+                    logger.trace("##########################");
+                    logger.trace("### END ### Mode \"Défense\"");
+                    logger.trace("##########################");
+
+                    break;
+                }
+
+                // SINON - Mode "Duel"
+                else {
+                    logger.info("SINON - Mode \"Duel\"");
+
+                    // MàJ - (boolean) Il a trouvé la combinaison secrète
+                    boo_HeWon = true;
+
+                    // Affiche "C'est votre dernière chance !"
+                    texts_Games.display_C_EST_VOTRE_DERNIERE_CHANCE();
+
+                    // Compteur de tours au dernier tour
+                    i = int_Mastermind_NumberOfChances - 1;
+                    logger.info("Compteur de tours au dernier tour");
+                }
+            }
+            // ELSE - Affiche le nombre de chances restantes
+            else {
+                logger.info("ELSE - Affiche le nombre de chances restantes");
+
+                // Récupération (int) Compteur de tours
+                int int_NumberOfRoundsCounter = (int) al_Mastermind_Defense.get(3);
+                logger.info("Récupération (int) Nombre de tours restants");
+
+                // Incrémentation += 1 Compteur de tours
+                int_NumberOfRoundsCounter += 1;
+                logger.debug("Incrémentation += 1 Compteur de tours : " + int_NumberOfRoundsCounter);
+
+                // Injection (int) Compteur de tours
+                al_Mastermind_Defense.set(3, int_NumberOfRoundsCounter);
+                logger.info("Injection (int) Compteur de tours");
+
+                // Affichage du nombre de chances restantes
+                texts_Games.display_RemainingChances(int_Mastermind_NumberOfChances, array_str_MenuChoices, str_SubMode, int_NumberOfRoundsCounter);
+
+                // Lancement de la comparaison des comparaisons
+                al_Mastermind_Defense = run_al_ComparisonOfComparisonResults(al_Mastermind_Defense);
+                logger.info("Lancement de la comparaison des comparaisons");
+
+                // Récupération (char[]) Comparaison des comparaisons
+                char array_ch_ComparisonOfComparisonResults[] = (char[]) al_Mastermind_Defense.get(8);
+                logger.debug("Récupération (char[]) Comparaison des comparaisons : " + Arrays.toString(array_ch_ComparisonOfComparisonResults));
+
+                // IF - "=" apparaît
+                if (array_ch_ComparisonOfComparisonResults[0] == '=') {
+                    logger.info("IF - \"=\" apparaît");
+
+                    // Lancement égalité positive
+                    al_Mastermind_Defense = run_PositiveEquality(int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                    logger.info("Lancement égalité positive");
+
+                    break;
+                }
+
+                // ELSE - '=' n'apparaît pas
+                else {
+                    logger.info("ELSE - '=' n'apparaît pas");
+
+                    // La lettre n'est pas présente à cette position = '†'
+                    ch_DefenseAnalysis[int_IndexOfPreviousLetter][int_ReplacementPosition] = '†';
+                    logger.info("La lettre n'est pas présente à cette position = '†'");
+
+                    // Injection (char[][]) Analyse de la défense
+                    al_Mastermind_Defense.set(9, ch_DefenseAnalysis);
+                    logger.info("Injection (char[][]) Analyse de la défense");
+
+                    // Affiche le tableau d'analyse
+                    display_Array_Defense.display_Array_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                }
+            }
+        } while (int_LapsCounter < int_NumberOfLaps);
+
+
+
+        logger.trace("##############################################");
+        logger.trace("<<< END >>> Méthode : run_NegativeDifference()");
+        logger.trace("##############################################\n");
+
+        return al_Mastermind_Defense;
     }
 }

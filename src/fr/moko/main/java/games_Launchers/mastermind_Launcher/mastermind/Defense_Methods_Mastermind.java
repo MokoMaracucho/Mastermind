@@ -109,4 +109,103 @@ public class Defense_Methods_Mastermind {
 
         return ch_NextLetter;
     }
+
+
+
+    /**
+     * Calcule le nombre de tours lorsque "≠" apparaît ou disparaît
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param al_Defense_Mastermind : (ArrayList) Données défense
+     *
+     * @return : (int) Le nombre de tours
+     */
+    public int run_int_NumberOfLaps(int int_Mastermind_NumberOfUnities, ArrayList al_Defense_Mastermind) {
+
+        logger.trace("##############################################");
+        logger.trace("<<< START >>> Méthode : run_int_NumberOfLaps()");
+        logger.trace("##############################################");
+
+        // Initialisation (int) Nombre de tours
+        int int_NumberOfLaps = 0;
+        logger.debug("Initialisation (int) Nombre de tours");
+
+        // Récupération (boolean[]) Lettres trouvées
+        boolean array_boo_FoundLetters[] = (boolean[]) al_Defense_Mastermind.get(10);
+        logger.debug("Récupération (boolean[]) Lettres trouvées : " + Arrays.toString(array_boo_FoundLetters));
+
+        // FOR - Chaque unité
+        logger.info("FOR - Chaque unité");
+        for (int j = 0; j < int_Mastermind_NumberOfUnities; j++) {
+
+            // IF - La lettre n'a pas encore été trouvée à cette position
+            if (array_boo_FoundLetters[j] == false) {
+
+                // Incrémentation += 1 Compteur tours
+                int_NumberOfLaps += 1;
+            }
+        }
+
+        // Décrémentation -=1 Nombre de tours
+        int_NumberOfLaps -= 1;
+
+        logger.debug("(int) Nombre de tours : " + int_NumberOfLaps);
+
+        logger.trace("############################################");
+        logger.trace("<<< END >>> Méthode : run_int_NumberOfLaps()");
+        logger.trace("############################################\n");
+
+        return int_NumberOfLaps;
+    }
+
+
+    /**
+     * La nouvelle position de remplacement lorsque "≠" apparaît ou disparaît
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param al_Defense_Mastermind : (ArrayList) Données défense
+     * @param int_IndexOfNewLetter : (int) Index de la nouvelle lettre
+     *
+     * @return : (int) La nouvelle position de remplacement
+     */
+    public int run_int_NewReplacementPosition(int int_Mastermind_NumberOfUnities, ArrayList al_Defense_Mastermind, int int_IndexOfNewLetter) {
+
+        logger.trace("########################################################");
+        logger.trace("<<< START >>> Méthode : run_int_NewReplacementPosition()");
+        logger.trace("########################################################");
+
+        // Initialisation (int) Nouvelle position de remplacement
+        int int_NewReplacementPosition = 0;
+        logger.debug("Initialisation (int) Nouvelle position de remplacement : " + int_NewReplacementPosition);
+
+        // Récupération (char[][]) Analyse de la défense
+        char array_ch_DefenseAnalysis[][] = (char[][]) al_Defense_Mastermind.get(9);
+        logger.info("Récupération (char[][]) Analyse de la défense");
+
+        // Récupération (int) Position de remplacement précédente
+        int int_PreviousReplacementPosition = (int) al_Defense_Mastermind.get(11);
+        logger.debug("Récupération (int) Position de remplacement précédente : " + int_PreviousReplacementPosition);
+
+        // FOR - Chaque unité
+        for (int i = int_PreviousReplacementPosition + 1; i < int_Mastermind_NumberOfUnities; i++) {
+            logger.info("FOR - Chaque unités");
+
+            // IF - La lettre n'a pas encore été testée
+            if (array_ch_DefenseAnalysis[int_IndexOfNewLetter][i] == ' ') {
+                logger.info("IF - La lettre n'a pas encore été testée");
+
+                // MàJ - (int) Nouvelle position de remplacement
+                int_NewReplacementPosition = i;
+                logger.debug("MàJ - (int) Nouvelle position de remplacement : " + int_NewReplacementPosition);
+
+                break;
+            }
+        }
+
+        logger.trace("######################################################");
+        logger.trace("<<< END >>> Méthode : run_int_NewReplacementPosition()");
+        logger.trace("######################################################\n");
+
+        return int_NewReplacementPosition;
+    }
 }

@@ -438,7 +438,7 @@ public class Mastermind_Launcher {
                     if (array_ch_ComparisonOfComparisonResults[0] == '=') {
                         logger.info("IF - \"=\" apparaît");
 
-                        al_Mastermind_Defense = defense_Mastermind.run_PositiveEquality(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+                        al_Mastermind_Defense = defense_Mastermind.run_PositiveEquality(int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
                         logger.info("Lancement égalité positive");
                     }
 
@@ -449,44 +449,9 @@ public class Mastermind_Launcher {
                         logger.info("IF - \"≠\" n'est pas apparu et que \"=\" a disparu");
 
                         // Lancement égalité négative
-                        //al_Mastermind_Defense = defense_Mastermind.run_NegativeEquality(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
+                        al_Mastermind_Defense = defense_Mastermind.run_NegativeEquality(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, str_SubMode, al_Mastermind_Defense);
                         logger.info("Lancement égalité négative");
                     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -495,8 +460,19 @@ public class Mastermind_Launcher {
                         logger.info("IF - \"≠\" apparaît");
 
                         // Lancement différence positive
-                        //al_Mastermind_Defense = mastermind_Defense.run_PositiveDifference(int_NumberOfUnities, int_NumberOfLetters, int_NumberOfChances, array_str_MenuChoices, str_SubMode, al_Mastermind_Defense, i, boo_WonPart, boo_HeWon);
+                        al_Mastermind_Defense = defense_Mastermind.run_PositiveDifference(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, int_Mastermind_NumberOfChances, array_str_Main_Menu_Choices, str_SubMode, al_Mastermind_Defense, i, boo_Won_Part, boo_HE_WON);
                         logger.info("Lancement différence positive");
+                    }
+
+
+
+                    // IF - "≠" disparaît
+                    if (array_ch_ComparisonOfComparisonResults[0] == '≠') {
+                        logger.info("IF - \"≠\" disparaît");
+
+                        // Lancement différence négative
+                        //al_Mastermind_Defense = defense_Mastermind.run_NegativeDifference(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, int_Mastermind_NumberOfChances, array_str_Main_Menu_Choices, str_SubMode, al_Mastermind_Defense, i, boo_Won_Part, boo_HE_WON);
+                        logger.info("Lancement différence négative");
                     }
                 }
 
