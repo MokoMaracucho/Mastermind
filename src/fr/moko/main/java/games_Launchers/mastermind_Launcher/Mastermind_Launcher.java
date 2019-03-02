@@ -6,6 +6,7 @@ import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Defense_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Methods_Mastermind;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Texts_Mastermind;
+import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_Array_Defense;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_al_Mastermind_Defense;
 
 import fr.moko.main.java.graphism.Graphism;
@@ -52,6 +53,9 @@ public class Mastermind_Launcher {
 
     // Instance : "Texts_Mastermind"
     Texts_Mastermind texts_Mastermind = new Texts_Mastermind();
+
+    // Instance : "Display_Array_Defense"
+    Display_Array_Defense display_Array_Defense = new Display_Array_Defense();
 
 
 
@@ -372,6 +376,8 @@ public class Mastermind_Launcher {
                         // Affiche "Il a gagné"
                         graphism.display_HE_WON();
 
+                        display_Array_Defense.display_Array_Defense(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Defense);
+
                         // MàJ - (boolean) Partie gagnée
                         boo_Won_Part = true;
                         logger.debug("MàJ - (boolean) Partie gagnée");
@@ -472,6 +478,7 @@ public class Mastermind_Launcher {
 
                         // Lancement différence négative
                         //al_Mastermind_Defense = defense_Mastermind.run_NegativeDifference(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, int_Mastermind_NumberOfChances, array_str_Main_Menu_Choices, str_SubMode, al_Mastermind_Defense, i, boo_Won_Part, boo_HE_WON);
+                        //al_Mastermind_Defense = defense_Mastermind.run_NegativeDifference(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, int_Mastermind_NumberOfChances, array_str_Main_Menu_Choices, str_SubMode, al_Mastermind_Defense, i, boo_Won_Part, boo_HE_WON);
                         logger.info("Lancement différence négative");
                     }
                 }
@@ -480,6 +487,69 @@ public class Mastermind_Launcher {
                 logger.trace("<<< END >>> Mode \"Défense\"");
                 logger.trace("##########################\n");
             }
+            
+
+
+            // Instance (ArrayList) Données challenger
+            ArrayList al_Mastermind_Challenger = new ArrayList();
+            logger.info("Instance (ArrayList) Données défense");
+
+            // Injection (char[]) Lettres sélectionnées pour le jeu dans données défense
+            al_Mastermind_Challenger.add(0, array_ch_SelectedLetters);
+            logger.debug("Injection (char[]) Lettres sélectionnées pour le jeu dans données défense : " + Arrays.toString(array_ch_SelectedLetters));
+
+            // Initialisation et injection (char[]) Combinaison secrète
+            char array_ch_RandomNumber[] = new char[int_Mastermind_NumberOfUnities];
+            al_Mastermind_Challenger.add(1, array_ch_RandomNumber);
+            logger.info("Initialisation et injection (char[]) Combinaison secrète");
+
+            // Initialisation et injection (int[]) Nombre de chaque lettre dans la combinaison
+            int array_int_NumberOfEachLettersInCombinasion_Challenger[] = new int[int_Mastermind_NumberOfUnities];
+            al_Mastermind_Challenger.add(2, array_int_NumberOfEachLettersInCombinasion_Challenger);
+            logger.info("Initialisation et injection (int[]) Nombre de chaque lettre dans la combinaison");
+
+            // Initialisation et injection (int) Compteur de tours
+            int int_NumberOfRoundsCounter_Challenger = 0;
+            al_Mastermind_Challenger.add(3, int_NumberOfRoundsCounter_Challenger);
+            logger.info("Initialisation et injection (int) Compteur de chances");
+
+            // Initialisation case vide
+            String str_NULL = "Null";
+            al_Mastermind_Challenger.add(4, str_NULL);
+
+            // Initialisation et injection (char[]) Nouvelle proposition de l'utilisateur
+            char array_ch_NewPlayerProposal[] = new char[int_Mastermind_NumberOfUnities];
+            al_Mastermind_Challenger.add(5, array_ch_NewPlayerProposal);
+            logger.info("Initialisation et injection (char[]) Nouvelle proposition de l'ordinateur");
+
+            // Initialisation case vide
+            al_Mastermind_Challenger.add(6, str_NULL);
+
+            // Initialisation et injection (int[]) Nouvelle comparaison
+            int array_int_NewComparisonResult_Challenger[] = new int[3];
+            al_Mastermind_Challenger.add(7, array_int_NewComparisonResult_Challenger);
+            logger.info("Initialisation et injection (int[]) Nouvelle comparaison");
+
+            // Initialisation case vide
+            al_Mastermind_Challenger.add(8, str_NULL);
+
+            // Initialisation case vide
+            al_Mastermind_Challenger.add(9, str_NULL);
+
+            // Initialisation et injection (boolean[]) Lettres de la combinaison trouvées
+            boolean array_boo_FoundLetters_Challenger[] = new boolean[int_Mastermind_NumberOfUnities];
+            al_Mastermind_Challenger.add(10, array_boo_FoundLetters_Challenger);
+            logger.info("Initialisation et injection (boolean[]) Lettres de la combinaison trouvées");
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
