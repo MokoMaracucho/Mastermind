@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028b4816-3f65-4793-b521-9e6db5ea7249" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Challenger_Recherche.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/Games/Utilities_Games.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Defense_Recherche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="473" column="26" selection-start-line="473" selection-start-column="26" selection-end-line="473" selection-end-column="26" />
+            <state relative-caret-position="-2664">
+              <caret line="112" column="63" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,11 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+            <state relative-caret-position="-2967">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,26 +54,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Texts_Games.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1347">
-              <caret line="97" column="106" selection-start-line="97" selection-start-column="106" selection-end-line="97" selection-end-column="106" />
+            <state relative-caret-position="2895">
+              <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Challenger_Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1872">
-              <caret line="1099" column="10" selection-start-line="1099" selection-start-column="10" selection-end-line="1099" selection-end-column="10" />
+            <state relative-caret-position="349">
+              <caret line="102" column="69" lean-forward="true" selection-start-line="98" selection-start-column="74" selection-end-line="102" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,10 +82,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="189" column="92" selection-start-line="189" selection-start-column="92" selection-end-line="189" selection-end-column="92" />
+            <state relative-caret-position="1635">
+              <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Defense_Recherche.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-314">
+              <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,6 +143,10 @@
       <find>run_int_TO_arrayInt</find>
       <find>display_VOTRE_COMBINAISON</find>
       <find>str_Combination_UpperCase</find>
+      <find>array_int_Combination</find>
+      <find>run_array_ch_ComparisonResult</find>
+      <find>Initialisation (char[]) Résultat de la comparaison</find>
+      <find>array_int_RandomNumber</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,23 +173,26 @@
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Methods_Games.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Texts_Recherche.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/menus/Main_Menu.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/menus/Texts_Main_Menu.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Methods_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Methods_Mastermind.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Texts_Games.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java" />
-        <option value="$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Defense_Recherche.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Challenger_Recherche.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java" />
       </list>
     </option>
   </component>
@@ -362,7 +415,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551480655719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551484796844" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -458,7 +511,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -496,13 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -587,34 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="94" column="5" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/menus/Texts_Main_Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
           <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="141" column="5" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="135" column="37" selection-start-line="135" selection-start-column="37" selection-end-line="135" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,36 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Recherche_Defense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4041">
-          <caret line="310" column="82" selection-start-line="310" selection-start-column="82" selection-end-line="310" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1514">
-          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -692,17 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Texts_Games.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1347">
-          <caret line="97" column="106" selection-start-line="97" selection-start-column="106" selection-end-line="97" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="189" column="92" selection-start-line="189" selection-start-column="92" selection-end-line="189" selection-end-column="92" />
+        <state relative-caret-position="20">
+          <caret line="445" lean-forward="true" selection-start-line="445" selection-end-line="445" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -716,10 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml">
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Texts_Games.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="-1347">
+          <caret line="97" column="106" selection-start-line="97" selection-start-column="106" selection-end-line="97" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -733,10 +718,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="473" column="26" selection-start-line="473" selection-start-column="26" selection-end-line="473" selection-end-column="26" />
+        <state relative-caret-position="318">
+          <caret line="189" column="92" selection-start-line="189" selection-start-column="92" selection-end-line="189" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Defense_Recherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="292" lean-forward="true" selection-start-line="292" selection-end-line="292" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/dev_Mode/Dev_Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="43" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/graphism/Graphism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2895">
+          <caret line="193" column="5" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2664">
+          <caret line="112" column="63" selection-start-line="112" selection-start-column="63" selection-end-line="112" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Challenger_Recherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="102" column="69" lean-forward="true" selection-start-line="98" selection-start-column="74" selection-end-line="102" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2967">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -129,4 +129,24 @@ public class Utilities_Games {
 
         return array_ch_Combination;
     }
+
+
+    /**
+     * Conversion d'un tableau de chaînes de caractères en chaîne de caractère
+     *
+     * @param int_NumberOfBoxes : (int) Nombre de cases du tableau
+     * @param array_ch : (char[]) Tableau de caractères
+     *
+     * @return (String) Chaîne de caractères
+     */
+    public String run_arrayStr_TO_str(int int_NumberOfBoxes, char array_ch[]){
+
+        String str_ComparisonResult = "";
+
+        for (int i = 0; i < int_NumberOfBoxes; i++){
+
+            str_ComparisonResult += array_ch[i];
+        }
+        return str_ComparisonResult;
+    }
 }

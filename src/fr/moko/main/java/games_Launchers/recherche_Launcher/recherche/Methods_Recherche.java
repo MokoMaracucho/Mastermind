@@ -1,5 +1,6 @@
 package fr.moko.main.java.games_Launchers.recherche_Launcher.recherche;
 
+import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 
 import org.apache.logging.log4j.LogManager;
@@ -22,6 +23,9 @@ public class Methods_Recherche {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();
+
+    // Instance : "Methods_Games"
+    Methods_Games methods_Games = new Methods_Games();
 
     // Instance : "Texts_Games"
     Texts_Games texts_Games = new Texts_Games();
@@ -70,7 +74,7 @@ public class Methods_Recherche {
      *
      * @return : (int) La combinaison
      */
-    public int run_Combination_TryCatch(Scanner sc_Combinaison, int int_Combination_TryCatch) {
+    public int run_Combination_TryCatch(String[] array_str_Maun_Menu_Choices, String str_Sub_Mode, Scanner sc_Combinaison, int int_Combination_TryCatch) {
 
         // Initialisation (boolean) Que des nombres
         boolean boo_OnlyNumbers = false;
@@ -101,6 +105,10 @@ public class Methods_Recherche {
 
                 // Affiche "Veuillez réessayer."
                 texts_Games.display_VEUILLEZ_REESSAYER();
+
+                // Initialise le scanner pour la proposition
+                sc_Combinaison = methods_Games.run_sc_Combination(array_str_Maun_Menu_Choices, str_Sub_Mode);
+                logger.info("Initialise le scanner pour la proposition");
 
                 // MàJ - (boolean) Il n'y a pas que des nombres
                 boo_OnlyNumbers = false;

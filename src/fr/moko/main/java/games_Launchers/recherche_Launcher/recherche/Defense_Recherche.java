@@ -14,7 +14,7 @@ import java.util.Arrays;
  * @author : Moko
  * @version : 1.0
  */
-public class Recherche_Defense {
+public class Defense_Recherche {
 
     // Instance : "Logger"
     static Logger logger = LogManager.getRootLogger();

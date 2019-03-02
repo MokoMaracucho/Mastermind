@@ -1,7 +1,7 @@
 package fr.moko.main.java.games_Launchers.recherche_Launcher.recherche;
 
 import fr.moko.main.java.delay.Delay;
-
+import fr.moko.main.java.dev_Mode.Dev_Mode;
 
 
 /**
@@ -14,6 +14,9 @@ public class Texts_Recherche {
 
     // Instance "Delay"
     Delay delay = new Delay();
+
+    // Instance "Dev_Mode"
+    Dev_Mode dev_Mode = new Dev_Mode();
 
     // Instance "Methods_Texts_Recherche"
     Methods_Texts_Recherche methods_Texts_Recherche = new Methods_Texts_Recherche();
@@ -96,15 +99,15 @@ public class Texts_Recherche {
     /**
      * Affiche le résultat de la comparaison
      *
-     * @param array_str_MenuChoices : (String[]) Choix du menu principal
+     * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
      * @param str_SubMode : (String) Sous-mode en mode "Duel"
      * @param str_ComparisonResult : (String) Résultat de la comparaison
      */
-    public void display_RESULTAT_DE_LA_COMPARAISON(String array_str_MenuChoices[], String str_SubMode, String str_ComparisonResult){
+    public void display_RESULTAT_DE_LA_COMPARAISON(String array_str_Main_Menu_Choices[], String str_SubMode, String str_ComparisonResult){
 
         String str_NewLine = new String();
 
-        switch (array_str_MenuChoices[1]){
+        switch (array_str_Main_Menu_Choices[1]){
 
             case "Challenger" :
 
@@ -139,5 +142,49 @@ public class Texts_Recherche {
 
         delay.delay_Text();
         System.out.println(str_NewLine + "Résultat de la comparaison :                       " + str_ComparisonResult);
+    }
+
+
+    /**
+     * Affiche l'enoncé en mode "Challenger"
+     *
+     * @param boo_DevMode : (boolean) Si en mode développeur
+     * @param int_Recherche_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Recherche_NumberOfChances : (int) Nombre de chances
+     * @param array_int_RandomNumber : (int[]) Combinaison générée de manière aléatoire
+     */
+    public void display_Challenger_Statement(boolean boo_DevMode, int int_Recherche_NumberOfUnities, int int_Recherche_NumberOfChances, int array_int_RandomNumber[]){
+
+        delay.delay_Text();
+        System.out.println("\n\tTrouvez la combinaison générée par l'ordinateur !");
+        delay.delay_Text();
+        System.out.println("\tAprès chaques propositions, un indice vous sera donné pour chaque chiffre.\n");
+
+        delay.delay_Text();
+        System.out.println("\t\t- \"-\" : le chiffre est plus petit;");
+        delay.delay_Text();
+        System.out.println("\t\t- \"+\" : le chiffre est plus grand;");
+        delay.delay_Text();
+        System.out.println("\t\t- \"=\" : vous avez trouvé le bon chiffre.");
+
+        if (boo_DevMode) {
+
+            dev_Mode.display_Combination_Recherche(int_Recherche_NumberOfUnities, array_int_RandomNumber);
+        }
+
+        delay.delay_Text();
+        System.out.println("\nSaisissez un nombre entre 0 et " + methods_Texts_Recherche.run_str_NumberMax(int_Recherche_NumberOfUnities) + " (Vous avez " + int_Recherche_NumberOfChances + " chances) !");
+    }
+
+
+    /**
+     * Affiche "Votre proposition ..."
+     *
+     * @param str_Proposition (String) Proposition en chaîne de caractère
+     */
+    public void display_VOTRE_PROPOSITION(String str_Proposition){
+
+        delay.delay_Text();
+        System.out.print("\nVotre proposition :                                " + str_Proposition);
     }
 }

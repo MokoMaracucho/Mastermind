@@ -3,10 +3,10 @@ package fr.moko.main.java.games_Launchers.recherche_Launcher;
 import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
+import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Challenger_Recherche;
+import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Defense_Recherche;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Methods_Recherche;
-import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Recherche_Defense;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Texts_Recherche;
-
 import fr.moko.main.java.graphism.Graphism;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -33,8 +33,11 @@ public class Recherche_Launcher {
     // Instance : "Texts_Games"
     Texts_Games texts_Games = new Texts_Games();
 
-    // Instance : "Recherche_Defense"
-    Recherche_Defense recherche_Defense = new Recherche_Defense();
+    // Instance : "Defense_Recherche"
+    Defense_Recherche defense_Recherche = new Defense_Recherche();
+
+    // Instance : "Challenger_Recherche"
+    Challenger_Recherche challenger_Recherche = new Challenger_Recherche();
 
     //Instance : "Utilities_Games"
     Utilities_Games utilities_Games = new Utilities_Games();
@@ -105,6 +108,10 @@ public class Recherche_Launcher {
         char array_ch_ComparisonResult_Defense[] = new char[int_Recherche_NumberOfUnities];
         logger.info("Initialisation et injection - (char[]) Résultat de la comparaison");
 
+        // Initialisation (int[]) Nombre aléatoire
+        int array_int_RandomNumber[] = new int[int_Recherche_NumberOfUnities];
+        logger.info("Initialisation (int[]) Nombre aléatoire");
+
 
 
         // Initialisation (boolean) L'ordinateur a gagné
@@ -121,6 +128,10 @@ public class Recherche_Launcher {
         String str_ComparisonResult_Defense = new String();
         logger.info("Initialisation (String) résultat de la comparaison en mode \"Défense\"");
         al_Recherche_Defense.add(4, array_ch_ComparisonResult_Defense);
+
+        // Initialisation (String) résultat de la comparaison en mode "Challenger"
+        String str_ComparisonResult_Challenger = new String();
+        logger.info("Initialisation (String) résultat de la comparaison en mode \"Challenger\"");
 
 
 
@@ -183,7 +194,7 @@ public class Recherche_Launcher {
                         logger.info("Lance le scanner pour le combinaison secrète");
 
                         // Vérifie si la combinaison secrète ne contient bien que des nombres
-                        int_Combination_TryCatch = methods_Recherche.run_Combination_TryCatch(sc_Combinaison, int_Combination_TryCatch);
+                        int_Combination_TryCatch = methods_Recherche.run_Combination_TryCatch(array_str_Main_Menu_Choices, str_Sub_Mode, sc_Combinaison, int_Combination_TryCatch);
                         logger.info("Vérifie si la combinaison secrète ne contient bien que des nombres");
 
                         // Vérifie la validité de la combinaison secrète
@@ -212,7 +223,7 @@ public class Recherche_Launcher {
                 }
 
                 // Lancement de la défense du jeu "Recheche +/-"
-                al_Recherche_Defense = recherche_Defense.run_Defense(int_Recherche_NumberOfUnities, int_Recherche_NumberOfChances, array_str_Main_Menu_Choices, str_Sub_Mode, i, al_Recherche_Defense);
+                al_Recherche_Defense = defense_Recherche.run_Defense(int_Recherche_NumberOfUnities, int_Recherche_NumberOfChances, array_str_Main_Menu_Choices, str_Sub_Mode, i, al_Recherche_Defense);
 
                 // Récupération (char[]) Résultat de la comparaison
                 array_ch_ComparisonResult_Defense = (char[]) al_Recherche_Defense.get(4);
@@ -260,6 +271,161 @@ public class Recherche_Launcher {
                     i = int_Recherche_NumberOfChances - 1;
                     logger.info("Compteur de tours au dernier tour");
                 }
+            }
+
+            if (array_str_Main_Menu_Choices[1].equals("Challenger") || array_str_Main_Menu_Choices[1].equals("Duel")) {
+
+                logger.trace("###############################");
+                logger.trace("### START ### Mode \"Challenger\"");
+                logger.trace("###############################");
+
+                // SI - Mode "Duel"
+                if (array_str_Main_Menu_Choices[1].equals("Duel")) {
+                    logger.info("SI - Node \"Duel\"");
+
+                    // Màj - (String) Sous-mode (Pour mode "Duel")
+                    str_Sub_Mode = "Challenger";
+                    logger.debug("Màj - (String) Sous-mode (Pour mode \"Duel\") : " + str_Sub_Mode);
+                }
+
+                // IF - Premier tour
+                if (i == 0) {
+                    logger.info("// IF - Premier tour");
+
+                    // Affiche "But du jeu :"
+                    texts_Games.display_BUT_DU_JEU();
+
+                    // Lance la génération d'une combinaison secrète aléatoire
+                    array_int_RandomNumber = challenger_Recherche.run_RandomNumber(int_Recherche_NumberOfUnities, array_int_RandomNumber);
+                    logger.debug("(int[]) Combinaison secrète aléatoire : " + array_int_RandomNumber);
+
+                    // Affiche l'énoncé du mode "Challenger"
+                    texts_Recherche.display_Challenger_Statement(boo_DevMode, int_Recherche_NumberOfUnities, int_Recherche_NumberOfChances, array_int_RandomNumber);
+                }
+
+                // Lance le mode "Challenger"
+                str_ComparisonResult_Challenger = challenger_Recherche.run_RecherchePlusMoins_Challenger(int_Recherche_NumberOfUnities, int_Recherche_NumberOfChances, array_str_Main_Menu_Choices, boo_HE_WON, i, str_Sub_Mode, array_int_RandomNumber, str_ComparisonResult_Challenger);
+
+                // IF - Mode "Challenger" && Le résultat de la comparaison = résultat gagnant
+                if (array_str_Main_Menu_Choices[1] == "Challenger" && str_ComparisonResult_Challenger.equals(str_WinningResult)) {
+                    logger.info("// IF - Mode \"Challenger\" && Le résultat de la comparaison = résultat gagnant");
+
+                    // Affiche "Vous avez gagné !"
+                    graphism.display_YOU_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_Won_Part = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée : " + boo_Won_Part);
+
+                    logger.trace("#############################");
+                    logger.trace("### END ### Mode \"Challenger\"");
+                    logger.trace("#############################");
+
+                    break;
+
+                }
+
+                // ELSE IF - En mode "Duel", le résultat de la comparaison = résultat gagnant && Que l'ordinateur n'a pas gagné
+                else if (str_ComparisonResult_Challenger.equals(str_WinningResult) && !boo_HE_WON) {
+                    logger.info("ELSE IF - En mode \"Duel\", le résultat de la comparaison = résultat gagnant && Que l'ordinateur n'a pas gagné");
+
+                    // Affiche (Vous avez gagné !)
+                    graphism.display_YOU_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_Won_Part = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée : " + boo_Won_Part);
+
+                    logger.trace("#######################");
+                    logger.trace("### END ### Mode \"Duel\"");
+                    logger.trace("#######################\n");
+
+                    break;
+
+                }
+
+                // ELSE IF - En mode "Duel", le résultat de la comparaison = résultat gagnant && Que l'ordinateur a gagné
+                else if (str_ComparisonResult_Challenger.equals(str_WinningResult) && boo_HE_WON) {
+                    logger.info("ELSE IF - En mode \"Duel\", le résultat de la comparaison = résultat gagnant && Que l'ordinateur a gagné");
+
+                    // Affiche "Match nul !"
+                    graphism.display_DRAW();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_Won_Part = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée : " + boo_Won_Part);
+
+                    logger.trace("#######################");
+                    logger.trace("### END ### Mode \"Duel\"");
+                    logger.trace("#######################");
+
+                    break;
+
+                }
+
+                // ELSE IF - En mode "Duel", le résultat de la comparaison ≠ résultat gagnant && Que l'ordinateur a gagné
+                else if (boo_HE_WON) {
+                    logger.info("ELSE IF - En mode \"Duel\", le résultat de la comparaison ≠ résultat gagnant && Que l'ordinateur a gagné");
+
+                    // AFFICHE "Il a gagné !"
+                    graphism.display_HE_WON();
+
+                    // MàJ - (boolean) Partie gagnée
+                    boo_Won_Part = true;
+                    logger.debug("MàJ - (boolean) Partie gagnée : " + boo_Won_Part);
+
+                    break;
+
+                }
+            }
+        }
+
+        // IF - La partie n'est pas gagnée
+        if (!boo_Won_Part) {
+            logger.info("IF - La partie n'est pas gagnée");
+
+            // SWITCH - Mode du jeu "Recherche +/-"
+            logger.info("SWITCH - Mode du jeu \"Recherche +/-\"");
+            switch (array_str_Main_Menu_Choices[1]) {
+
+                // CASE - Mode "Challenger"
+                case "Challenger":
+                    logger.info("CASE - Mode \"Challenger\"");
+
+                    // Affiche "Vous avez perdu ..."
+                    graphism.display_YOU_LOOSE();
+
+                    logger.trace("#############################");
+                    logger.trace("### END ### Mode \"Challenger\"");
+                    logger.trace("#############################");
+
+                    break;
+
+                // CASE - Mode "Défense"
+                case "Défense":
+                    logger.info("CASE - Mode \"Défense\"");
+
+                    // Affiche "Il a perdu ..."
+                    graphism.display_HE_LOOSE();
+
+                    logger.trace("##########################");
+                    logger.trace("### END ### Mode \"Défense\"");
+                    logger.trace("##########################");
+
+                    break;
+
+                // CASE - Mode "Duel"
+                case "Duel":
+                    logger.info("CASE - Mode \"Duel\"");
+
+                    // Affiche "Vous avez perdu ..."
+                    graphism.display_YOU_LOOSE();
+
+                    logger.trace("#######################");
+                    logger.trace("### END ### Mode \"Duel\"");
+                    logger.trace("#######################");
+
+                    break;
             }
         }
     }
