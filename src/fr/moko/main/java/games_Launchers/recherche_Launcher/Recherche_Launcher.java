@@ -8,8 +8,7 @@ import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Defense_Re
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Methods_Recherche;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.recherche.Texts_Recherche;
 import fr.moko.main.java.graphism.Graphism;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

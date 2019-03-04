@@ -1,8 +1,7 @@
 package fr.moko.main.java.menus;
 
 import fr.moko.main.java.graphism.Graphism;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 
 

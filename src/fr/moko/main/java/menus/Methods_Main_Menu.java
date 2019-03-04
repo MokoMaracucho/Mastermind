@@ -1,7 +1,6 @@
 package fr.moko.main.java.menus;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.Scanner;
 
@@ -263,6 +262,25 @@ public class Methods_Main_Menu {
 
                         break;
                 }
+                break;
+
+            case "End" :
+
+                switch (ch_Scanner){
+
+                    case 'O' :
+
+                        break;
+
+                    case 'Q' :
+
+                        // EXIT - Sortie du jeu
+                        System.exit(0);
+                        logger.warn("EXIT - Sortie du jeu");
+
+                        break;
+                }
+
                 break;
         }
 

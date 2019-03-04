@@ -71,7 +71,7 @@ public class Texts_Games {
     public void display_FAITES_VOTRE_PROPOSITION(){
 
         delay.delay_Text();
-        System.out.print("Faites votre proposition : ");
+        System.out.print("\nFaites votre proposition : ");
     }
 
 
@@ -226,5 +226,20 @@ public class Texts_Games {
 
         delay.delay_Text();
         System.out.print("\nC'est votre dernière chance !!!");
+    }
+
+
+
+    /**
+     * Affiche "C'est votre dernière chance !!!"
+     */
+    public void display_VOULEZ_VOUS_CONTINUER(){
+
+        delay.delay_Text();
+        System.out.println("\nVoulez-vous continuer ?");
+
+        delay.delay_Text();
+        System.out.println("\n\t- \"O\" pour continuer;");
+        System.out.println("\t- \"Q\" pour quitter.\n");
     }
 }

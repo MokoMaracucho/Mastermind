@@ -1,8 +1,6 @@
 package fr.moko.main.java.configuration;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;

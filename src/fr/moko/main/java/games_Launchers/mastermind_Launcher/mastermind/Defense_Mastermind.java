@@ -2,10 +2,9 @@ package fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind;
 import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind.Utilities.Display_Array_Defense;
-
 import fr.moko.main.java.graphism.Graphism;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,7 +46,7 @@ public class Defense_Mastermind {
     /**
      * Lancement du mode "Défense"
      *
-     * @param int_Mastermind_NumberOfUnities   : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
      * @param int_Mastermind_NumberOfLetters   : (int) Nombre de lettres utilisées pour les combinaisons
      * @param array_str_Main_MenuChoices : (String[]) Choix du menu principal
      * @param i                     : (int) Nombre de tours

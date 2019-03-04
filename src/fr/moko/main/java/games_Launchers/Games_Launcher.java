@@ -2,13 +2,16 @@ package fr.moko.main.java.games_Launchers;
 
 import fr.moko.main.java.configuration.Configuration;
 import fr.moko.main.java.dev_Mode.Dev_Mode;
+import fr.moko.main.java.games_Launchers.Games.Texts_Games;
 import fr.moko.main.java.games_Launchers.mastermind_Launcher.Mastermind_Launcher;
 import fr.moko.main.java.games_Launchers.recherche_Launcher.Recherche_Launcher;
 import fr.moko.main.java.graphism.Graphism;
 import fr.moko.main.java.menus.Main_Menu;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import fr.moko.main.java.menus.Methods_Main_Menu;
+import fr.moko.main.java.menus.Texts_Main_Menu;
+
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 
@@ -19,7 +22,7 @@ import java.util.ArrayList;
  *
  * <ul>
  *     <li>Recherche +/-</li>
- *     <li>mastermind_Launcher</li>
+ *     <li>Mastermind</li>
  * </ul>
  *
  * @author : Moko
@@ -38,6 +41,15 @@ public class Games_Launcher {
 
     // Instance "Main_Menu"
     Main_Menu main_Menu = new Main_Menu();
+
+    // Instance "Texts_Games"
+    Texts_Games texts_Games = new Texts_Games();
+
+    // Instance "Texts_Main_Menu"
+    Texts_Main_Menu texts_Main_Menu = new Texts_Main_Menu();
+
+    // Instance "Methods_Main_Menu"
+    Methods_Main_Menu methods_Main_Menu = new Methods_Main_Menu();
 
     // Instance "Graphism"
     Graphism graphism = new Graphism();
@@ -187,6 +199,22 @@ public class Games_Launcher {
 
                     break;
             }
+
+
+
+            logger.trace("####################################################################");
+            logger.trace("<<< 5th Part >>> Méthode : game_Launcher() : Voulez-vous continuer ?");
+            logger.trace("####################################################################");
+
+            texts_Games.display_VOULEZ_VOUS_CONTINUER();
+
+            String str_Scanner = methods_Main_Menu.run_Scanner();
+
+            String str_Main_Menu_Value = "End";
+
+            char ch_Scanner = str_Scanner.toUpperCase().charAt(0);
+
+            methods_Main_Menu.run_Scanner_Treatment(str_Main_Menu_Value, ch_Scanner);
         }
 
         logger.trace("#####################################");

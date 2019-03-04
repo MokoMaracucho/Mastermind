@@ -2,8 +2,7 @@ package fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind;
 
 import fr.moko.main.java.games_Launchers.Games.Methods_Games;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.Arrays;
 import java.util.Scanner;

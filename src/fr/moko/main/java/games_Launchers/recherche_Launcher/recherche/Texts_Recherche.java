@@ -157,8 +157,14 @@ public class Texts_Recherche {
 
         delay.delay_Text();
         System.out.println("\n\tTrouvez la combinaison générée par l'ordinateur !");
+
+        if (boo_DevMode) {
+
+            dev_Mode.display_Combination_Recherche(int_Recherche_NumberOfUnities, array_int_RandomNumber);
+        }
+
         delay.delay_Text();
-        System.out.println("\tAprès chaques propositions, un indice vous sera donné pour chaque chiffre.\n");
+        System.out.println("\n\tAprès chaques propositions, un indice vous sera donné pour chaque chiffre.\n");
 
         delay.delay_Text();
         System.out.println("\t\t- \"-\" : le chiffre est plus petit;");
@@ -167,13 +173,9 @@ public class Texts_Recherche {
         delay.delay_Text();
         System.out.println("\t\t- \"=\" : vous avez trouvé le bon chiffre.");
 
-        if (boo_DevMode) {
-
-            dev_Mode.display_Combination_Recherche(int_Recherche_NumberOfUnities, array_int_RandomNumber);
-        }
-
         delay.delay_Text();
-        System.out.println("\nSaisissez un nombre entre 0 et " + methods_Texts_Recherche.run_str_NumberMax(int_Recherche_NumberOfUnities) + " (Vous avez " + int_Recherche_NumberOfChances + " chances) !");
+        System.out.println("\nSaisissez un nombre entre 0 et " + methods_Texts_Recherche.run_str_NumberMax(int_Recherche_NumberOfUnities) + ".");
+        System.out.println("\nVous avez " + int_Recherche_NumberOfChances + " chances !");
     }
 
 

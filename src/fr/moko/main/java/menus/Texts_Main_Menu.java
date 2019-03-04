@@ -42,7 +42,7 @@ public class Texts_Main_Menu {
     public void display_ETES_VOUS_SUR() {
 
         delay.delay_Text();
-        System.out.println("Êtes-vous sûr ? \"O\" pour confirmer, sinon \"N\".\n");
+        System.out.println("\nÊtes-vous sûr ? \"O\" pour confirmer, sinon \"N\".\n");
 
         delay.delay_Text();
         System.out.println("\t- \"O\" pour confirmer;");
@@ -72,7 +72,7 @@ public class Texts_Main_Menu {
     public void display_VEUILLEZ_FAIRE_UN_CHOIX() {
 
         delay.delay_Text();
-        System.out.println("Veuillez faire un choix !\n");
+        System.out.println("\nVeuillez faire un choix !\n");
     }
 
 
@@ -83,7 +83,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_RECHERCHE() {
 
         delay.delay_Text();
-        System.out.println("\nVous avez choisi de jouer à \"Recherche +/-\" !\n");
+        System.out.println("\nVous avez choisi de jouer à \"Recherche +/-\" !");
     }
 
 
@@ -94,7 +94,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_MASTERMIND() {
 
         delay.delay_Text();
-        System.out.println("\nVous avez choisi de jouer au \"mastermind_Launcher\" !\n");
+        System.out.println("\nVous avez choisi de jouer au \"Mastermind\" !");
     }
 
 
@@ -105,7 +105,7 @@ public class Texts_Main_Menu {
     public void display_VOTRE_CHOIX_N_EST_PAS_CORRECT() {
 
         delay.delay_Text();
-        System.out.println("Votre choix n'est pas correct !\n");
+        System.out.println("\nVotre choix n'est pas correct !");
     }
 
 
@@ -116,7 +116,7 @@ public class Texts_Main_Menu {
     public void display_VEUILLEZ_REESSAYER() {
 
         delay.delay_Text();
-        System.out.println("Veuillez réessayer.\n");
+        System.out.println("\nVeuillez réessayer.");
     }
 
 
@@ -148,7 +148,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_CHALLENGER() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer en mode \"Challenger\" !\n");
+        System.out.println("\nVous avez choisi de jouer en mode \"Challenger\" !");
     }
 
 
@@ -159,7 +159,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_DEFENSE() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer en mode \"Défense\" !\n");
+        System.out.println("\nVous avez choisi de jouer en mode \"Défense\" !");
     }
 
 
@@ -170,7 +170,7 @@ public class Texts_Main_Menu {
     public void display_VOUS_AVEZ_CHOISI_DE_JOUER_EN_MODE_DUEL() {
 
         delay.delay_Text();
-        System.out.println("Vous avez choisi de jouer en mode \"Duel\" !\n");
+        System.out.println("\nVous avez choisi de jouer en mode \"Duel\" !");
     }
 
 

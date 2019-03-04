@@ -1,7 +1,6 @@
 package fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;

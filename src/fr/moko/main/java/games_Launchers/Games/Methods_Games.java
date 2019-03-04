@@ -1,8 +1,6 @@
 package fr.moko.main.java.games_Launchers.Games;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import java.util.Scanner;
 
