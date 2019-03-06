@@ -673,8 +673,8 @@ public class Defense_Mastermind {
             if (i != int_IndexNewLetter) {
                 logger.info("IF - 'i' != Index nouvelle lettre");
 
-                // La lettre n'est présente à cette position = '†'
-                array_ch_DefenseAnalysis[i][int_ReplacementPosition] = '†';
+                // La lettre n'est présente à cette position = '†' //
+                array_ch_DefenseAnalysis[i][int_ReplacementPosition] = '†'; // °
                 logger.info("La lettre n'est présente à cette position = '†'");
             }
             // ELSE - 'i' = Index nouvelle lettre

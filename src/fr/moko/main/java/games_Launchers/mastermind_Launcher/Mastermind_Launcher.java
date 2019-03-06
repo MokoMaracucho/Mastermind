@@ -68,10 +68,9 @@ public class Mastermind_Launcher {
      * @param al_Configuration : (ArrayList) Valeurs de configuration
      * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
      */
-    public void mastermind_Launcher(ArrayList al_Configuration, String array_str_Main_Menu_Choices[]) {
+    public void mastermind_Launcher(boolean boo_DevMode, ArrayList al_Configuration, String array_str_Main_Menu_Choices[]) {
 
         // Récupération des valeurs de configuration
-        boolean boo_DevMode = (boolean) al_Configuration.get(0);
         int int_Mastermind_NumberOfUnities = (int) al_Configuration.get(3);
         int int_Mastermind_NumberOfLetters = (int) al_Configuration.get(4);
         int int_Mastermind_NumberOfChances = (int) al_Configuration.get(5);
@@ -564,7 +563,7 @@ public class Mastermind_Launcher {
                 if (i == 0) {
 
                     // Génération de la combinaison secrète
-                    array_ch_RandomNumber = challenger_Mastermind.run_array_ch_RandomLetter(int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Challenger);
+                    array_ch_RandomNumber = challenger_Mastermind.run_array_ch_RandomLetter(boo_DevMode, int_Mastermind_NumberOfUnities, int_Mastermind_NumberOfLetters, al_Mastermind_Challenger);
                     logger.info("Génération de la combinaison secrète");
 
                     // Injection (char[]) Combinaison secrète

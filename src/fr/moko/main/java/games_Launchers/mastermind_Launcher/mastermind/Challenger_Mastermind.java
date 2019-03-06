@@ -28,7 +28,7 @@ public class Challenger_Mastermind {
      *
      * @return : (char[]) Combinaison aléatoire de lettres
      */
-    public char[] run_array_ch_RandomLetter(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, ArrayList al_Mastermind_Challenger) {
+    public char[] run_array_ch_RandomLetter(boolean boo_DevMode, int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, ArrayList al_Mastermind_Challenger) {
 
         logger.trace("###################################################");
         logger.trace("<<< START >>> Méthode : run_array_ch_RandomLetter()");

@@ -59,7 +59,7 @@ public class Games_Launcher {
     /**
      * Lancement des jeux "Recherche +/-" et "Mastermind"
      */
-    public void games_Launcher() {
+    public void games_Launcher(boolean boo_DevMode) {
 
         logger.trace("#######################################");
         logger.trace("<<< START >>> Méthode : game_Launcher()");
@@ -76,12 +76,6 @@ public class Games_Launcher {
 
         // Récupération (ArrayList) valeurs de configurations dans "config.properties" : "al_PropertiesValue"
         al_Configuration = configuration.get_Configuration(al_Configuration);
-
-
-
-        // Récupération - (boolean) Mode développeur
-        boolean boo_DevMode = (boolean) al_Configuration.get(0);
-        logger.debug("Récupération - (boolean) Mode développeur : " + boo_DevMode);
 
 
 
@@ -180,7 +174,7 @@ public class Games_Launcher {
                     logger.info("Instance \"recherchePlusMoins\"");
 
                     // Lancement du jeu "Recherche +/-"
-                    recherche_Launcher.recherche_Launcher(al_Configuration, array_str_Main_Menu_Choices);
+                    recherche_Launcher.recherche_Launcher(boo_DevMode, al_Configuration, array_str_Main_Menu_Choices);
                     logger.info("Lancement du jeu \"Recherche +/-\"");
 
                     break;
@@ -194,7 +188,7 @@ public class Games_Launcher {
                     logger.info("Instance \"Mastermind\"");
 
                     // Lancement du jeu "Mastermind"
-                    mastermind_Launcher.mastermind_Launcher(al_Configuration, array_str_Main_Menu_Choices);
+                    mastermind_Launcher.mastermind_Launcher(boo_DevMode, al_Configuration, array_str_Main_Menu_Choices);
                     logger.info("Lancement du jeu \"Mastermind\"");
 
                     break;

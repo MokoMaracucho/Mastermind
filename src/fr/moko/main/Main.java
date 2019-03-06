@@ -22,8 +22,12 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        String str_DevMode = args[0];
+
+        boolean boo_DevMode = Boolean.valueOf(str_DevMode);
+
         // Instance "Games_Launcher"
         Games_Launcher games_Launcher = new Games_Launcher();
-        games_Launcher.games_Launcher();
+        games_Launcher.games_Launcher(boo_DevMode);
     }
 }

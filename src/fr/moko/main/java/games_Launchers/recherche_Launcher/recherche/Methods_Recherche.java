@@ -208,7 +208,7 @@ public class Methods_Recherche {
 
         // Initialisation (String) Nombre maximum
         String str_NumberMax = methods_Texts_Recherche.run_str_NumberMax(int_Recherche_NumberOfUnities);
-        logger.info("// Initialisation (String) Nombre maximum");
+        logger.debug("Initialisation (String) Nombre maximum : " + str_NumberMax);
 
         // Conversion (int) La chaîne de caractère contenant le nombre maximum
         int int_NumberMax = Integer.parseInt(str_NumberMax);

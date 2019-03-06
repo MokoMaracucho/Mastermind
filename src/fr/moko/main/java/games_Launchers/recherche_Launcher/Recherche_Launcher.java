@@ -58,10 +58,9 @@ public class Recherche_Launcher {
      * @param al_Configuration : (ArrayList) Valeurs de configuration
      * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
      */
-    public void recherche_Launcher(ArrayList al_Configuration, String array_str_Main_Menu_Choices[]) {
+    public void recherche_Launcher(boolean boo_DevMode, ArrayList al_Configuration, String array_str_Main_Menu_Choices[]) {
 
         // Récupération des valeurs de configuration
-        boolean boo_DevMode = (boolean) al_Configuration.get(0);
         int int_Recherche_NumberOfUnities = (int) al_Configuration.get(1);
         int int_Recherche_NumberOfChances = (int) al_Configuration.get(2);
         logger.info("Récupération des valeurs de configuration");
