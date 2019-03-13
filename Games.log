@@ -1,0 +1,1318 @@
+03:29:06.705 [main] [30mTRACE[m  - #######################################
+03:29:06.711 [main] [30mTRACE[m  - <<< START >>> Méthode : game_Launcher()
+03:29:06.711 [main] [30mTRACE[m  - #######################################
+03:29:06.712 [main] [30mTRACE[m  - ######################################################################################
+03:29:06.712 [main] [30mTRACE[m  - <<< 1st Part >>> Méthode : game_Launcher() : Récupération des valeurs de configuration
+03:29:06.712 [main] [30mTRACE[m  - ######################################################################################
+03:29:06.712 [main] [30mTRACE[m  - #############################################
+03:29:06.712 [main] [30mTRACE[m  - <<< START >>> Méthode : get_PropertiesValue()
+03:29:06.713 [main] [30mTRACE[m  - #############################################
+03:29:06.714 [main] [30mTRACE[m  - ###########################################
+03:29:06.715 [main] [30mTRACE[m  - <<< END >>> Méthode : get_PropertiesValue()
+03:29:06.715 [main] [30mTRACE[m  - ###########################################
+
+03:29:06.716 [main] [36mDEBUG[m  - Récupération - (int) Nombre d'unités des combinaisons du jeu "Recherche +/-" : 8
+03:29:06.717 [main] [36mDEBUG[m  - Récupération - (int) Nombre de chances du jeu "Recherche +/-" : 10
+03:29:06.717 [main] [36mDEBUG[m  - Récupération - (int) Nombre d'unités des combinaisons du jeu "Mastermind" : 8
+03:29:06.718 [main] [36mDEBUG[m  - Récupération - (int) Nombre de lettres utilisées pour le jeu "Mastermind" : 6
+03:29:06.719 [main] [36mDEBUG[m  - Récupération - (int) Nombre de chances du jeu "Mastermind" : 40
+03:29:06.719 [main] [30mTRACE[m  - #########################################################
+03:29:06.719 [main] [30mTRACE[m  - <<< 2nd Part >>> Méthode : game_Launcher() : Présentation
+03:29:06.719 [main] [30mTRACE[m  - #########################################################
+03:29:06.720 [main] [36mDEBUG[m  - Initialisation - (boolean) Premier tour : true
+03:29:06.720 [main] [32mINFO [m  - FOR - Lancement boucle infini
+03:29:06.721 [main] [36mDEBUG[m  - Remise à zéro de "i" : 0
+03:29:06.721 [main] [32mINFO [m  - IF - Premier tour
+03:29:09.241 [main] [36mDEBUG[m  - MàJ - (boolean) Premier tour : false
+03:29:09.241 [main] [30mTRACE[m  - ###########################################################
+03:29:09.241 [main] [30mTRACE[m  - <<< 3rd Part >>> Méthode : game_Launcher() : Menu principal
+03:29:09.241 [main] [30mTRACE[m  - ###########################################################
+03:29:09.242 [main] [30mTRACE[m  - #######################################
+03:29:09.242 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Main_Menu()
+03:29:09.242 [main] [30mTRACE[m  - #######################################
+03:29:09.242 [main] [32mINFO [m  - DO {} WHILE - Confirmation = "N"
+03:29:09.242 [main] [32mINFO [m  - DO {} WHILE - Le choix du jeu = ""
+03:29:09.243 [main] [36mDEBUG[m  - MàJ - (String) Valeur du menu : Games
+03:29:10.054 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:29:10.054 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:29:10.054 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:29:14.082 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:29:14.083 [main] [36mDEBUG[m  - Initialisation et récupération - (String) Valeur de la chaîne de caractère contenue dams le scanner : r
+03:29:14.084 [main] [36mDEBUG[m  - Initialisation et récupération - (char) Lettre correspondant au choix du jeu : R
+03:29:14.084 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:29:14.084 [main] [32mINFO [m  - CASE - "Games"
+03:29:14.084 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:29:14.085 [main] [32mINFO [m  - CASE - 'R'
+03:29:14.288 [main] [36mDEBUG[m  - MàJ - (String) Choix : Recherche +/-
+03:29:14.289 [main] [36mDEBUG[m  - Injection - (String) Choix du jeu : Recherche +/-
+03:29:14.289 [main] [32mINFO [m  - DO {} WHILE - La confirmation = ""
+03:29:15.095 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:29:15.095 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:29:15.096 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:29:17.150 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:29:17.151 [main] [36mDEBUG[m  - Initialisation et récupération - (String) Valeur de la chaîne de caractère contenue dams le scanner : o
+03:29:17.152 [main] [36mDEBUG[m  - Initialisation et récupération - (char) Lettre correspondant au choix de la confirmation : O
+03:29:17.152 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:29:17.152 [main] [32mINFO [m  - CASE - "Comfirm"
+03:29:17.152 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:29:17.153 [main] [32mINFO [m  - CASE - 'O'
+03:29:17.153 [main] [36mDEBUG[m  - MàJ - (String) Choix : O
+03:29:17.153 [main] [36mDEBUG[m  - Injection - (String) Confirmation : O
+03:29:17.154 [main] [32mINFO [m  - DO {} WHILE - Confirnmation = "N"
+03:29:17.154 [main] [32mINFO [m  - DO {} WHILE - Choix du mode = ""
+03:29:18.159 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:29:18.159 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:29:18.160 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:29:19.958 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:29:19.959 [main] [36mDEBUG[m  - (String) Valeur de la chaîne de caractère contenue dams le scanner : 2
+03:29:19.959 [main] [36mDEBUG[m  - (char) Lettre correspondant au choix du mode : 2
+03:29:19.960 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:29:19.960 [main] [32mINFO [m  - CASE - "Modes"
+03:29:19.960 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:29:19.960 [main] [32mINFO [m  - CASE - '2'
+03:29:20.162 [main] [36mDEBUG[m  - MàJ - (String) Choix : Défense
+03:29:20.162 [main] [36mDEBUG[m  - str_ModeChoise : Défense
+03:29:20.163 [main] [32mINFO [m  - DO {} WHILE - La confirmation = ""
+03:29:20.964 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:29:20.965 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:29:20.965 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:29:22.474 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:29:22.475 [main] [36mDEBUG[m  - (String) Valeur de la chaîne de caractère contenue dams le scanner : o
+03:29:22.475 [main] [36mDEBUG[m  - (char) Lettre correspondant au choix de la confirmation : O
+03:29:22.475 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:29:22.475 [main] [32mINFO [m  - CASE - "Comfirm"
+03:29:22.476 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:29:22.476 [main] [32mINFO [m  - CASE - 'O'
+03:29:22.476 [main] [36mDEBUG[m  - MàJ - (String) Choix : O
+03:29:22.477 [main] [36mDEBUG[m  - str_ConfirmChoise : O
+03:29:22.477 [main] [36mDEBUG[m  - (String) Choix du jeu : Recherche +/-
+03:29:22.478 [main] [36mDEBUG[m  - (String) Choix du mode : Défense
+03:29:24.707 [main] [30mTRACE[m  - #####################################
+03:29:24.708 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Main_Menu()
+03:29:24.708 [main] [30mTRACE[m  - #####################################
+
+03:29:24.708 [main] [30mTRACE[m  - ################################################################################################
+03:29:24.708 [main] [30mTRACE[m  - <<< 4th Part >>> Méthode : game_Launcher() : Lance du jeu "Recherche +/-" ou du jeu "Mastermind"
+03:29:24.708 [main] [30mTRACE[m  - ################################################################################################
+03:29:24.708 [main] [32mINFO [m  - SWITCH - Choix du jeu
+03:29:24.708 [main] [32mINFO [m  - CASE - Mode  "Recherche +/-"
+03:29:24.717 [main] [32mINFO [m  - Instance "recherchePlusMoins"
+03:29:24.717 [main] [32mINFO [m  - Récupération des valeurs de configuration
+03:29:24.718 [main] [32mINFO [m  - Initialisation (String) Résultat gagnant
+03:29:24.718 [main] [32mINFO [m  - FOR - Incrémentation "=" au résultat gagnant
+03:29:24.718 [main] [36mDEBUG[m  - Résultat gagnant : ========
+03:29:24.719 [main] [36mDEBUG[m  - (String) Résultat gagnant : ========
+03:29:24.719 [main] [32mINFO [m  - Instance - (ArrayList) Données de défense
+03:29:24.719 [main] [32mINFO [m  - Initialisation et injection - (int[]) Combinaison secrète
+03:29:24.719 [main] [32mINFO [m  - Initialisation et injection - (int[]) Derniers inférieurs
+03:29:24.719 [main] [32mINFO [m  - Initialisation et injection - (int[]) Derniers supérieurs
+03:29:24.720 [main] [32mINFO [m  - Initialisation et injection - (int[]) Proposition de l'ordinateur
+03:29:24.720 [main] [32mINFO [m  - Initialisation et injection - (char[]) Résultat de la comparaison
+03:29:24.720 [main] [32mINFO [m  - Initialisation (int[]) Nombre aléatoire
+03:29:24.720 [main] [36mDEBUG[m  - Initialisation (boolean) L'ordinateur a gagné : false
+03:29:24.721 [main] [36mDEBUG[m  - Initialisation (bolean) Partie gagnée : false
+03:29:24.721 [main] [32mINFO [m  - Initialisation (String) résultat de la comparaison en mode "Défense"
+03:29:24.721 [main] [32mINFO [m  - Initialisation (String) résultat de la comparaison en mode "Challenger"
+03:29:24.721 [main] [32mINFO [m  - Lancement du compteur de tours
+03:29:24.721 [main] [30mTRACE[m  - ############################
+03:29:24.721 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:29:24.721 [main] [30mTRACE[m  - ############################
+03:29:24.721 [main] [32mINFO [m  - IF - Mode "Duel"
+03:29:24.721 [main] [32mINFO [m  - SI - Premier tour
+03:29:25.527 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:29:25.528 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:29:25.730 [main] [36mDEBUG[m  - Initialisation (int) Combinaison Try Catch : 0
+03:29:25.731 [main] [36mDEBUG[m  - Initialisation (boolean) Combinaison validée : false
+03:29:25.731 [main] [32mINFO [m  - DO {} WHILE - La Combinaison n'est pas validée
+03:29:25.731 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:29:25.731 [main] [32mINFO [m  - CASE - Mode "Défense"
+03:29:25.932 [main] [32mINFO [m  - Lance le scanner pour le combinaison secrète
+03:29:25.933 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:29:25.933 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:29:25.934 [main] [32mINFO [m  - try
+03:29:49.381 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 12093487
+03:29:49.381 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:29:49.382 [main] [32mINFO [m  - Vérifie si la combinaison secrète ne contient bien que des nombres
+03:29:49.383 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:29:49.384 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:29:49.384 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:29:49.385 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:29:49.385 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:29:49.385 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:29:49.386 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:29:49.386 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:29:49.387 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:29:49.387 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:29:49.387 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:29:49.388 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:29:49.388 [main] [32mINFO [m  - Vérifie la validité de la combinaison secrète
+03:29:49.388 [main] [32mINFO [m  - DO {} WHILE - Sortie -> La combinaison est validée
+03:29:49.389 [main] [36mDEBUG[m  - int_IStart : 7
+03:29:49.396 [main] [36mDEBUG[m  - (array int) Combinaison : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:49.398 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison secrète en tableau d'entiers : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:49.398 [main] [32mINFO [m  - MàJ - Combinaison secrète dans ArrayList "al_RecherchePlusMoins_Defense"
+03:29:49.601 [main] [36mDEBUG[m  - Récupération (int[]) Derniers supérieur : [0, 0, 0, 0, 0, 0, 0, 0]
+03:29:49.601 [main] [32mINFO [m  - FOR - Chaque unité du tableau des derniers supérieurs
+03:29:49.601 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [9, 9, 9, 9, 9, 9, 9, 9]
+03:29:49.602 [main] [30mTRACE[m  - #####################################
+03:29:49.602 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:29:49.602 [main] [30mTRACE[m  - #####################################
+03:29:49.602 [main] [30mTRACE[m  - ####################################################
+03:29:49.602 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:29:49.602 [main] [30mTRACE[m  - ####################################################
+03:29:49.602 [main] [32mINFO [m  - IF - Premier tour
+03:29:49.602 [main] [30mTRACE[m  - #############################################################
+03:29:49.602 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_FirstComputerProposal()
+03:29:49.602 [main] [30mTRACE[m  - #############################################################
+03:29:49.603 [main] [32mINFO [m  - Injection de 5 dans première proposition de l'ordinateur
+03:29:49.603 [main] [36mDEBUG[m  - (int[]) Première proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:49.603 [main] [30mTRACE[m  - ###########################################################
+03:29:49.603 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_FirstComputerProposal()
+03:29:49.603 [main] [30mTRACE[m  - ###########################################################
+
+03:29:49.603 [main] [32mINFO [m  - Lance première proposition de l'ordinateur
+03:29:49.604 [main] [30mTRACE[m  - ##################################################
+03:29:49.604 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:29:49.604 [main] [30mTRACE[m  - ##################################################
+
+03:29:49.604 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:29:49.604 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:49.605 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 55555555
+03:29:49.822 [main] [30mTRACE[m  - #######################################################
+03:29:49.823 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:29:49.823 [main] [30mTRACE[m  - #######################################################
+03:29:49.823 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:49.824 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:49.824 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:29:49.824 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:29:49.824 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:49.824 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:49.824 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:49.825 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:49.825 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:49.825 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:49.825 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:49.825 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:49.825 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:49.825 [main] [30mTRACE[m  - ######################################################
+03:29:49.826 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:29:49.826 [main] [30mTRACE[m  - ######################################################
+
+03:29:49.826 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:29:49.826 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:49.833 [main] [36mDEBUG[m  - Incrémentation String() : ---+--++
+03:29:49.834 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ---+--++
+03:29:50.036 [main] [30mTRACE[m  - ###################################
+03:29:50.036 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:29:50.036 [main] [30mTRACE[m  - ###################################
+
+03:29:50.037 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:50.037 [main] [36mDEBUG[m  - Incrémentation String() : ---+--++
+03:29:50.038 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ---+--++
+03:29:50.038 [main] [30mTRACE[m  - ############################
+03:29:50.038 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:29:50.038 [main] [30mTRACE[m  - ############################
+03:29:50.039 [main] [32mINFO [m  - IF - Mode "Duel"
+03:29:50.039 [main] [30mTRACE[m  - #####################################
+03:29:50.039 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:29:50.039 [main] [30mTRACE[m  - #####################################
+03:29:50.039 [main] [30mTRACE[m  - ####################################################
+03:29:50.039 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:29:50.039 [main] [30mTRACE[m  - ####################################################
+03:29:50.039 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:29:50.253 [main] [30mTRACE[m  - ##########################################################
+03:29:50.253 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:50.254 [main] [30mTRACE[m  - ##########################################################
+03:29:50.254 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 0, 0, 0, 0, 0, 0]
+03:29:50.254 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:50.254 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:50.255 [main] [32mINFO [m  - FOR - Les positions '+'
+03:29:50.255 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 0, 5, 0, 0, 5, 5]
+03:29:50.255 [main] [30mTRACE[m  - ########################################################
+03:29:50.255 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:50.256 [main] [30mTRACE[m  - ########################################################
+
+03:29:50.256 [main] [30mTRACE[m  - ##########################################################
+03:29:50.256 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:50.256 [main] [30mTRACE[m  - ##########################################################
+03:29:50.256 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [9, 9, 9, 9, 9, 9, 9, 9]
+03:29:50.257 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:50.257 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:50.257 [main] [32mINFO [m  - FOR - Les positions '-'
+03:29:50.258 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [5, 5, 5, 9, 5, 5, 9, 9]
+03:29:50.258 [main] [30mTRACE[m  - ########################################################
+03:29:50.258 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:50.258 [main] [30mTRACE[m  - ########################################################
+
+03:29:50.258 [main] [30mTRACE[m  - ##############################################################
+03:29:50.258 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:29:50.258 [main] [30mTRACE[m  - ##############################################################
+03:29:50.259 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 0, 5, 0, 0, 5, 5]
+03:29:50.259 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [5, 5, 5, 9, 5, 5, 9, 9]
+03:29:50.260 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:29:50.260 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, -, -, +, +]
+03:29:50.260 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, -, -, +, -, -, +, +]
+03:29:50.261 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.261 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.262 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.262 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.262 [main] [30mTRACE[m  - ############################################################
+03:29:50.262 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:29:50.263 [main] [30mTRACE[m  - ############################################################
+
+03:29:50.263 [main] [32mINFO [m  - Lancement second type de proposition
+03:29:50.263 [main] [30mTRACE[m  - ##################################################
+03:29:50.263 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:29:50.263 [main] [30mTRACE[m  - ##################################################
+
+03:29:50.263 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:29:50.263 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.263 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 33373377
+03:29:50.464 [main] [30mTRACE[m  - #######################################################
+03:29:50.464 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:29:50.464 [main] [30mTRACE[m  - #######################################################
+03:29:50.464 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:50.464 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.465 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:29:50.465 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:29:50.465 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:50.465 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:50.465 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:50.465 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:50.465 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:50.465 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:50.466 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:50.466 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:50.466 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.466 [main] [30mTRACE[m  - ######################################################
+03:29:50.466 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:29:50.466 [main] [30mTRACE[m  - ######################################################
+
+03:29:50.466 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:29:50.466 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.467 [main] [36mDEBUG[m  - Incrémentation String() : ---+=++=
+03:29:50.467 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ---+=++=
+03:29:50.669 [main] [30mTRACE[m  - ###################################
+03:29:50.669 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:29:50.669 [main] [30mTRACE[m  - ###################################
+
+03:29:50.669 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.670 [main] [36mDEBUG[m  - Incrémentation String() : ---+=++=
+03:29:50.670 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ---+=++=
+03:29:50.670 [main] [30mTRACE[m  - ############################
+03:29:50.670 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:29:50.670 [main] [30mTRACE[m  - ############################
+03:29:50.670 [main] [32mINFO [m  - IF - Mode "Duel"
+03:29:50.670 [main] [30mTRACE[m  - #####################################
+03:29:50.670 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:29:50.670 [main] [30mTRACE[m  - #####################################
+03:29:50.670 [main] [30mTRACE[m  - ####################################################
+03:29:50.671 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:29:50.671 [main] [30mTRACE[m  - ####################################################
+03:29:50.671 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:29:50.871 [main] [30mTRACE[m  - ##########################################################
+03:29:50.871 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:50.871 [main] [30mTRACE[m  - ##########################################################
+03:29:50.872 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 0, 5, 0, 0, 5, 5]
+03:29:50.872 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.872 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.872 [main] [32mINFO [m  - FOR - Les positions '+'
+03:29:50.872 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 0, 7, 0, 3, 7, 5]
+03:29:50.872 [main] [30mTRACE[m  - ########################################################
+03:29:50.872 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:50.872 [main] [30mTRACE[m  - ########################################################
+
+03:29:50.872 [main] [30mTRACE[m  - ##########################################################
+03:29:50.875 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:50.875 [main] [30mTRACE[m  - ##########################################################
+03:29:50.875 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [5, 5, 5, 9, 5, 5, 9, 9]
+03:29:50.875 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.876 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.876 [main] [32mINFO [m  - FOR - Les positions '-'
+03:29:50.876 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [3, 3, 3, 9, 5, 5, 9, 9]
+03:29:50.876 [main] [30mTRACE[m  - ########################################################
+03:29:50.876 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:50.876 [main] [30mTRACE[m  - ########################################################
+
+03:29:50.876 [main] [30mTRACE[m  - ##############################################################
+03:29:50.876 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:29:50.876 [main] [30mTRACE[m  - ##############################################################
+03:29:50.876 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 0, 7, 0, 3, 7, 5]
+03:29:50.876 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [3, 3, 3, 9, 5, 5, 9, 9]
+03:29:50.876 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [3, 3, 3, 7, 3, 3, 7, 7]
+03:29:50.876 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, -, +, =, +, +, =]
+03:29:50.877 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, -, -, +, =, +, +, =]
+03:29:50.877 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:50.877 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:50.877 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:50.877 [main] [30mTRACE[m  - ############################################################
+03:29:50.877 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:29:50.877 [main] [30mTRACE[m  - ############################################################
+
+03:29:50.878 [main] [32mINFO [m  - Lancement second type de proposition
+03:29:50.878 [main] [30mTRACE[m  - ##################################################
+03:29:50.878 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:29:50.878 [main] [30mTRACE[m  - ##################################################
+
+03:29:50.878 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:29:50.878 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:50.878 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 22283487
+03:29:51.078 [main] [30mTRACE[m  - #######################################################
+03:29:51.079 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:29:51.079 [main] [30mTRACE[m  - #######################################################
+03:29:51.079 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:51.079 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:51.079 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:29:51.079 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:29:51.079 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:51.080 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.080 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:51.080 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:29:51.080 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.080 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.080 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.080 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.080 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.081 [main] [30mTRACE[m  - ######################################################
+03:29:51.081 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:29:51.081 [main] [30mTRACE[m  - ######################################################
+
+03:29:51.081 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:29:51.081 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.081 [main] [36mDEBUG[m  - Incrémentation String() : -=-+====
+03:29:51.081 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : -=-+====
+03:29:51.284 [main] [30mTRACE[m  - ###################################
+03:29:51.285 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:29:51.285 [main] [30mTRACE[m  - ###################################
+
+03:29:51.285 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.285 [main] [36mDEBUG[m  - Incrémentation String() : -=-+====
+03:29:51.285 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : -=-+====
+03:29:51.286 [main] [30mTRACE[m  - ############################
+03:29:51.286 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:29:51.286 [main] [30mTRACE[m  - ############################
+03:29:51.286 [main] [32mINFO [m  - IF - Mode "Duel"
+03:29:51.286 [main] [30mTRACE[m  - #####################################
+03:29:51.286 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:29:51.286 [main] [30mTRACE[m  - #####################################
+03:29:51.286 [main] [30mTRACE[m  - ####################################################
+03:29:51.287 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:29:51.287 [main] [30mTRACE[m  - ####################################################
+03:29:51.287 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:29:51.491 [main] [30mTRACE[m  - ##########################################################
+03:29:51.491 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:51.491 [main] [30mTRACE[m  - ##########################################################
+03:29:51.491 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 0, 7, 0, 3, 7, 5]
+03:29:51.491 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:51.491 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.491 [main] [32mINFO [m  - FOR - Les positions '+'
+03:29:51.491 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 0, 8, 0, 3, 7, 5]
+03:29:51.492 [main] [30mTRACE[m  - ########################################################
+03:29:51.492 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:51.492 [main] [30mTRACE[m  - ########################################################
+
+03:29:51.492 [main] [30mTRACE[m  - ##########################################################
+03:29:51.492 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:51.492 [main] [30mTRACE[m  - ##########################################################
+03:29:51.492 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [3, 3, 3, 9, 5, 5, 9, 9]
+03:29:51.492 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:51.492 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.492 [main] [32mINFO [m  - FOR - Les positions '-'
+03:29:51.492 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [2, 3, 2, 9, 5, 5, 9, 9]
+03:29:51.492 [main] [30mTRACE[m  - ########################################################
+03:29:51.492 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:51.492 [main] [30mTRACE[m  - ########################################################
+
+03:29:51.492 [main] [30mTRACE[m  - ##############################################################
+03:29:51.493 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:29:51.493 [main] [30mTRACE[m  - ##############################################################
+03:29:51.493 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 0, 8, 0, 3, 7, 5]
+03:29:51.493 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [2, 3, 2, 9, 5, 5, 9, 9]
+03:29:51.493 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [2, 2, 2, 8, 3, 4, 8, 7]
+03:29:51.493 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, -, +, =, =, =, =]
+03:29:51.493 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, =, -, +, =, =, =, =]
+03:29:51.493 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:51.493 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:51.494 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:51.494 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:51.494 [main] [30mTRACE[m  - ############################################################
+03:29:51.494 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:29:51.494 [main] [30mTRACE[m  - ############################################################
+
+03:29:51.494 [main] [32mINFO [m  - Lancement second type de proposition
+03:29:51.494 [main] [30mTRACE[m  - ##################################################
+03:29:51.494 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:29:51.494 [main] [30mTRACE[m  - ##################################################
+
+03:29:51.494 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:29:51.494 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:51.494 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 12193487
+03:29:51.694 [main] [30mTRACE[m  - #######################################################
+03:29:51.695 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:29:51.695 [main] [30mTRACE[m  - #######################################################
+03:29:51.695 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:51.695 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:51.695 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:29:51.695 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:51.695 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:51.696 [main] [30mTRACE[m  - ######################################################
+03:29:51.696 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:29:51.696 [main] [30mTRACE[m  - ######################################################
+
+03:29:51.696 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:29:51.696 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:51.696 [main] [36mDEBUG[m  - Incrémentation String() : ==-=====
+03:29:51.696 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ==-=====
+03:29:51.897 [main] [30mTRACE[m  - ###################################
+03:29:51.897 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:29:51.897 [main] [30mTRACE[m  - ###################################
+
+03:29:51.897 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:51.898 [main] [36mDEBUG[m  - Incrémentation String() : ==-=====
+03:29:51.898 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ==-=====
+03:29:51.898 [main] [30mTRACE[m  - ############################
+03:29:51.898 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:29:51.898 [main] [30mTRACE[m  - ############################
+03:29:51.898 [main] [32mINFO [m  - IF - Mode "Duel"
+03:29:51.898 [main] [30mTRACE[m  - #####################################
+03:29:51.898 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:29:51.898 [main] [30mTRACE[m  - #####################################
+03:29:51.898 [main] [30mTRACE[m  - ####################################################
+03:29:51.899 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:29:51.899 [main] [30mTRACE[m  - ####################################################
+03:29:51.899 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:29:52.099 [main] [30mTRACE[m  - ##########################################################
+03:29:52.100 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:52.100 [main] [30mTRACE[m  - ##########################################################
+03:29:52.100 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 0, 8, 0, 3, 7, 5]
+03:29:52.100 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:52.101 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:52.101 [main] [32mINFO [m  - FOR - Les positions '+'
+03:29:52.101 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 0, 8, 0, 3, 7, 5]
+03:29:52.101 [main] [30mTRACE[m  - ########################################################
+03:29:52.101 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:29:52.101 [main] [30mTRACE[m  - ########################################################
+
+03:29:52.101 [main] [30mTRACE[m  - ##########################################################
+03:29:52.101 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:52.102 [main] [30mTRACE[m  - ##########################################################
+03:29:52.102 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [2, 3, 2, 9, 5, 5, 9, 9]
+03:29:52.102 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:52.102 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:52.102 [main] [32mINFO [m  - FOR - Les positions '-'
+03:29:52.102 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [2, 3, 1, 9, 5, 5, 9, 9]
+03:29:52.102 [main] [30mTRACE[m  - ########################################################
+03:29:52.102 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:29:52.102 [main] [30mTRACE[m  - ########################################################
+
+03:29:52.102 [main] [30mTRACE[m  - ##############################################################
+03:29:52.102 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:29:52.103 [main] [30mTRACE[m  - ##############################################################
+03:29:52.103 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 0, 8, 0, 3, 7, 5]
+03:29:52.104 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [2, 3, 1, 9, 5, 5, 9, 9]
+03:29:52.104 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [1, 2, 1, 9, 3, 4, 8, 7]
+03:29:52.104 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, -, =, =, =, =, =]
+03:29:52.104 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [=, =, -, =, =, =, =, =]
+03:29:52.104 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.104 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:29:52.105 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:52.105 [main] [30mTRACE[m  - ############################################################
+03:29:52.105 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:29:52.105 [main] [30mTRACE[m  - ############################################################
+
+03:29:52.105 [main] [32mINFO [m  - Lancement second type de proposition
+03:29:52.105 [main] [30mTRACE[m  - ##################################################
+03:29:52.105 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:29:52.105 [main] [30mTRACE[m  - ##################################################
+
+03:29:52.105 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:29:52.105 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:52.105 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 12093487
+03:29:52.306 [main] [30mTRACE[m  - #######################################################
+03:29:52.306 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:29:52.306 [main] [30mTRACE[m  - #######################################################
+03:29:52.306 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:52.306 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 0, 9, 3, 4, 8, 7]
+03:29:52.306 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:29:52.306 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:29:52.306 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:29:52.307 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [=, =, =, =, =, =, =, =]
+03:29:52.307 [main] [30mTRACE[m  - ######################################################
+03:29:52.307 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:29:52.307 [main] [30mTRACE[m  - ######################################################
+
+03:29:52.307 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:29:52.307 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, =, =, =, =, =, =]
+03:29:52.307 [main] [36mDEBUG[m  - Incrémentation String() : ========
+03:29:52.307 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ========
+03:29:52.508 [main] [30mTRACE[m  - ###################################
+03:29:52.509 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:29:52.509 [main] [30mTRACE[m  - ###################################
+
+03:29:52.509 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, =, =, =, =, =, =]
+03:29:52.509 [main] [36mDEBUG[m  - Incrémentation String() : ========
+03:29:52.509 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ========
+03:29:52.509 [main] [32mINFO [m  - IF - Le résultat de la comparaison est égale le résultat gagnant
+03:29:52.509 [main] [32mINFO [m  - SI - Mode "Défense"
+03:29:54.517 [main] [36mDEBUG[m  - MàJ - (boolean) Partie gagnée
+03:29:54.517 [main] [30mTRACE[m  - ##########################
+03:29:54.517 [main] [30mTRACE[m  - ### END ### Mode "Défense"
+03:29:54.518 [main] [30mTRACE[m  - ##########################
+03:29:54.518 [main] [32mINFO [m  - Lancement du jeu "Recherche +/-"
+03:29:54.518 [main] [30mTRACE[m  - ####################################################################
+03:29:54.518 [main] [30mTRACE[m  - <<< 5th Part >>> Méthode : game_Launcher() : Voulez-vous continuer ?
+03:29:54.518 [main] [30mTRACE[m  - ####################################################################
+03:29:54.919 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:29:54.919 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:29:54.919 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:35:55.763 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:35:55.763 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:35:55.763 [main] [36mDEBUG[m  - Remise à zéro de "i" : 0
+03:35:55.763 [main] [30mTRACE[m  - ###########################################################
+03:35:55.763 [main] [30mTRACE[m  - <<< 3rd Part >>> Méthode : game_Launcher() : Menu principal
+03:35:55.764 [main] [30mTRACE[m  - ###########################################################
+03:35:55.764 [main] [30mTRACE[m  - #######################################
+03:35:55.764 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Main_Menu()
+03:35:55.764 [main] [30mTRACE[m  - #######################################
+03:35:55.764 [main] [32mINFO [m  - DO {} WHILE - Confirmation = "N"
+03:35:55.764 [main] [32mINFO [m  - DO {} WHILE - Le choix du jeu = ""
+03:35:55.764 [main] [36mDEBUG[m  - MàJ - (String) Valeur du menu : Games
+03:35:56.570 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:35:56.570 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:35:56.570 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:36:04.636 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:36:04.636 [main] [36mDEBUG[m  - Initialisation et récupération - (String) Valeur de la chaîne de caractère contenue dams le scanner : r
+03:36:04.636 [main] [36mDEBUG[m  - Initialisation et récupération - (char) Lettre correspondant au choix du jeu : R
+03:36:04.636 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:36:04.636 [main] [32mINFO [m  - CASE - "Games"
+03:36:04.636 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:36:04.636 [main] [32mINFO [m  - CASE - 'R'
+03:36:04.837 [main] [36mDEBUG[m  - MàJ - (String) Choix : Recherche +/-
+03:36:04.837 [main] [36mDEBUG[m  - Injection - (String) Choix du jeu : Recherche +/-
+03:36:04.837 [main] [32mINFO [m  - DO {} WHILE - La confirmation = ""
+03:36:05.643 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:36:05.643 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:36:05.643 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:36:07.445 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:36:07.445 [main] [36mDEBUG[m  - Initialisation et récupération - (String) Valeur de la chaîne de caractère contenue dams le scanner : o
+03:36:07.445 [main] [36mDEBUG[m  - Initialisation et récupération - (char) Lettre correspondant au choix de la confirmation : O
+03:36:07.445 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:36:07.445 [main] [32mINFO [m  - CASE - "Comfirm"
+03:36:07.446 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:36:07.446 [main] [32mINFO [m  - CASE - 'O'
+03:36:07.446 [main] [36mDEBUG[m  - MàJ - (String) Choix : O
+03:36:07.446 [main] [36mDEBUG[m  - Injection - (String) Confirmation : O
+03:36:07.446 [main] [32mINFO [m  - DO {} WHILE - Confirnmation = "N"
+03:36:07.446 [main] [32mINFO [m  - DO {} WHILE - Choix du mode = ""
+03:36:08.454 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:36:08.454 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:36:08.454 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:36:09.438 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:36:09.438 [main] [36mDEBUG[m  - (String) Valeur de la chaîne de caractère contenue dams le scanner : 3
+03:36:09.438 [main] [36mDEBUG[m  - (char) Lettre correspondant au choix du mode : 3
+03:36:09.438 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:36:09.438 [main] [32mINFO [m  - CASE - "Modes"
+03:36:09.438 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:36:09.438 [main] [32mINFO [m  - CASE - '3'
+03:36:09.643 [main] [36mDEBUG[m  - MàJ - (String) Choix : Duel
+03:36:09.643 [main] [36mDEBUG[m  - str_ModeChoise : Duel
+03:36:09.643 [main] [32mINFO [m  - DO {} WHILE - La confirmation = ""
+03:36:10.446 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:36:10.446 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:36:10.446 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:36:11.191 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:36:11.192 [main] [36mDEBUG[m  - (String) Valeur de la chaîne de caractère contenue dams le scanner : o
+03:36:11.192 [main] [36mDEBUG[m  - (char) Lettre correspondant au choix de la confirmation : O
+03:36:11.192 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu
+03:36:11.192 [main] [32mINFO [m  - CASE - "Comfirm"
+03:36:11.192 [main] [32mINFO [m  - SWITCH - (char) Caractére récupéré du scanner
+03:36:11.192 [main] [32mINFO [m  - CASE - 'O'
+03:36:11.192 [main] [36mDEBUG[m  - MàJ - (String) Choix : O
+03:36:11.192 [main] [36mDEBUG[m  - str_ConfirmChoise : O
+03:36:11.193 [main] [36mDEBUG[m  - (String) Choix du jeu : Recherche +/-
+03:36:11.193 [main] [36mDEBUG[m  - (String) Choix du mode : Duel
+03:36:13.405 [main] [30mTRACE[m  - #####################################
+03:36:13.405 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Main_Menu()
+03:36:13.405 [main] [30mTRACE[m  - #####################################
+
+03:36:13.405 [main] [30mTRACE[m  - ################################################################################################
+03:36:13.406 [main] [30mTRACE[m  - <<< 4th Part >>> Méthode : game_Launcher() : Lance du jeu "Recherche +/-" ou du jeu "Mastermind"
+03:36:13.406 [main] [30mTRACE[m  - ################################################################################################
+03:36:13.406 [main] [32mINFO [m  - SWITCH - Choix du jeu
+03:36:13.406 [main] [32mINFO [m  - CASE - Mode  "Recherche +/-"
+03:36:13.406 [main] [32mINFO [m  - Instance "recherchePlusMoins"
+03:36:13.406 [main] [32mINFO [m  - Récupération des valeurs de configuration
+03:36:13.406 [main] [32mINFO [m  - Initialisation (String) Résultat gagnant
+03:36:13.406 [main] [32mINFO [m  - FOR - Incrémentation "=" au résultat gagnant
+03:36:13.406 [main] [36mDEBUG[m  - Résultat gagnant : ========
+03:36:13.406 [main] [36mDEBUG[m  - (String) Résultat gagnant : ========
+03:36:13.406 [main] [32mINFO [m  - Instance - (ArrayList) Données de défense
+03:36:13.406 [main] [32mINFO [m  - Initialisation et injection - (int[]) Combinaison secrète
+03:36:13.406 [main] [32mINFO [m  - Initialisation et injection - (int[]) Derniers inférieurs
+03:36:13.406 [main] [32mINFO [m  - Initialisation et injection - (int[]) Derniers supérieurs
+03:36:13.406 [main] [32mINFO [m  - Initialisation et injection - (int[]) Proposition de l'ordinateur
+03:36:13.406 [main] [32mINFO [m  - Initialisation et injection - (char[]) Résultat de la comparaison
+03:36:13.407 [main] [32mINFO [m  - Initialisation (int[]) Nombre aléatoire
+03:36:13.407 [main] [36mDEBUG[m  - Initialisation (boolean) L'ordinateur a gagné : false
+03:36:13.407 [main] [36mDEBUG[m  - Initialisation (bolean) Partie gagnée : false
+03:36:13.407 [main] [32mINFO [m  - Initialisation (String) résultat de la comparaison en mode "Défense"
+03:36:13.407 [main] [32mINFO [m  - Initialisation (String) résultat de la comparaison en mode "Challenger"
+03:36:13.407 [main] [32mINFO [m  - Lancement du compteur de tours
+03:36:13.407 [main] [30mTRACE[m  - ############################
+03:36:13.407 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:36:13.407 [main] [30mTRACE[m  - ############################
+03:36:13.407 [main] [32mINFO [m  - IF - Mode "Duel"
+03:36:13.408 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Défense
+03:36:13.408 [main] [32mINFO [m  - SI - Premier tour
+03:36:13.608 [main] [32mINFO [m  - SI - Mode "Duel", affiche l'énoncé
+03:36:14.816 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:36:14.817 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:36:15.017 [main] [36mDEBUG[m  - Initialisation (int) Combinaison Try Catch : 0
+03:36:15.017 [main] [36mDEBUG[m  - Initialisation (boolean) Combinaison validée : false
+03:36:15.018 [main] [32mINFO [m  - DO {} WHILE - La Combinaison n'est pas validée
+03:36:15.018 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:36:15.018 [main] [32mINFO [m  - CASE - Mode "Duel"
+03:36:15.018 [main] [32mINFO [m  - SWITCH - Le sous-mode en mode "Duel"
+03:36:15.220 [main] [32mINFO [m  - Lance le scanner pour le combinaison secrète
+03:36:15.220 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:36:15.221 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:36:15.221 [main] [32mINFO [m  - try
+03:36:23.213 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 12903487
+03:36:23.213 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:36:23.213 [main] [32mINFO [m  - Vérifie si la combinaison secrète ne contient bien que des nombres
+03:36:23.213 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:23.213 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:36:23.213 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:23.213 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:23.214 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:36:23.214 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:36:23.214 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:36:23.214 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:36:23.214 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:36:23.214 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:23.214 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:36:23.214 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:36:23.214 [main] [32mINFO [m  - Vérifie la validité de la combinaison secrète
+03:36:23.214 [main] [32mINFO [m  - DO {} WHILE - Sortie -> La combinaison est validée
+03:36:23.214 [main] [36mDEBUG[m  - int_IStart : 7
+03:36:23.214 [main] [36mDEBUG[m  - (array int) Combinaison : [1, 2, 9, 0, 3, 4, 8, 7]
+03:36:23.214 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison secrète en tableau d'entiers : [1, 2, 9, 0, 3, 4, 8, 7]
+03:36:23.214 [main] [32mINFO [m  - MàJ - Combinaison secrète dans ArrayList "al_RecherchePlusMoins_Defense"
+03:36:23.416 [main] [36mDEBUG[m  - Récupération (int[]) Derniers supérieur : [0, 0, 0, 0, 0, 0, 0, 0]
+03:36:23.416 [main] [32mINFO [m  - FOR - Chaque unité du tableau des derniers supérieurs
+03:36:23.417 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [9, 9, 9, 9, 9, 9, 9, 9]
+03:36:23.417 [main] [30mTRACE[m  - #####################################
+03:36:23.417 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:36:23.417 [main] [30mTRACE[m  - #####################################
+03:36:23.417 [main] [30mTRACE[m  - ####################################################
+03:36:23.417 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:36:23.417 [main] [30mTRACE[m  - ####################################################
+03:36:23.417 [main] [32mINFO [m  - IF - Premier tour
+03:36:23.417 [main] [30mTRACE[m  - #############################################################
+03:36:23.417 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_FirstComputerProposal()
+03:36:23.417 [main] [30mTRACE[m  - #############################################################
+03:36:23.418 [main] [32mINFO [m  - Injection de 5 dans première proposition de l'ordinateur
+03:36:23.418 [main] [36mDEBUG[m  - (int[]) Première proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:23.418 [main] [30mTRACE[m  - ###########################################################
+03:36:23.418 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_FirstComputerProposal()
+03:36:23.418 [main] [30mTRACE[m  - ###########################################################
+
+03:36:23.418 [main] [32mINFO [m  - Lance première proposition de l'ordinateur
+03:36:23.418 [main] [30mTRACE[m  - ##################################################
+03:36:23.418 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:36:23.418 [main] [30mTRACE[m  - ##################################################
+
+03:36:23.418 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:36:23.418 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:23.418 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 55555555
+03:36:23.621 [main] [30mTRACE[m  - #######################################################
+03:36:23.622 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:36:23.622 [main] [30mTRACE[m  - #######################################################
+03:36:23.622 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 9, 0, 3, 4, 8, 7]
+03:36:23.622 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:23.622 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:36:23.622 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:36:23.622 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:23.622 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:23.623 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:23.623 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:23.623 [main] [30mTRACE[m  - ######################################################
+03:36:23.623 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:36:23.623 [main] [30mTRACE[m  - ######################################################
+
+03:36:23.623 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:36:23.624 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:23.624 [main] [36mDEBUG[m  - Incrémentation String() : --+---++
+03:36:23.624 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : --+---++
+03:36:23.825 [main] [30mTRACE[m  - ###################################
+03:36:23.825 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:36:23.825 [main] [30mTRACE[m  - ###################################
+
+03:36:23.825 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:23.825 [main] [36mDEBUG[m  - Incrémentation String() : --+---++
+03:36:23.825 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : --+---++
+03:36:23.826 [main] [30mTRACE[m  - ###############################
+03:36:23.826 [main] [30mTRACE[m  - ### START ### Mode "Challenger"
+03:36:23.826 [main] [30mTRACE[m  - ###############################
+03:36:23.826 [main] [32mINFO [m  - SI - Node "Duel"
+03:36:23.826 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Challenger
+03:36:23.826 [main] [32mINFO [m  - // IF - Premier tour
+03:36:24.027 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.028 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 0, 0, 0, 0, 0, 0, 0]
+03:36:24.028 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.028 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 0, 0, 0, 0, 0, 0]
+03:36:24.028 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.028 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 0, 0, 0, 0, 0]
+03:36:24.028 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.028 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 7, 0, 0, 0, 0]
+03:36:24.029 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.029 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 7, 6, 0, 0, 0]
+03:36:24.029 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.029 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 7, 6, 4, 0, 0]
+03:36:24.029 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.029 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 7, 6, 4, 6, 0]
+03:36:24.029 [main] [32mINFO [m  - FOR - Pour chaque unité de la combinaison secrète
+03:36:24.029 [main] [36mDEBUG[m  - Incréemntattion chiffre aléatoire : [6, 8, 2, 7, 6, 4, 6, 7]
+03:36:24.029 [main] [36mDEBUG[m  - Nombre aléatoire généré : [6, 8, 2, 7, 6, 4, 6, 7]
+03:36:24.030 [main] [36mDEBUG[m  - (int[]) Combinaison secrète aléatoire : [I@651aed93
+03:36:25.235 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:36:25.235 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:36:25.240 [main] [36mDEBUG[m  - Initialisation (int) Proposition Try Catch
+03:36:25.240 [main] [36mDEBUG[m  - Initialisation (boolean) Proposition validée : false
+03:36:25.240 [main] [32mINFO [m  - DO {} WHILE - La proposition n'est pas validée
+03:36:25.240 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:36:25.240 [main] [32mINFO [m  - CASE - Mode "Duel"
+03:36:25.240 [main] [32mINFO [m  - SWITCH - Le sous-mode en mode "Duel"
+03:36:25.240 [main] [32mINFO [m  - CASE - Mode "Challenger"
+03:36:25.441 [main] [32mINFO [m  - Initialise le scanner pour la proposition
+03:36:25.441 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:36:25.441 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:36:25.441 [main] [32mINFO [m  - try
+03:36:34.096 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 55555555
+03:36:34.096 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:36:34.096 [main] [32mINFO [m  - Vérifie si la combinaison de l'utilisateur ne contient que des nombres
+03:36:34.096 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:34.096 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:36:34.096 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:34.097 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:34.097 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:36:34.097 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:36:34.097 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:36:34.097 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:36:34.097 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:36:34.097 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:34.097 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:36:34.097 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:36:34.097 [main] [32mINFO [m  - MàJ - (boolean) Vérifie si la combinaison de l'utilisateur est valide
+03:36:34.097 [main] [36mDEBUG[m  - int_IStart : 7
+03:36:34.098 [main] [36mDEBUG[m  - (array int) Combinaison : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.098 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison de l'utilisateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.304 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau à comparer : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.305 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau de base : [6, 8, 2, 7, 6, 4, 6, 7]
+03:36:34.305 [main] [36mDEBUG[m  - Initialisation (char[]) Résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:36:34.305 [main] [32mINFO [m  - FOR - Pour chaque unité
+03:36:34.305 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:34.305 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.306 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:34.306 [main] [32mINFO [m  - Lancement comparaiosn entre la combinaison de l'utilisateur et la combinaison secrète
+03:36:34.508 [main] [30mTRACE[m  - ############################
+03:36:34.508 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:36:34.508 [main] [30mTRACE[m  - ############################
+03:36:34.508 [main] [32mINFO [m  - IF - Mode "Duel"
+03:36:34.508 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Défense
+03:36:34.508 [main] [30mTRACE[m  - #####################################
+03:36:34.508 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:36:34.508 [main] [30mTRACE[m  - #####################################
+03:36:34.508 [main] [30mTRACE[m  - ####################################################
+03:36:34.508 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:36:34.508 [main] [30mTRACE[m  - ####################################################
+03:36:34.508 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:36:34.709 [main] [30mTRACE[m  - ##########################################################
+03:36:34.709 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:36:34.709 [main] [30mTRACE[m  - ##########################################################
+03:36:34.709 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 0, 0, 0, 0, 0, 0]
+03:36:34.709 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.709 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:34.709 [main] [32mINFO [m  - FOR - Les positions '+'
+03:36:34.709 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 5, 0, 0, 0, 5, 5]
+03:36:34.709 [main] [30mTRACE[m  - ########################################################
+03:36:34.710 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:36:34.710 [main] [30mTRACE[m  - ########################################################
+
+03:36:34.710 [main] [30mTRACE[m  - ##########################################################
+03:36:34.710 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:36:34.710 [main] [30mTRACE[m  - ##########################################################
+03:36:34.710 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [9, 9, 9, 9, 9, 9, 9, 9]
+03:36:34.710 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.710 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:34.710 [main] [32mINFO [m  - FOR - Les positions '-'
+03:36:34.710 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [5, 5, 9, 5, 5, 5, 9, 9]
+03:36:34.710 [main] [30mTRACE[m  - ########################################################
+03:36:34.710 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:36:34.710 [main] [30mTRACE[m  - ########################################################
+
+03:36:34.710 [main] [30mTRACE[m  - ##############################################################
+03:36:34.710 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:36:34.710 [main] [30mTRACE[m  - ##############################################################
+03:36:34.710 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 5, 0, 0, 0, 5, 5]
+03:36:34.710 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [5, 5, 9, 5, 5, 5, 9, 9]
+03:36:34.710 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [5, 5, 5, 5, 5, 5, 5, 5]
+03:36:34.710 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, -, -, +, +]
+03:36:34.711 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, -, +, -, -, -, +, +]
+03:36:34.711 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:34.711 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:34.711 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:34.711 [main] [30mTRACE[m  - ############################################################
+03:36:34.711 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:36:34.711 [main] [30mTRACE[m  - ############################################################
+
+03:36:34.711 [main] [32mINFO [m  - Lancement second type de proposition
+03:36:34.711 [main] [30mTRACE[m  - ##################################################
+03:36:34.711 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:36:34.711 [main] [30mTRACE[m  - ##################################################
+
+03:36:34.711 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:36:34.711 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:34.711 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 33733377
+03:36:34.912 [main] [30mTRACE[m  - #######################################################
+03:36:34.912 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:36:34.912 [main] [30mTRACE[m  - #######################################################
+03:36:34.912 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 9, 0, 3, 4, 8, 7]
+03:36:34.913 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:34.913 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:36:34.913 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:34.913 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:34.913 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:34.913 [main] [30mTRACE[m  - ######################################################
+03:36:34.913 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:36:34.913 [main] [30mTRACE[m  - ######################################################
+
+03:36:34.913 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:36:34.914 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:34.914 [main] [36mDEBUG[m  - Incrémentation String() : --+-=++=
+03:36:34.914 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : --+-=++=
+03:36:35.116 [main] [30mTRACE[m  - ###################################
+03:36:35.116 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:36:35.116 [main] [30mTRACE[m  - ###################################
+
+03:36:35.116 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:35.116 [main] [36mDEBUG[m  - Incrémentation String() : --+-=++=
+03:36:35.116 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : --+-=++=
+03:36:35.116 [main] [30mTRACE[m  - ###############################
+03:36:35.116 [main] [30mTRACE[m  - ### START ### Mode "Challenger"
+03:36:35.117 [main] [30mTRACE[m  - ###############################
+03:36:35.117 [main] [32mINFO [m  - SI - Node "Duel"
+03:36:35.117 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Challenger
+03:36:35.117 [main] [36mDEBUG[m  - Initialisation (int) Proposition Try Catch
+03:36:35.117 [main] [36mDEBUG[m  - Initialisation (boolean) Proposition validée : false
+03:36:35.117 [main] [32mINFO [m  - DO {} WHILE - La proposition n'est pas validée
+03:36:35.117 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:36:35.117 [main] [32mINFO [m  - CASE - Mode "Duel"
+03:36:35.117 [main] [32mINFO [m  - SWITCH - Le sous-mode en mode "Duel"
+03:36:35.117 [main] [32mINFO [m  - CASE - Mode "Challenger"
+03:36:35.319 [main] [32mINFO [m  - Initialise le scanner pour la proposition
+03:36:35.319 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:36:35.319 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:36:35.319 [main] [32mINFO [m  - try
+03:36:43.286 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 77377377
+03:36:43.286 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:36:43.286 [main] [32mINFO [m  - Vérifie si la combinaison de l'utilisateur ne contient que des nombres
+03:36:43.286 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:43.286 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:36:43.286 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:36:43.286 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:43.286 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:36:43.287 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:36:43.287 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:36:43.287 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:36:43.287 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:36:43.287 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:36:43.287 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:36:43.287 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:36:43.287 [main] [32mINFO [m  - MàJ - (boolean) Vérifie si la combinaison de l'utilisateur est valide
+03:36:43.287 [main] [36mDEBUG[m  - int_IStart : 7
+03:36:43.287 [main] [36mDEBUG[m  - (array int) Combinaison : [7, 7, 3, 7, 7, 3, 7, 7]
+03:36:43.287 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison de l'utilisateur : [7, 7, 3, 7, 7, 3, 7, 7]
+03:36:43.488 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau à comparer : [7, 7, 3, 7, 7, 3, 7, 7]
+03:36:43.488 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau de base : [6, 8, 2, 7, 6, 4, 6, 7]
+03:36:43.489 [main] [36mDEBUG[m  - Initialisation (char[]) Résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:36:43.489 [main] [32mINFO [m  - FOR - Pour chaque unité
+03:36:43.489 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - ELSE IF - L'unité à comparer est > que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:36:43.489 [main] [32mINFO [m  - Lancement comparaiosn entre la combinaison de l'utilisateur et la combinaison secrète
+03:36:43.693 [main] [30mTRACE[m  - ############################
+03:36:43.693 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:36:43.693 [main] [30mTRACE[m  - ############################
+03:36:43.693 [main] [32mINFO [m  - IF - Mode "Duel"
+03:36:43.693 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Défense
+03:36:43.694 [main] [30mTRACE[m  - #####################################
+03:36:43.694 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:36:43.694 [main] [30mTRACE[m  - #####################################
+03:36:43.694 [main] [30mTRACE[m  - ####################################################
+03:36:43.694 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:36:43.694 [main] [30mTRACE[m  - ####################################################
+03:36:43.694 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:36:43.894 [main] [30mTRACE[m  - ##########################################################
+03:36:43.894 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:36:43.894 [main] [30mTRACE[m  - ##########################################################
+03:36:43.895 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 5, 0, 0, 0, 5, 5]
+03:36:43.895 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:43.895 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:43.895 [main] [32mINFO [m  - FOR - Les positions '+'
+03:36:43.895 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 7, 0, 0, 3, 7, 5]
+03:36:43.895 [main] [30mTRACE[m  - ########################################################
+03:36:43.895 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:36:43.895 [main] [30mTRACE[m  - ########################################################
+
+03:36:43.895 [main] [30mTRACE[m  - ##########################################################
+03:36:43.895 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:36:43.895 [main] [30mTRACE[m  - ##########################################################
+03:36:43.895 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [5, 5, 9, 5, 5, 5, 9, 9]
+03:36:43.895 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:43.895 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:43.895 [main] [32mINFO [m  - FOR - Les positions '-'
+03:36:43.895 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [3, 3, 9, 3, 5, 5, 9, 9]
+03:36:43.895 [main] [30mTRACE[m  - ########################################################
+03:36:43.895 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:36:43.895 [main] [30mTRACE[m  - ########################################################
+
+03:36:43.895 [main] [30mTRACE[m  - ##############################################################
+03:36:43.895 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:36:43.896 [main] [30mTRACE[m  - ##############################################################
+03:36:43.896 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 7, 0, 0, 3, 7, 5]
+03:36:43.896 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [3, 3, 9, 3, 5, 5, 9, 9]
+03:36:43.896 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [3, 3, 7, 3, 3, 3, 7, 7]
+03:36:43.896 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, -, +, -, =, +, +, =]
+03:36:43.896 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, -, +, -, =, +, +, =]
+03:36:43.896 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:36:43.896 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:36:43.896 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:36:43.896 [main] [30mTRACE[m  - ############################################################
+03:36:43.896 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:36:43.896 [main] [30mTRACE[m  - ############################################################
+
+03:36:43.896 [main] [32mINFO [m  - Lancement second type de proposition
+03:36:43.896 [main] [30mTRACE[m  - ##################################################
+03:36:43.896 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:36:43.896 [main] [30mTRACE[m  - ##################################################
+
+03:36:43.896 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:36:43.897 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:36:43.897 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 22823487
+03:36:44.098 [main] [30mTRACE[m  - #######################################################
+03:36:44.098 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:36:44.098 [main] [30mTRACE[m  - #######################################################
+03:36:44.098 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 9, 0, 3, 4, 8, 7]
+03:36:44.098 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:36:44.098 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:36:44.098 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:36:44.098 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:44.098 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:44.098 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur < à l'unité de la combinaison secrète
+03:36:44.098 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:36:44.098 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:44.099 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:44.099 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:44.099 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:36:44.099 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:36:44.099 [main] [30mTRACE[m  - ######################################################
+03:36:44.099 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:36:44.099 [main] [30mTRACE[m  - ######################################################
+
+03:36:44.099 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:36:44.099 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:36:44.099 [main] [36mDEBUG[m  - Incrémentation String() : -=+-====
+03:36:44.099 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : -=+-====
+03:36:44.301 [main] [30mTRACE[m  - ###################################
+03:36:44.301 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:36:44.301 [main] [30mTRACE[m  - ###################################
+
+03:36:44.301 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:36:44.301 [main] [36mDEBUG[m  - Incrémentation String() : -=+-====
+03:36:44.301 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : -=+-====
+03:36:44.301 [main] [30mTRACE[m  - ###############################
+03:36:44.301 [main] [30mTRACE[m  - ### START ### Mode "Challenger"
+03:36:44.301 [main] [30mTRACE[m  - ###############################
+03:36:44.301 [main] [32mINFO [m  - SI - Node "Duel"
+03:36:44.301 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Challenger
+03:36:44.301 [main] [36mDEBUG[m  - Initialisation (int) Proposition Try Catch
+03:36:44.302 [main] [36mDEBUG[m  - Initialisation (boolean) Proposition validée : false
+03:36:44.302 [main] [32mINFO [m  - DO {} WHILE - La proposition n'est pas validée
+03:36:44.302 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:36:44.302 [main] [32mINFO [m  - CASE - Mode "Duel"
+03:36:44.302 [main] [32mINFO [m  - SWITCH - Le sous-mode en mode "Duel"
+03:36:44.302 [main] [32mINFO [m  - CASE - Mode "Challenger"
+03:36:44.502 [main] [32mINFO [m  - Initialise le scanner pour la proposition
+03:36:44.502 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:36:44.502 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:36:44.502 [main] [32mINFO [m  - try
+03:37:02.466 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 68176467
+03:37:02.466 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:37:02.466 [main] [32mINFO [m  - Vérifie si la combinaison de l'utilisateur ne contient que des nombres
+03:37:02.466 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:37:02.466 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:37:02.466 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:37:02.467 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:37:02.467 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:37:02.467 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:37:02.467 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:37:02.467 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:37:02.467 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:37:02.467 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:37:02.467 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:37:02.467 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:37:02.467 [main] [32mINFO [m  - MàJ - (boolean) Vérifie si la combinaison de l'utilisateur est valide
+03:37:02.467 [main] [36mDEBUG[m  - int_IStart : 7
+03:37:02.467 [main] [36mDEBUG[m  - (array int) Combinaison : [6, 8, 1, 7, 6, 4, 6, 7]
+03:37:02.467 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison de l'utilisateur : [6, 8, 1, 7, 6, 4, 6, 7]
+03:37:02.668 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau à comparer : [6, 8, 1, 7, 6, 4, 6, 7]
+03:37:02.669 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau de base : [6, 8, 2, 7, 6, 4, 6, 7]
+03:37:02.669 [main] [36mDEBUG[m  - Initialisation (char[]) Résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:37:02.669 [main] [32mINFO [m  - FOR - Pour chaque unité
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - IF - L'unité à comparer est < que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:02.669 [main] [32mINFO [m  - Lancement comparaiosn entre la combinaison de l'utilisateur et la combinaison secrète
+03:37:02.874 [main] [30mTRACE[m  - ############################
+03:37:02.874 [main] [30mTRACE[m  - <<< START >>> Mode "Défense"
+03:37:02.874 [main] [30mTRACE[m  - ############################
+03:37:02.874 [main] [32mINFO [m  - IF - Mode "Duel"
+03:37:02.874 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Défense
+03:37:02.874 [main] [30mTRACE[m  - #####################################
+03:37:02.874 [main] [30mTRACE[m  - <<< START >>> Méthode : run_Defense()
+03:37:02.874 [main] [30mTRACE[m  - #####################################
+03:37:02.874 [main] [30mTRACE[m  - ####################################################
+03:37:02.874 [main] [30mTRACE[m  - <<< START >>> Méthode : run_al_NewComputerProposal()
+03:37:02.874 [main] [30mTRACE[m  - ####################################################
+03:37:02.874 [main] [32mINFO [m  - SINON - Aprés premier tour
+03:37:03.076 [main] [30mTRACE[m  - ##########################################################
+03:37:03.076 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastInferiorUpdate()
+03:37:03.076 [main] [30mTRACE[m  - ##########################################################
+03:37:03.076 [main] [36mDEBUG[m  - (int[]) Derniers inférieurs : [0, 0, 7, 0, 0, 3, 7, 5]
+03:37:03.076 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:37:03.076 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:37:03.076 [main] [32mINFO [m  - FOR - Les positions '+'
+03:37:03.076 [main] [36mDEBUG[m  - MàJ - (int[]) Derniers inférieurs : [0, 0, 8, 0, 0, 3, 7, 5]
+03:37:03.077 [main] [30mTRACE[m  - ########################################################
+03:37:03.077 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastInferiorUpdate()
+03:37:03.077 [main] [30mTRACE[m  - ########################################################
+
+03:37:03.077 [main] [30mTRACE[m  - ##########################################################
+03:37:03.077 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_LastSuperiorUpdate()
+03:37:03.077 [main] [30mTRACE[m  - ##########################################################
+03:37:03.077 [main] [36mDEBUG[m  - (int[]) Derniers supérieurs : [3, 3, 9, 3, 5, 5, 9, 9]
+03:37:03.077 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordianteur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:37:03.077 [main] [36mDEBUG[m  - (char[]) Résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:37:03.077 [main] [32mINFO [m  - FOR - Les positions '-'
+03:37:03.077 [main] [36mDEBUG[m  - (array int) Derniers supérieurs MàJ : [2, 3, 9, 2, 5, 5, 9, 9]
+03:37:03.077 [main] [30mTRACE[m  - ########################################################
+03:37:03.077 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_LastSuperiorUpdate()
+03:37:03.077 [main] [30mTRACE[m  - ########################################################
+
+03:37:03.077 [main] [30mTRACE[m  - ##############################################################
+03:37:03.077 [main] [30mTRACE[m  - ### START ### Méthode : run_array_int_SecondComputerProposal()
+03:37:03.077 [main] [30mTRACE[m  - ##############################################################
+03:37:03.077 [main] [36mDEBUG[m  - Récupération (char[]) Derniers inférieurs : [0, 0, 8, 0, 0, 3, 7, 5]
+03:37:03.077 [main] [36mDEBUG[m  - Récupération (char[]) Derniers supérieurs : [2, 3, 9, 2, 5, 5, 9, 9]
+03:37:03.077 [main] [36mDEBUG[m  - Récupération (char[]) Proposition de l'ordinateur : [2, 2, 8, 2, 3, 4, 8, 7]
+03:37:03.077 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [-, =, +, -, =, =, =, =]
+03:37:03.077 [main] [36mDEBUG[m  - Initialisation (int[]) Nouvelle proposition de l'ordinateur : [-, =, +, -, =, =, =, =]
+03:37:03.077 [main] [32mINFO [m  - FOR - Injection de la nouvelle proposition de l'ordinateur
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '+'
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '-'
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:37:03.077 [main] [32mINFO [m  - IF - L'unité du résultat de la comparaison = '='
+03:37:03.077 [main] [36mDEBUG[m  - (array int) Nouvelle proposition de l'ordinateur : [1, 2, 9, 1, 3, 4, 8, 7]
+03:37:03.077 [main] [30mTRACE[m  - ############################################################
+03:37:03.077 [main] [30mTRACE[m  - ### END ### Méthode : run_array_int_SecondComputerProposal()
+03:37:03.077 [main] [30mTRACE[m  - ############################################################
+
+03:37:03.078 [main] [32mINFO [m  - Lancement second type de proposition
+03:37:03.078 [main] [30mTRACE[m  - ##################################################
+03:37:03.078 [main] [30mTRACE[m  - <<< END >>> Méthode : run_al_NewComputerProposal()
+03:37:03.078 [main] [30mTRACE[m  - ##################################################
+
+03:37:03.078 [main] [32mINFO [m  - Lance la nouvelle proposition de l'ordinateur
+03:37:03.078 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 9, 1, 3, 4, 8, 7]
+03:37:03.078 [main] [36mDEBUG[m  - Conversion (String) Proposition de l'ordinateur : 12913487
+03:37:03.281 [main] [30mTRACE[m  - #######################################################
+03:37:03.282 [main] [30mTRACE[m  - ### START ### Méthode : run_array_ch_ComparisonResult()
+03:37:03.282 [main] [30mTRACE[m  - #######################################################
+03:37:03.282 [main] [36mDEBUG[m  - (int[]) Combinaison secrète : [1, 2, 9, 0, 3, 4, 8, 7]
+03:37:03.282 [main] [36mDEBUG[m  - (int[]) Proposition de l'ordinateur : [1, 2, 9, 1, 3, 4, 8, 7]
+03:37:03.282 [main] [36mDEBUG[m  - (char[]) Initialisation du résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:37:03.282 [main] [32mINFO [m  - FOR - Comparaison de chaque unité de la proposition de l'ordinateur et de la combinaison secrète
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - L'unité de la proposition de l'ordinateur > à l'unité de la combinaison secrète
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [32mINFO [m  - IF - Les unités de la proposition de l'ordinateur et de la combinaison secrète sont égales
+03:37:03.282 [main] [36mDEBUG[m  - (char[]) MàJ résultat de la comparaison : [=, =, =, -, =, =, =, =]
+03:37:03.282 [main] [30mTRACE[m  - ######################################################
+03:37:03.282 [main] [30mTRACE[m  - ### End ### Méthode : run_array_ch_ComparisonResult()
+03:37:03.282 [main] [30mTRACE[m  - ######################################################
+
+03:37:03.282 [main] [32mINFO [m  - Lancement de la comparaison entre la proposition de l'ordinateur et la combinaison secrète
+03:37:03.282 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, =, -, =, =, =, =]
+03:37:03.282 [main] [36mDEBUG[m  - Incrémentation String() : ===-====
+03:37:03.282 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ===-====
+03:37:03.483 [main] [30mTRACE[m  - ###################################
+03:37:03.483 [main] [30mTRACE[m  - <<< END >>> Méthode : run_Defense()
+03:37:03.483 [main] [30mTRACE[m  - ###################################
+
+03:37:03.483 [main] [36mDEBUG[m  - Récupération (char[]) Résultat de la comparaison : [=, =, =, -, =, =, =, =]
+03:37:03.483 [main] [36mDEBUG[m  - Incrémentation String() : ===-====
+03:37:03.484 [main] [36mDEBUG[m  - Conversion (String) Résultat de la comparaison : ===-====
+03:37:03.484 [main] [30mTRACE[m  - ###############################
+03:37:03.484 [main] [30mTRACE[m  - ### START ### Mode "Challenger"
+03:37:03.484 [main] [30mTRACE[m  - ###############################
+03:37:03.484 [main] [32mINFO [m  - SI - Node "Duel"
+03:37:03.484 [main] [36mDEBUG[m  - Màj - (String) Sous-mode (Pour mode "Duel") : Challenger
+03:37:03.484 [main] [36mDEBUG[m  - Initialisation (int) Proposition Try Catch
+03:37:03.484 [main] [36mDEBUG[m  - Initialisation (boolean) Proposition validée : false
+03:37:03.484 [main] [32mINFO [m  - DO {} WHILE - La proposition n'est pas validée
+03:37:03.484 [main] [32mINFO [m  - SWITCH - Mode des jeux
+03:37:03.484 [main] [32mINFO [m  - CASE - Mode "Duel"
+03:37:03.484 [main] [32mINFO [m  - SWITCH - Le sous-mode en mode "Duel"
+03:37:03.484 [main] [32mINFO [m  - CASE - Mode "Challenger"
+03:37:03.686 [main] [32mINFO [m  - Initialise le scanner pour la proposition
+03:37:03.686 [main] [36mDEBUG[m  - Initialisation (boolean) Que des nombres : false
+03:37:03.686 [main] [32mINFO [m  - DO {} WHILE - Il n'y a pas que des nombres
+03:37:03.686 [main] [32mINFO [m  - try
+03:37:16.384 [main] [36mDEBUG[m  - Récupération (int) du contenu du scanner : 68276467
+03:37:16.384 [main] [36mDEBUG[m  - MàJ - (boolean) Il n'y a que des nombres : true
+03:37:16.384 [main] [32mINFO [m  - Vérifie si la combinaison de l'utilisateur ne contient que des nombres
+03:37:16.384 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:37:16.384 [main] [36mDEBUG[m  - (boolean) Le nombre est négatif : false
+03:37:16.384 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est négatif : false
+03:37:16.384 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:37:16.384 [main] [32mINFO [m  - FOR - le numbre d'unité de la combinaison
+03:37:16.384 [main] [36mDEBUG[m  - (String) Nombre maximum : 99999999
+03:37:16.384 [main] [36mDEBUG[m  - Initialisation (String) Nombre maximum : 99999999
+03:37:16.384 [main] [32mINFO [m  - Conversion (int) La chaîne de caractère contenant le nombre maximum
+03:37:16.385 [main] [36mDEBUG[m  - (boolean) Le nombre est trop grand : false
+03:37:16.385 [main] [36mDEBUG[m  - Initialisation (boolean) Le nombre est trop grand : false
+03:37:16.385 [main] [32mINFO [m  - IF - Nombre positif et pas trop grand
+03:37:16.385 [main] [36mDEBUG[m  - MàJ - (boolean) Combinaison valide : true
+03:37:16.385 [main] [32mINFO [m  - MàJ - (boolean) Vérifie si la combinaison de l'utilisateur est valide
+03:37:16.385 [main] [36mDEBUG[m  - int_IStart : 7
+03:37:16.385 [main] [36mDEBUG[m  - (array int) Combinaison : [6, 8, 2, 7, 6, 4, 6, 7]
+03:37:16.385 [main] [36mDEBUG[m  - Conversion (int[]) Combinaison de l'utilisateur : [6, 8, 2, 7, 6, 4, 6, 7]
+03:37:16.588 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau à comparer : [6, 8, 2, 7, 6, 4, 6, 7]
+03:37:16.588 [main] [36mDEBUG[m  - -----------------------------------------------------------> Tableau de base : [6, 8, 2, 7, 6, 4, 6, 7]
+03:37:16.588 [main] [36mDEBUG[m  - Initialisation (char[]) Résultat de la comparaison : [ ,  ,  ,  ,  ,  ,  ,  ]
+03:37:16.588 [main] [32mINFO [m  - FOR - Pour chaque unité
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - ELSE - L'unité à comparer est = que l'unité comparée
+03:37:16.588 [main] [32mINFO [m  - Lancement comparaiosn entre la combinaison de l'utilisateur et la combinaison secrète
+03:37:16.790 [main] [32mINFO [m  - ELSE IF - En mode "Duel", le résultat de la comparaison = résultat gagnant && Que l'ordinateur n'a pas gagné
+03:37:18.799 [main] [36mDEBUG[m  - MàJ - (boolean) Partie gagnée : true
+03:37:18.799 [main] [30mTRACE[m  - #######################
+03:37:18.799 [main] [30mTRACE[m  - ### END ### Mode "Duel"
+03:37:18.800 [main] [30mTRACE[m  - #######################
+
+03:37:18.800 [main] [32mINFO [m  - Lancement du jeu "Recherche +/-"
+03:37:18.800 [main] [30mTRACE[m  - ####################################################################
+03:37:18.800 [main] [30mTRACE[m  - <<< 5th Part >>> Méthode : game_Launcher() : Voulez-vous continuer ?
+03:37:18.800 [main] [30mTRACE[m  - ####################################################################
+03:37:19.204 [main] [36mDEBUG[m  - Initialisation (boolean) si le scanner est vide : true
+03:37:19.204 [main] [32mINFO [m  - DO {} WHILE - Si le scanner est vide
+03:37:19.204 [main] [36mDEBUG[m  - MàJ - (boolean) Scanner vide : false
+03:50:49.797 [main] [32mINFO [m  - Récupération (String) contenu du scanner
+03:50:49.797 [main] [32mINFO [m  - SWITCH - (String) Valeur du menu

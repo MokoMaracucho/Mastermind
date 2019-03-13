@@ -390,6 +390,9 @@ public class Recherche_Launcher {
                 case "Challenger":
                     logger.info("CASE - Mode \"Challenger\"");
 
+                    // Affiche la solution
+                    texts_Recherche.display_LA_COMBINAISON_ETAIT(int_Recherche_NumberOfUnities, array_int_RandomNumber);
+
                     // Affiche "Vous avez perdu ..."
                     graphism.display_YOU_LOOSE();
 
@@ -415,6 +418,9 @@ public class Recherche_Launcher {
                 // CASE - Mode "Duel"
                 case "Duel":
                     logger.info("CASE - Mode \"Duel\"");
+
+                    // Affiche la solution
+                    texts_Recherche.display_LA_COMBINAISON_ETAIT(int_Recherche_NumberOfUnities, array_int_RandomNumber);
 
                     // Affiche "Vous avez perdu ..."
                     graphism.display_YOU_LOOSE();

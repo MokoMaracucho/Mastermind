@@ -2,6 +2,7 @@ package fr.moko.main.java.games_Launchers.mastermind_Launcher.mastermind;
 
 import fr.moko.main.java.delay.Delay;
 import fr.moko.main.java.dev_Mode.Dev_Mode;
+import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,9 @@ public class Texts_Mastermind {
 
     // Instance "Delay"
     Delay delay = new Delay();
+
+    // Instance "Utilities_Games"
+    Utilities_Games utilities_Games = new Utilities_Games();
 
     // Instance "Dev_Mode"
     Dev_Mode dev_Mode = new Dev_Mode();
@@ -129,5 +133,20 @@ public class Texts_Mastermind {
         System.out.println("\tVous devez découvrir une combinaison composée de " + int_Mastermind_NumberOfUnities + " lettres.");
         System.out.println("\n\tLa combinaison est composée des lettres suivantes : " + texts_Methods_Mastermind.run_str_LettersForCombination(int_Mastermind_NumberOfLetters, array_ch_SelectedLetters) + ".");
         System.out.println("\n\tVous avez " + int_Mastermind_NumberOfChances + " chances !");
+    }
+
+
+    /**
+     * Affiche la combinaison secrète
+     *
+     * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param array_ch_RandomNumber : (int[]) Combinaison secrète
+     */
+    public void display_LA_COMBINAISON_ETAIT(int int_Mastermind_NumberOfUnities, char[] array_ch_RandomNumber){
+
+        String str_Combination = utilities_Games.run_arrayCh_TO_str(int_Mastermind_NumberOfUnities, array_ch_RandomNumber);
+
+        delay.delay_Text();
+        System.out.println("\nLa combinaison était : " + str_Combination + "...");
     }
 }

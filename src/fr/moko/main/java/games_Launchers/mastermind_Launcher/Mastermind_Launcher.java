@@ -781,6 +781,9 @@ public class Mastermind_Launcher {
                 case "Challenger":
                     logger.info("CASE - Mode \"Challenger\"");
 
+                    // Affiche la solution
+                    texts_Mastermind.display_LA_COMBINAISON_ETAIT(int_Mastermind_NumberOfUnities, array_ch_RandomNumber);
+
                     // Affiche "Vous avez perdu ..."
                     graphism.display_YOU_LOOSE();
 
@@ -806,6 +809,9 @@ public class Mastermind_Launcher {
                 // CASE - Mode "Duel"
                 case "Duel":
                     logger.info("CASE - Mode \"Duel\"");
+
+                    // Affiche la solution
+                    texts_Mastermind.display_LA_COMBINAISON_ETAIT(int_Mastermind_NumberOfUnities, array_ch_RandomNumber);
 
                     // Affiche "Vous avez perdu ..."
                     graphism.display_YOU_LOOSE();

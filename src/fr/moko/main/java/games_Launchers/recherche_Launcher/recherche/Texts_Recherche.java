@@ -2,6 +2,7 @@ package fr.moko.main.java.games_Launchers.recherche_Launcher.recherche;
 
 import fr.moko.main.java.delay.Delay;
 import fr.moko.main.java.dev_Mode.Dev_Mode;
+import fr.moko.main.java.games_Launchers.Games.Utilities_Games;
 
 
 /**
@@ -14,6 +15,9 @@ public class Texts_Recherche {
 
     // Instance "Delay"
     Delay delay = new Delay();
+
+    // Instance "Utilities_Games"
+    Utilities_Games utilities_Games = new Utilities_Games();
 
     // Instance "Dev_Mode"
     Dev_Mode dev_Mode = new Dev_Mode();
@@ -188,5 +192,20 @@ public class Texts_Recherche {
 
         delay.delay_Text();
         System.out.print("\nVotre proposition :                                " + str_Proposition);
+    }
+
+
+    /**
+     * Affiche la combinaison secrète
+     *
+     * @param int_Recherche_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param array_int_RandomNumber : (int[]) Combinaison secrète
+     */
+    public void display_LA_COMBINAISON_ETAIT(int int_Recherche_NumberOfUnities, int[] array_int_RandomNumber){
+
+        String str_Combination = utilities_Games.run_arrayInt_TO_str(int_Recherche_NumberOfUnities, array_int_RandomNumber);
+
+        delay.delay_Text();
+        System.out.println("\nLa combinaison était : " + str_Combination + "...");
     }
 }
