@@ -35,6 +35,7 @@ public class Texts_Mastermind {
      * Affiche l'énoncé en mode "Défense"
      *
      * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
      * @param array_ch_SelectedLetters : (char[]) Lettres sélectionnées pour le jeu "Mastermind"
      */
     public void display_Defense_Statement(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, char array_ch_SelectedLetters[]){
@@ -103,7 +104,10 @@ public class Texts_Mastermind {
      * Affiche l'énoncé en mode "Mastermind"
      *
      * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
-     * @param al_Mastermind_Challenger :
+     * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param int_Mastermind_NumberOfChances : (int) Nombre de chances
+     * @param boo_DevMode : (boolean) Mode développeur
+     * @param al_Mastermind_Challenger : (ArrayList) Données attaque
      */
     public void display_Challenger_Statement(int int_Mastermind_NumberOfUnities, int int_Mastermind_NumberOfLetters, int int_Mastermind_NumberOfChances, boolean boo_DevMode, ArrayList al_Mastermind_Challenger){
 

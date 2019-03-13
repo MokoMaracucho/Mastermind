@@ -58,6 +58,8 @@ public class Games_Launcher {
 
     /**
      * Lancement des jeux "Recherche +/-" et "Mastermind"
+     *
+     * @param boo_DevMode : (boolean) En mode développeur
      */
     public void games_Launcher(boolean boo_DevMode) {
 

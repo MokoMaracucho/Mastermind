@@ -65,6 +65,7 @@ public class Mastermind_Launcher {
     /**
      * Lancement du jeu "Mastermind"
      *
+     * @param boo_DevMode : (boolean) Mode développeur
      * @param al_Configuration : (ArrayList) Valeurs de configuration
      * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
      */

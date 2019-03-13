@@ -22,6 +22,7 @@ public class Challenger_Mastermind {
     /**
      * Génére une combinaison aléatoire de lettres
      *
+     * @param boo_DevMode : (boolean) Mode développeur
      * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
      * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
      * @param al_Mastermind_Challenger : (ArrayList) Données challenger

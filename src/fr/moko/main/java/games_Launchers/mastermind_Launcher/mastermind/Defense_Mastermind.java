@@ -289,6 +289,7 @@ public class Defense_Mastermind {
      *
      * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
      * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param str_SubMode : (String) Sous-mode en mode "Duel"
      * @param al_Mastermind_Defense : (ArrayList) Données défense
      *
      * @return : (ArrayList) Données de défense
@@ -715,6 +716,7 @@ public class Defense_Mastermind {
      *
      * @param int_Mastermind_NumberOfUnities : (int) Nombre d'unités utilisées pour les combinaisons
      * @param int_Mastermind_NumberOfLetters : (int) Nombre de lettres utilisées pour les combinaisons
+     * @param str_SubMode : (String) Sous-mode en mode "Duel"
      * @param al_Mastermind_Defense : (ArrayList) Données défense
      *
      * @return : (ArrayList) Données de défense
@@ -821,6 +823,8 @@ public class Defense_Mastermind {
      * @param str_SubMode : (String) Sous-mode en mode "Duel"
      * @param al_Mastermind_Defense : (ArrayList) Données défense
      * @param i : (int) Compteur de tours
+     * @param boo_WonPart : (boolean) La partie est gagnée
+     * @param boo_HeWon : (boolean) L'ordinateur a gagné
      *
      * @return : (ArrayList) Données de défense
      */
@@ -1043,6 +1047,8 @@ public class Defense_Mastermind {
      * @param str_Sub_Mode : (String) Sous-mode en mode "Duel"
      * @param al_Mastermind_Defense : (ArrayList) Données défense
      * @param i : (int) Compteur de tours
+     * @param boo_WonPart : (boolean) La partie est gagnée
+     * @param boo_HeWon : (boolean) L'ordinateur a gagné
      *
      * @return : (ArrayList) Données de défense
      */

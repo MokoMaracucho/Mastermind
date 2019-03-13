@@ -69,12 +69,14 @@ public class Methods_Recherche {
     /**
      * Teste si la combinaison ne contient bien que des nombres
      *
+     * @param array_str_Main_Menu_Choices : (String[]) Choix du menu principal
+     * @param str_Sub_Mode : (String) Sous-mode en mode "Duel"
      * @param sc_Combinaison : (Scanner) Contenant la combinaison à tester
      * @param int_Combination_TryCatch : (int[]) Combinaison ne contenat que des chiffres
      *
      * @return : (int) La combinaison
      */
-    public int run_Combination_TryCatch(String[] array_str_Maun_Menu_Choices, String str_Sub_Mode, Scanner sc_Combinaison, int int_Combination_TryCatch) {
+    public int run_Combination_TryCatch(String[] array_str_Main_Menu_Choices, String str_Sub_Mode, Scanner sc_Combinaison, int int_Combination_TryCatch) {
 
         // Initialisation (boolean) Que des nombres
         boolean boo_OnlyNumbers = false;
@@ -107,7 +109,7 @@ public class Methods_Recherche {
                 texts_Games.display_VEUILLEZ_REESSAYER();
 
                 // Initialise le scanner pour la proposition
-                sc_Combinaison = methods_Games.run_sc_Combination(array_str_Maun_Menu_Choices, str_Sub_Mode);
+                sc_Combinaison = methods_Games.run_sc_Combination(array_str_Main_Menu_Choices, str_Sub_Mode);
                 logger.info("Initialise le scanner pour la proposition");
 
                 // MàJ - (boolean) Il n'y a pas que des nombres
