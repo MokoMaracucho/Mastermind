@@ -7,19 +7,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="028b4816-3f65-4793-b521-9e6db5ea7249" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fr/moko/test/java/Recherche_Tests/Recherche_Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fr/moko/test/java/mastermind_Tests/Mastermind_Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mastermind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mastermind.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mastermind/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mastermind/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/Menus/Main_Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/Menus/Methods_Main_Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/Menus/Texts_Main_Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/configuration/Configuration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/delay/Delay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/dev_Mode/Dev_Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/Games/Methods_Games.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/Games/Texts_Games.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/Games/Utilities_Games.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/Games_Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Challenger_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Methods_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Methods_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Methods_Mastermind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_Array_Defense.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Utilities/Display_al_Mastermind_Defense.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/Recherche_Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Challenger_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Defense_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Methods_Texts_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mastermind/fr/moko/main/java/graphism/Graphism.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/moko/test/java/Recherche_Tests/Recherche_Tests.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,34 +48,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/recherche_Launcher/recherche/Texts_Recherche.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="60" selection-start-line="16" selection-start-column="30" selection-end-line="19" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="142" column="65" selection-start-line="142" selection-start-column="65" selection-end-line="142" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="813" column="121" selection-start-line="813" selection-start-column="121" selection-end-line="813" selection-end-column="121" />
+            <state relative-caret-position="7055">
+              <caret line="478" column="61" lean-forward="true" selection-start-line="478" selection-start-column="61" selection-end-line="478" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="511" column="57" selection-start-line="511" selection-start-column="21" selection-end-line="511" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,22 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/test/java/Recherche_Tests/Recherche_Tests.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/moko/test/java/mastermind_Tests/Mastermind_Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2535">
-              <caret line="169" selection-start-line="169" selection-end-line="169" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/Games/Utilities_Games.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="72" column="37" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="3105">
+              <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,6 +107,9 @@
       <find>†</find>
       <find>'.'</find>
       <find>array_ch_Combination</find>
+      <find>ComparisonResult</find>
+      <find>run_al_ComparisonOfComparisonResults</find>
+      <find>str_SubMode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,6 +159,10 @@
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Texts_Mastermind.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java" />
         <option value="$PROJECT_DIR$/src/fr/moko/test/java/Recherche_Tests/Recherche_Tests.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/test/java/Mastermind_Tests/Recherche_Tests.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/test/java/Mastermind_Tests/Mastermind_Tests.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/test/java/Mastermind_Tests/Mastermind_Test.java" />
+        <option value="$PROJECT_DIR$/src/fr/moko/test/java/mastermind_Tests/Mastermind_Tests.java" />
       </list>
     </option>
   </component>
@@ -375,6 +375,16 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mastermind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mastermind" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fr" type="462c0819:PsiDirectoryNode" />
+              <item name="moko" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mastermind_Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -382,7 +392,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552503762072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552506138369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -407,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Mastermind_Tests.run_ComparisonOfComparisonResults">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.moko.main.Main" />
       <module name="mastermind" />
@@ -422,6 +432,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Mastermind_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mastermind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.Mastermind_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.Mastermind_Tests" />
+      <option name="MAIN_CLASS_NAME" value="java.Mastermind_Tests.Mastermind_Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mastermind_Test.run_al_NewComparisonResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mastermind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.Mastermind_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.Mastermind_Tests" />
+      <option name="MAIN_CLASS_NAME" value="java.Mastermind_Tests.Mastermind_Test" />
+      <option name="METHOD_NAME" value="run_al_NewComparisonResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mastermind_Tests.run_ComparisonOfComparisonResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mastermind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.mastermind_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.mastermind_Tests" />
+      <option name="MAIN_CLASS_NAME" value="java.mastermind_Tests.Mastermind_Tests" />
+      <option name="METHOD_NAME" value="run_ComparisonOfComparisonResults" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mastermind_Tests.run_al_NewComparisonResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mastermind" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.mastermind_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.mastermind_Tests" />
+      <option name="MAIN_CLASS_NAME" value="java.mastermind_Tests.Mastermind_Tests" />
+      <option name="METHOD_NAME" value="run_al_NewComparisonResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Mastermind_Tests.run_ComparisonOfComparisonResults" />
+        <item itemvalue="JUnit.Mastermind_Tests.run_al_NewComparisonResult" />
+        <item itemvalue="JUnit.Mastermind_Test" />
+        <item itemvalue="JUnit.Mastermind_Test.run_al_NewComparisonResult" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -435,6 +515,14 @@
       <updated>1551366010346</updated>
     </task>
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Mastermind_Tests_run_al_NewComparisonResult - 2019.03.13 at 14h 37m 37s.xml">
+      <configuration name="Mastermind_Tests.run_al_NewComparisonResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Mastermind_Tests_run_ComparisonOfComparisonResults - 2019.03.13 at 14h 37m 55s.xml">
+      <configuration name="Mastermind_Tests.run_ComparisonOfComparisonResults" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,16 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="849" column="78" selection-start-line="849" selection-start-column="78" selection-end-line="849" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -758,18 +836,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/Mastermind_Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="813" column="121" selection-start-line="813" selection-start-column="121" selection-end-line="813" selection-end-column="121" />
+        <state relative-caret-position="7055">
+          <caret line="478" column="61" lean-forward="true" selection-start-line="478" selection-start-column="61" selection-end-line="478" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/moko/test/java/Recherche_Tests/Recherche_Tests.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/test/java/Mastermind_Tests/Mastermind_Test.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/main/java/games_Launchers/mastermind_Launcher/mastermind/Defense_Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2535">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        <state relative-caret-position="451">
+          <caret line="511" column="57" selection-start-line="511" selection-start-column="21" selection-end-line="511" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/moko/test/java/mastermind_Tests/Mastermind_Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
