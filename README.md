@@ -23,6 +23,8 @@ Pour lancer le programme dans un terminal :
 
         - Pour ne pas jouer en mode "Développeur" : java -jar mastermind.jar false
 
+        - Si vous ne saisissez pas d'argument (java -jar mastermind.jar), la valeur utilisée sera celle spécifiée dans le fichier "config.properties"
+
 
 
 Pour configurer les jeux, ouvrez le fichier "config.properties" et modifiez les paramètres en respectant les consignes.

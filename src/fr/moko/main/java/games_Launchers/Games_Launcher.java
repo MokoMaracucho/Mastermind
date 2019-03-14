@@ -59,9 +59,9 @@ public class Games_Launcher {
     /**
      * Lancement des jeux "Recherche +/-" et "Mastermind"
      *
-     * @param boo_DevMode : (boolean) En mode développeur
+     * @param str_DevMode_Console : (String) Mode développeur depuis console
      */
-    public void games_Launcher(boolean boo_DevMode) {
+    public void games_Launcher(String str_DevMode_Console) {
 
         logger.trace("#######################################");
         logger.trace("<<< START >>> Méthode : game_Launcher()");
@@ -78,6 +78,37 @@ public class Games_Launcher {
 
         // Récupération (ArrayList) valeurs de configurations dans "config.properties" : "al_PropertiesValue"
         al_Configuration = configuration.get_Configuration(al_Configuration);
+
+
+
+        // Récupération - (boolean) Mode développeur depuis "config.properties"
+        boolean boo_DevMode_Config = (boolean) al_Configuration.get(0);
+        logger.debug("Récupération - (boolean) Mode développeur depuis \"config.properties\" : " + boo_DevMode_Config);
+
+
+
+        boolean boo_DevMode;
+
+        switch (str_DevMode_Console) {
+
+            case "true" :
+
+                boo_DevMode = true;
+
+                break;
+
+            case "false" :
+
+                boo_DevMode = false;
+
+                break;
+
+            default :
+
+                boo_DevMode = boo_DevMode_Config;
+
+                break;
+        }
 
 
 

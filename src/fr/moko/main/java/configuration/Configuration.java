@@ -45,7 +45,7 @@ public class Configuration {
         InputStream inputStream;
 
         // Initialisation (String) des variables
-        String str_DevMode = new String();
+        String str_DevMode_Config = new String();
 
         String str_Recherche_NumberOfUnities = new String();
         String str_Recherche_NumberOfChances = new String();
@@ -69,7 +69,7 @@ public class Configuration {
             properties.load(input);
 
             // Récuperation (String) valeurs dans "config.properties"
-            str_DevMode =  properties.getProperty("boo_DevMode");
+            str_DevMode_Config =  properties.getProperty("boo_DevMode");
 
             str_Recherche_NumberOfUnities =  properties.getProperty("int_Recherche_NumberOfUnities");
             str_Recherche_NumberOfChances =  properties.getProperty("int_Recherche_NumberOfChances");
@@ -84,8 +84,8 @@ public class Configuration {
         }
 
         // Initialisation, récupération et injection - (boolean) Mode développeur
-        boolean boo_DevMode = Boolean.parseBoolean(str_DevMode);
-        al_Configuration.add(0, boo_DevMode);
+        boolean boo_DevMode_Config = Boolean.parseBoolean(str_DevMode_Config);
+        al_Configuration.add(0, boo_DevMode_Config);
 
 
 
